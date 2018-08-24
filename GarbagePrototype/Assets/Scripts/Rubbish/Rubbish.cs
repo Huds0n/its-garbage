@@ -26,7 +26,7 @@ public class Rubbish : MonoBehaviour {
     public float fallMultiplier = 2.5f;
     [Range(0.0f, 5.0f)]
     public float lowJumpMultiplier = 2f;
-
+    AudioSource newspaperPickUp;
 
     private void Awake()
     {
@@ -48,8 +48,10 @@ public class Rubbish : MonoBehaviour {
 
         Vector3 force = new Vector3(xForce, yForce, 0);
         rb.velocity = force;
-
+        
         LeanTween.scale(gameObject, new Vector3(.3f, .3f, .3f), .4f).setLoopPingPong();
+
+        newspaperPickUp = GetComponent<AudioSource>();
     }
 
 	// Update is called once per frame
@@ -87,6 +89,8 @@ public class Rubbish : MonoBehaviour {
                     transform.position += dir * moveSpeed * Time.fixedDeltaTime;
 
                     LeanTween.rotate(gameObject, new Vector3(359, 359, 359), .3f).setLoopPingPong();
+
+                    newspaperPickUp.Play(0);
                 }
             }
         }
@@ -103,6 +107,7 @@ public class Rubbish : MonoBehaviour {
                 player.GetComponent<PlayerMain>().uiCount = 0;
                 player.GetComponent<PlayerMain>().largeUI = true;
             }
+            //newspaperPickUp.Play(0);
            player.GetComponent<PlayerMain>().canDie = false;
             Destroy(gameObject);
         }

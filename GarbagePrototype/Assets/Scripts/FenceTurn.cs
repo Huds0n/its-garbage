@@ -7,9 +7,10 @@ public class FenceTurn : MonoBehaviour {
 	BoxCollider fenceCollider;
     
 	bool rotateOtherWay;
-
+    AudioSource fenceSpin;
 	void Start(){
 		fenceCollider = GetComponent<BoxCollider> ();
+        fenceSpin = GetComponent<AudioSource>();
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -18,6 +19,7 @@ public class FenceTurn : MonoBehaviour {
         {
             Turn();
 			StartCoroutine (TurnColliderOffandOn());
+            fenceSpin.Play(0);
         }
     }
 

@@ -19,6 +19,9 @@ public class Dog : MonoBehaviour {
 	Quaternion rotation = Quaternion.identity;
 
 	public GameObject dogShit;
+    AudioSource dogAudio;
+    public AudioClip dogShitNoise;
+    public AudioClip dogEnter;
 
     // Use this for initialization
     void Start () {
@@ -27,6 +30,7 @@ public class Dog : MonoBehaviour {
         transform.position = new Vector3(startPositionX, transform.position.y, transform.position.z);
 
 		InvokeRepeating ("DogShitDrop", 3f, 2f);
+        dogAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,9 +52,13 @@ public class Dog : MonoBehaviour {
 			if (transform.rotation.y == 0) {
 				rotation.eulerAngles = new Vector3 (0, 180, 0);
 				transform.rotation = rotation;
+                dogAudio.clip = dogEnter;
+                dogAudio.Play();
 			} else {
 				rotation.eulerAngles = Vector3.zero;
 				transform.rotation = rotation;
+                dogAudio.clip = dogEnter;
+                dogAudio.Play();
 			}
 		
 
@@ -67,6 +75,8 @@ public class Dog : MonoBehaviour {
        
 		if (rand == 3) {
 			Instantiate (dogShit, transform.position, transform.rotation);
+            dogAudio.clip = dogShitNoise;
+            dogAudio.Play();
 
 		}
 	}

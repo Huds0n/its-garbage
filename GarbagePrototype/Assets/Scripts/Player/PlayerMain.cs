@@ -150,6 +150,9 @@ public class PlayerMain : MonoBehaviour {
     public ReferencedScripts referencesScript;
 
     int anInt = 0;
+
+    AudioSource shortHurt;
+
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -168,6 +171,8 @@ public class PlayerMain : MonoBehaviour {
 		timeStamp = Time.time + timeWait;
 
 		dashTimeStamp = Time.time + dashRecharger;
+
+        shortHurt = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -210,6 +215,7 @@ public class PlayerMain : MonoBehaviour {
         {
             //start hurting!
 			hurtAnimation = true;
+            shortHurt.Play(0);
             StartCoroutine(Hurting());
 
         }
