@@ -1,0 +1,272 @@
+fileFormatVersion: 2
+guid: 088a9612a487434448c200e7d3112d63
+timeCreated: 1522037292
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: armJNT_1
+    100002: armJNT_10
+    100004: armJNT_11
+    100006: armJNT_12
+    100008: armJNT_13
+    100010: armJNT_14
+    100012: armJNT_15
+    100014: armJNT_16
+    100016: armJNT_17
+    100018: armJNT_18
+    100020: armJNT_19
+    100022: armJNT_2
+    100024: armJNT_20
+    100026: armJNT_21
+    100028: armJNT_22
+    100030: armJNT_23
+    100032: armJNT_24
+    100034: armJNT_3
+    100036: armJNT_4
+    100038: armJNT_5
+    100040: armJNT_6
+    100042: armJNT_7
+    100044: armJNT_8
+    100046: armJNT_9
+    100048: bodyJNT_BASE
+    100050: bodyJNT_MID
+    100052: bodyJNT_TOP
+    100054: bodyMesh
+    100056: Club
+    100058: clubNurbs
+    100060: clubNurbs_PH
+    100062: clubNurbs_SN
+    100064: eyeBall
+    100066: //RootNode
+    100068: joint14
+    100070: joint15
+    100072: joint16
+    100074: joint18
+    100076: lidRoot
+    100078: lowerMouthJNT_1
+    100080: lowerMouthJNT_2
+    100082: lowerMouthJNT_3
+    100084: lowerMouthJNT_4
+    100086: lowerMouthJNT_5
+    100088: pupil
+    100090: rootLowerMouth
+    100092: rootUpperMouth
+    100094: teeth
+    100096: teethUp
+    100098: upperMouthJNT_10
+    100100: upperMouthJNT_12
+    100102: upperMouthJNT_7
+    100104: upperMouthJNT_8
+    100106: upperMouthJNT_9
+    400000: armJNT_1
+    400002: armJNT_10
+    400004: armJNT_11
+    400006: armJNT_12
+    400008: armJNT_13
+    400010: armJNT_14
+    400012: armJNT_15
+    400014: armJNT_16
+    400016: armJNT_17
+    400018: armJNT_18
+    400020: armJNT_19
+    400022: armJNT_2
+    400024: armJNT_20
+    400026: armJNT_21
+    400028: armJNT_22
+    400030: armJNT_23
+    400032: armJNT_24
+    400034: armJNT_3
+    400036: armJNT_4
+    400038: armJNT_5
+    400040: armJNT_6
+    400042: armJNT_7
+    400044: armJNT_8
+    400046: armJNT_9
+    400048: bodyJNT_BASE
+    400050: bodyJNT_MID
+    400052: bodyJNT_TOP
+    400054: bodyMesh
+    400056: Club
+    400058: clubNurbs
+    400060: clubNurbs_PH
+    400062: clubNurbs_SN
+    400064: eyeBall
+    400066: //RootNode
+    400068: joint14
+    400070: joint15
+    400072: joint16
+    400074: joint18
+    400076: lidRoot
+    400078: lowerMouthJNT_1
+    400080: lowerMouthJNT_2
+    400082: lowerMouthJNT_3
+    400084: lowerMouthJNT_4
+    400086: lowerMouthJNT_5
+    400088: pupil
+    400090: rootLowerMouth
+    400092: rootUpperMouth
+    400094: teeth
+    400096: teethUp
+    400098: upperMouthJNT_10
+    400100: upperMouthJNT_12
+    400102: upperMouthJNT_7
+    400104: upperMouthJNT_8
+    400106: upperMouthJNT_9
+    2100000: lambert1
+    2100002: teeth1
+    2100004: blinn1
+    2300000: Club
+    2300002: eyeBall
+    2300004: pupil
+    3300000: Club
+    3300002: eyeBall
+    3300004: pupil
+    4300000: bodyMesh
+    4300002: teethUp
+    4300004: teeth
+    4300006: eyeBall
+    4300008: pupil
+    4300010: Club
+    7400000: HitFront_A
+    7400002: Idle
+    9500000: //RootNode
+    13700000: bodyMesh
+    13700002: teeth
+    13700004: teethUp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: HitFront_A
+      takeName: HitFront_A
+      firstFrame: 1
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: HitFront_A
+      firstFrame: 1
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

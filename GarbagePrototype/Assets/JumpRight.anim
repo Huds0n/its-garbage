@@ -1,0 +1,3156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: JumpRight
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.44573265, y: -0.45842975, z: -0.4514572, w: 0.6223854}
+        inSlope: {x: 0.028536558, y: -0.0059946775, z: 0.122907996, w: 0.06394243}
+        outSlope: {x: 0.028536558, y: -0.0059946775, z: 0.122907996, w: 0.06394243}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: 0.44599867, y: -0.45870328, z: -0.44756317, w: 0.6247909}
+        inSlope: {x: -0.01709532, y: -0.0077506695, z: 0.06302782, w: 0.051714048}
+        outSlope: {x: -0.01709532, y: -0.0077506695, z: 0.06302782, w: 0.051714048}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.44389302, y: -0.45966068, z: -0.43967783, w: 0.6311533}
+        inSlope: {x: -0.00027357996, y: -0.00012516728, z: 0.0010463994, w: 0.0008296808}
+        outSlope: {x: -0.00027357996, y: -0.00012516728, z: 0.0010463994, w: 0.0008296808}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.44504696, y: -0.45868886, z: -0.4430837, w: 0.6296208}
+        inSlope: {x: 0.10680219, y: 0.095236324, z: -0.248646, w: -0.16357791}
+        outSlope: {x: 0.10680219, y: 0.095236324, z: -0.248646, w: -0.16357791}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.010118023, y: -0.002388284, z: 0.10781297, w: 0.9941271}
+        inSlope: {x: -0.039924927, y: -0.004702425, z: 0.068403475, w: -0.0073680156}
+        outSlope: {x: -0.039924927, y: -0.004702425, z: 0.068403475, w: -0.0073680156}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: 0.009266133, y: -0.0024909517, z: 0.109259374, w: 0.993967}
+        inSlope: {x: 0.00000049176833, y: 0.000000053088627, z: -0.0000008047118,
+          w: 0.0000007152994}
+        outSlope: {x: 0.00000049176833, y: 0.000000053088627, z: -0.0000008047118,
+          w: 0.0000007152994}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.009266133, y: -0.0024909517, z: 0.109259374, w: 0.993967}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.0093626715, y: -0.002286774, z: 0.107141376, w: 0.99438334}
+        inSlope: {x: 0.013580835, y: 0.015083328, z: -0.17905127, w: 0.022596704}
+        outSlope: {x: 0.013580835, y: 0.015083328, z: -0.17905127, w: 0.022596704}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.08547826, y: -0, z: -0, w: 0.99634004}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333588
+        value: {x: 0.08547826, y: -0, z: -0, w: 0.99634004}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.08547826, y: -0, z: -0, w: 0.99634004}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.54565406, y: 0.83547914, z: -0.0544947, w: -0.035590712}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.54565406, y: 0.83547914, z: -0.0544947, w: -0.035590712}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint17_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.015342222, y: -0.010645176, z: 0.049817648, w: 0.99858373}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.015342222, y: -0.010645176, z: 0.049817648, w: 0.99858373}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint17_R/joint18_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0.45016629, w: 0.89294475}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0.45016629, w: 0.89294475}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint20_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.0000038146973
+        value: {x: -0.35223573, y: 0.5872381, z: -0.49153787, w: -0.53802603}
+        inSlope: {x: -0.0018540286, y: 0.07304892, z: 0.13538109, w: -0.04318421}
+        outSlope: {x: -0.0018540286, y: 0.07304892, z: 0.13538109, w: -0.04318421}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: -0.35046497, y: 0.60139614, z: -0.47621056, w: -0.5373273}
+        inSlope: {x: 0.00014912784, y: 0.001356814, z: 0.001513452, w: 0.00008010731}
+        outSlope: {x: 0.00014912784, y: 0.001356814, z: 0.001513452, w: 0.00008010731}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.35046354, y: 0.6014101, z: -0.476195, w: -0.5373263}
+        inSlope: {x: -0.3126502, y: -0.60113835, z: -0.49056712, w: 0.020173173}
+        outSlope: {x: -0.3126502, y: -0.60113835, z: -0.49056712, w: 0.020173173}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.17742172, w: 0.98427105}
+        inSlope: {x: 0, y: 0, z: 0.01075966, w: 0.0018179758}
+        outSlope: {x: 0, y: 0, z: 0.01075966, w: 0.0018179758}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.17642239, w: 0.9843178}
+        inSlope: {x: 0, y: 0, z: 0.008133267, w: 0.0013183866}
+        outSlope: {x: 0, y: 0, z: 0.008133267, w: 0.0013183866}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.19141558, w: 0.981772}
+        inSlope: {x: 0, y: 0, z: 0.014921324, w: 0.0026746478}
+        outSlope: {x: 0, y: 0, z: 0.014921324, w: 0.0026746478}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.19001304, w: 0.9817878}
+        inSlope: {x: 0, y: 0, z: 0.011285258, w: 0.0019144671}
+        outSlope: {x: 0, y: 0, z: 0.011285258, w: 0.0019144671}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.23006523, w: 0.97318566}
+        inSlope: {x: 0, y: 0, z: 0.026352737, w: 0.0063666413}
+        outSlope: {x: 0, y: 0, z: 0.026352737, w: 0.0063666413}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.23330055, w: 0.9724062}
+        inSlope: {x: 0, y: 0, z: 0.006770966, w: 0.0015856082}
+        outSlope: {x: 0, y: 0, z: 0.006770966, w: 0.0015856082}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.24889416, w: 0.96854264}
+        inSlope: {x: 0, y: 0, z: 0.028017519, w: 0.0073562227}
+        outSlope: {x: 0, y: 0, z: 0.028017519, w: 0.0073562227}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.2523339, w: 0.9676419}
+        inSlope: {x: 0, y: 0, z: 0.0072003664, w: 0.001832701}
+        outSlope: {x: 0, y: 0, z: 0.0072003664, w: 0.001832701}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.22890295, w: 0.9734593}
+        inSlope: {x: 0, y: 0, z: 0.025799736, w: 0.0061976216}
+        outSlope: {x: 0, y: 0, z: 0.025799736, w: 0.0061976216}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.23207034, w: 0.9727005}
+        inSlope: {x: 0, y: 0, z: 0.0066284244, w: 0.0015441235}
+        outSlope: {x: 0, y: 0, z: 0.0066284244, w: 0.0015441235}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.17587936, w: 0.9846219}
+        inSlope: {x: 0, y: 0, z: 0.0133909155, w: 0.0022044864}
+        outSlope: {x: 0, y: 0, z: 0.0133909155, w: 0.0022044864}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.17462847, w: 0.98463935}
+        inSlope: {x: 0, y: 0, z: 0.01012476, w: 0.0015804087}
+        outSlope: {x: 0, y: 0, z: 0.01012476, w: 0.0015804087}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.095894985, w: 0.9954076}
+        inSlope: {x: 0, y: 0, z: 0.020644672, w: 0.0019424945}
+        outSlope: {x: 0, y: 0, z: 0.020644672, w: 0.0019424945}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166794
+        value: {x: 0, y: -0, z: -0.09295831, w: 0.99567}
+        inSlope: {x: 0, y: 0, z: -0.00030944683, w: -0.000029326358}
+        outSlope: {x: 0, y: 0, z: -0.00030944683, w: -0.000029326358}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.093651116, w: 0.9956068}
+        inSlope: {x: 0, y: 0, z: 0.00032915667, w: 0.000035476252}
+        outSlope: {x: 0, y: 0, z: 0.00032915667, w: 0.000035476252}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.4399382, y: -7.0966445e-15, z: 1.8319857e-15, w: 0.8981724}
+        inSlope: {x: 0.06374836, y: 2.8199916e-14, z: -5.098664e-15, w: -0.030674934}
+        outSlope: {x: 0.06374836, y: 2.8199916e-14, z: -5.098664e-15, w: -0.030674934}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333588
+        value: {x: 0.43566334, y: -4.654599e-15, z: 1.3061246e-15, w: 0.9001097}
+        inSlope: {x: -0.031640876, y: 1.5303226e-14, z: -5.9791603e-15, w: 0.015321026}
+        outSlope: {x: -0.031640876, y: 1.5303226e-14, z: -5.9791603e-15, w: 0.015321026}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.43217304, y: -6.495933e-15, z: 1.3571967e-15, w: 0.90180266}
+        inSlope: {x: 0.06688651, y: 5.396796e-15, z: -9.001435e-16, w: -0.03243987}
+        outSlope: {x: 0.06688651, y: 5.396796e-15, z: -9.001435e-16, w: -0.03243987}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.9201299, y: -0.03463447, z: -0.2292223, w: 0.31615055}
+        inSlope: {x: 0.025201797, y: 0.037959993, z: 0.0054733753, w: -0.064325094}
+        outSlope: {x: 0.025201797, y: 0.037959993, z: 0.0054733753, w: -0.064325094}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333588
+        value: {x: 0.9186864, y: -0.024412816, z: -0.22961657, w: 0.32046166}
+        inSlope: {x: -0.009933168, y: 0.08845508, z: -0.0038667335, w: 0.03259285}
+        outSlope: {x: -0.009933168, y: 0.08845508, z: -0.0038667335, w: 0.03259285}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.9175593, y: -0.014720584, z: -0.22988239, w: 0.3240714}
+        inSlope: {x: -0.00021671837, y: 0.0018090149, z: -0.000022530097, w: 0.0006801953}
+        outSlope: {x: -0.00021671837, y: 0.0018090149, z: -0.000022530097, w: 0.0006801953}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.91738427, y: -0.014392368, z: -0.23246482, w: 0.32321662}
+        inSlope: {x: -0.023751145, y: -0.032548834, z: -0.17535084, w: -0.05146451}
+        outSlope: {x: -0.023751145, y: -0.032548834, z: -0.17535084, w: -0.05146451}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0.0031273975, z: -0, w: 0.9999951}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0.0031273975, z: -0, w: 0.9999951}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0.001447872, z: -0, w: 0.999999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0.001447872, z: -0, w: 0.999999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R/joint6_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.035614364, y: 0.036432967, z: -0.6994963, w: 0.71279836}
+        inSlope: {x: 0.041883696, y: 0.042679034, z: 0.0016737087, w: -0.0016957386}
+        outSlope: {x: 0.041883696, y: 0.042679034, z: 0.0016737087, w: -0.0016957386}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: 0.036506087, y: 0.037341624, z: -0.69945985, w: 0.7127614}
+        inSlope: {x: -0.0000004023559, y: -0.0000004023559, z: 0, w: 0}
+        outSlope: {x: -0.0000004023559, y: -0.0000004023559, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.036506087, y: 0.037341624, z: -0.69945985, w: 0.7127614}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.036506087, y: 0.037341624, z: -0.69945985, w: 0.7127614}
+        inSlope: {x: -0.09677582, y: -0.10927596, z: 0.14244884, w: 0.14678101}
+        outSlope: {x: -0.09677582, y: -0.10927596, z: 0.14244884, w: 0.14678101}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.71215856, y: 0.05882354, z: -0.69730896, w: 0.06424969}
+        inSlope: {x: -0.0047975373, y: 0.018803949, z: 0.0045855143, w: 0.019186573}
+        outSlope: {x: -0.0047975373, y: 0.018803949, z: 0.0045855143, w: 0.019186573}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666794
+        value: {x: 0.7117175, y: 0.059720997, z: -0.69688255, w: 0.06516417}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.7117175, y: 0.059720997, z: -0.69688255, w: 0.06516417}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.7120596, y: 0.057968907, z: -0.69720715, w: 0.063375816}
+        inSlope: {x: 0.016724365, y: -0.14775486, z: -0.01550555, w: -0.15088336}
+        outSlope: {x: 0.016724365, y: -0.14775486, z: -0.01550555, w: -0.15088336}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.7145817, y: -0.023585016, z: -0.6992011, w: -0.019943878}
+        inSlope: {x: -0.000664933, y: -0.01887613, z: 0.0007603562, w: -0.019292086}
+        outSlope: {x: -0.000664933, y: -0.01887613, z: 0.0007603562, w: -0.019292086}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.7144019, y: -0.024076236, z: -0.6990223, w: -0.020446867}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.71450067, y: -0.022992672, z: -0.6991252, w: -0.019339072}
+        inSlope: {x: 0.003758011, y: 0.09106619, z: -0.004205768, w: 0.093076155}
+        outSlope: {x: 0.003758011, y: 0.09106619, z: -0.004205768, w: 0.093076155}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.47517565, y: 0.073445395, z: 0.6963563, w: -0.5335897}
+        inSlope: {x: -0.11944151, y: 0.06027901, z: 0.25954056, w: 0.23492956}
+        outSlope: {x: -0.11944151, y: 0.06027901, z: 0.25954056, w: 0.23492956}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333588
+        value: {x: 0.47361895, y: 0.07376573, z: 0.7055333, w: -0.52198315}
+        inSlope: {x: -0.022033853, y: 0.009113242, z: 0.09640638, w: 0.111385524}
+        outSlope: {x: -0.022033853, y: 0.009113242, z: 0.09640638, w: 0.111385524}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.47112498, y: 0.074834585, z: 0.71609735, w: -0.5095543}
+        inSlope: {x: -0.0004799274, y: 0.00020679412, z: 0.0019776446, w: 0.0023645905}
+        outSlope: {x: -0.0004799274, y: 0.00020679412, z: 0.0019776446, w: 0.0023645905}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.47112003, y: 0.07483651, z: 0.71611804, w: -0.5095296}
+        inSlope: {x: -0.013817967, y: -0.07183497, z: -0.6924959, w: -0.8918273}
+        outSlope: {x: -0.013817967, y: -0.07183497, z: -0.6924959, w: -0.8918273}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.17784335, w: 0.9842218}
+        inSlope: {x: 0, y: 0, z: 0.090618014, w: 0.017666101}
+        outSlope: {x: 0, y: 0, z: 0.090618014, w: 0.017666101}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0, y: -0, z: -0.17515904, w: 0.98454016}
+        inSlope: {x: 0, y: 0, z: 0.0003418857, w: 0.000060080303}
+        outSlope: {x: 0, y: 0, z: 0.0003418857, w: 0.000060080303}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.17654374, w: 0.98432463}
+        inSlope: {x: 0, y: 0, z: -0.06778556, w: -0.010954924}
+        outSlope: {x: 0, y: 0, z: -0.06778556, w: -0.010954924}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.19454011, w: 0.98090374}
+        inSlope: {x: 0, y: 0, z: 0.10187063, w: 0.019892814}
+        outSlope: {x: 0, y: 0, z: 0.10187063, w: 0.019892814}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: 0, y: -0, z: -0.19180843, w: 0.9814324}
+        inSlope: {x: 0, y: 0, z: 0.028125495, w: 0.0055011436}
+        outSlope: {x: 0, y: 0, z: 0.028125495, w: 0.0055011436}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0, y: -0, z: -0.18826249, w: 0.9821188}
+        inSlope: {x: 0, y: 0, z: 0.00047420553, w: 0.000090120455}
+        outSlope: {x: 0, y: 0, z: 0.00047420553, w: 0.000090120455}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.19018623, w: 0.9818097}
+        inSlope: {x: 0, y: 0, z: -0.09410956, w: -0.015905382}
+        outSlope: {x: 0, y: 0, z: -0.09410956, w: -0.015905382}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.23889253, w: 0.9710597}
+        inSlope: {x: 0, y: 0, z: 0.12251733, w: 0.029677572}
+        outSlope: {x: 0, y: 0, z: 0.12251733, w: 0.029677572}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: 0, y: -0, z: -0.23560669, w: 0.9718485}
+        inSlope: {x: 0, y: 0, z: 0.03381994, w: 0.008204864}
+        outSlope: {x: 0, y: 0, z: 0.03381994, w: 0.008204864}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0, y: -0, z: -0.23134191, w: 0.97287256}
+        inSlope: {x: 0, y: 0, z: 0.0005698692, w: 0.00013518072}
+        outSlope: {x: 0, y: 0, z: 0.0005698692, w: 0.00013518072}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.2336648, w: 0.9724089}
+        inSlope: {x: 0, y: 0, z: -0.11352851, w: -0.023821594}
+        outSlope: {x: 0, y: 0, z: -0.11352851, w: -0.023821594}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.25511593, w: 0.9669532}
+        inSlope: {x: 0, y: 0, z: 0.1258232, w: 0.034318432}
+        outSlope: {x: 0, y: 0, z: 0.1258232, w: 0.034318432}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.2500038
+        value: {x: 0, y: -0, z: -0.25064853, w: 0.9680782}
+        inSlope: {x: 0, y: 0, z: 0.007402212, w: 0.0019176083}
+        outSlope: {x: 0, y: 0, z: 0.007402212, w: 0.0019176083}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.25443137, w: 0.9676242}
+        inSlope: {x: 0, y: 0, z: -0.12739776, w: -0.033423986}
+        outSlope: {x: 0, y: 0, z: -0.12739776, w: -0.033423986}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.23754479, w: 0.9713897}
+        inSlope: {x: 0, y: 0, z: 0.119942896, w: 0.028887926}
+        outSlope: {x: 0, y: 0, z: 0.119942896, w: 0.028887926}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: 0, y: -0, z: -0.23432803, w: 0.9721576}
+        inSlope: {x: 0, y: 0, z: 0.033109855, w: 0.007986708}
+        outSlope: {x: 0, y: 0, z: 0.033109855, w: 0.007986708}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0, y: -0, z: -0.23015288, w: 0.9731545}
+        inSlope: {x: 0, y: 0, z: 0.00055771, w: 0.00013160455}
+        outSlope: {x: 0, y: 0, z: 0.00055771, w: 0.00013160455}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.23242615, w: 0.9727018}
+        inSlope: {x: 0, y: 0, z: -0.11111351, w: -0.023238229}
+        outSlope: {x: 0, y: 0, z: -0.11111351, w: -0.023238229}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.18016216, w: 0.9836776}
+        inSlope: {x: 0, y: 0, z: 0.09878808, w: 0.017563343}
+        outSlope: {x: 0, y: 0, z: 0.09878808, w: 0.017563343}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333588
+        value: {x: 0, y: -0, z: -0.17530037, w: 0.984515}
+        inSlope: {x: 0, y: 0, z: 0.020135622, w: 0.0035876133}
+        outSlope: {x: 0, y: 0, z: 0.020135622, w: 0.0035876133}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0.17305239, w: 0.98491263}
+        inSlope: {x: 0, y: 0, z: -0.0705707, w: -0.01261744}
+        outSlope: {x: 0, y: 0, z: -0.0705707, w: -0.01261744}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: -0, z: -0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0, z: -0.093720295, w: 0.99562985}
+        inSlope: {x: 0, y: 0, z: 0.06260311, w: 0.00633531}
+        outSlope: {x: 0, y: 0, z: 0.06260311, w: 0.00633531}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0, y: -0, z: -0.092546985, w: 0.99570835}
+        inSlope: {x: 0, y: 0, z: 0.00022995032, w: 0.00002145728}
+        outSlope: {x: 0, y: 0, z: 0.00022995032, w: 0.00002145728}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0, z: -0.09401561, w: 0.9955667}
+        inSlope: {x: 0, y: 0, z: -0.06877732, w: -0.006713152}
+        outSlope: {x: 0, y: 0, z: -0.06877732, w: -0.006713152}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.3022141, y: -1.2659966e-16, z: -1.8351526e-15, w: 0.95325065}
+        inSlope: {x: -0.03466318, y: 1.1277825e-14, z: 9.061554e-16, w: 0.011140372}
+        outSlope: {x: -0.03466318, y: 1.1277825e-14, z: 9.061554e-16, w: 0.011140372}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.30136657, y: -3.3914647e-15, z: -2.4543313e-15, w: 0.9535084}
+        inSlope: {x: -0.00012480977, y: 2.1647208e-14, z: -1.1973231e-14, w: 0.000039338323}
+        outSlope: {x: -0.00012480977, y: 2.1647208e-14, z: -1.1973231e-14, w: 0.000039338323}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.30262923, y: -1.2395135e-15, z: -2.6519098e-15, w: 0.9531331}
+        inSlope: {x: 0.06784034, y: 7.306006e-14, z: 1.5223283e-15, w: -0.020798683}
+        outSlope: {x: 0.06784034, y: 7.306006e-14, z: 1.5223283e-15, w: -0.020798683}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.0000038146973
+        value: {x: 0.8771006, y: -0.09608478, z: -0.12079447, w: 0.45483068}
+        inSlope: {x: -0.03239157, y: -0.17101699, z: -0.081383586, w: 0.0061651096}
+        outSlope: {x: -0.03239157, y: -0.17101699, z: -0.081383586, w: 0.0061651096}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.3750038
+        value: {x: 0.87444353, y: -0.11338398, z: -0.1237423, w: 0.45517075}
+        inSlope: {x: -0.0002646395, y: -0.0016822494, z: -0.0002862756, w: 0.000011086126}
+        outSlope: {x: -0.0002646395, y: -0.0016822494, z: -0.0002862756, w: 0.000011086126}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.8745497, y: -0.111974746, z: -0.12523763, w: 0.4549998}
+        inSlope: {x: 0.009531643, y: 0.044752266, z: -0.09673266, w: -0.03218557}
+        outSlope: {x: 0.009531643, y: 0.044752266, z: -0.09673266, w: -0.03218557}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0.0031273975, z: -0, w: 0.9999951}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0.0031273975, z: -0, w: 0.9999951}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L/joint5_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0, y: 0.001447872, z: -0, w: 0.999999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0, y: 0.001447872, z: -0, w: 0.999999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L/joint5_L/joint6_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.67539835, y: -0.20937298, z: -0.67539835, w: -0.20937298}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.67539835, y: -0.20937298, z: -0.67539835, w: -0.20937298}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint22_M/nurbsCircle1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.67539835, y: -0.20937298, z: -0.67539835, w: -0.20937298}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.67539835, y: -0.20937298, z: -0.67539835, w: -0.20937298}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint22_M/nurbsCircle2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.027010279, y: 0.0014365289, z: 0.053102143, w: 0.9982407}
+        inSlope: {x: -0.00026914952, y: 0.0019459429, z: 0.07208948, w: -0.0033860335}
+        outSlope: {x: -0.00026914952, y: 0.0019459429, z: 0.07208948, w: -0.0033860335}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.29166794
+        value: {x: -0.027008848, y: 0.0013386256, z: 0.049483556, w: 0.9984088}
+        inSlope: {x: -0.000015601718, y: -0.00036875712, z: -0.013626077, w: 0.00067521085}
+        outSlope: {x: -0.000015601718, y: -0.00036875712, z: -0.013626077, w: 0.00067521085}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.027011117, y: 0.001289376, z: 0.04766327, w: 0.9984967}
+        inSlope: {x: -0.000019905132, y: -0.0004068444, z: -0.015039989, w: 0.0007116105}
+        outSlope: {x: -0.000019905132, y: -0.0004068444, z: -0.015039989, w: 0.0007116105}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: bin
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 2.7763774e-19, y: 0.0062083206, z: 3.4003821e-18}
+        inSlope: {x: -1.33245835e-17, y: -0.0008940489, z: -7.826863e-17}
+        outSlope: {x: -1.33245835e-17, y: -0.0008940489, z: -7.826863e-17}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.04166794
+        value: {x: -0, y: 0.0061905417, z: 0}
+        inSlope: {x: -1.4249854e-21, y: 0.00000006810056, z: -7.995024e-17}
+        outSlope: {x: -4.2657397e-21, y: 5.5509457e-17, z: -7.994576e-17}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -3.781228e-18, y: 0.0061707166, z: 7.5070296e-19}
+        inSlope: {x: -1.546359e-18, y: 0.00025818672, z: 1.176026e-17}
+        outSlope: {x: -1.546359e-18, y: 0.00025818672, z: 1.176026e-17}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.03613903, y: 0.00014914418, z: 0.0000189126}
+        inSlope: {x: 0.00015723705, y: 0.00004444481, z: 0.0000056359277}
+        outSlope: {x: 0.00015723705, y: 0.00004444481, z: 0.0000056359277}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333588
+        value: {x: -0.036140285, y: 0.00014879025, z: 0.000018867719}
+        inSlope: {x: -0, y: 1.1151454e-18, z: 1.3939318e-19}
+        outSlope: {x: -0, y: 2.602244e-18, z: 3.252805e-19}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: {x: -0.036140285, y: 0.00014879025, z: 0.000018867719}
+        inSlope: {x: -0, y: 1.1152475e-18, z: 1.3940594e-19}
+        outSlope: {x: -1.4616433e-11, y: -0.000000006124066, z: -9.318183e-10}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.036140285, y: 0.00014879025, z: 0.000018867719}
+        inSlope: {x: -0.0004904461, y: -0.00013869019, z: -0.000017587223}
+        outSlope: {x: -0.00049072935, y: -0.0001387033, z: -0.000017588689}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.036666665, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.036666665, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.036666665, y: 1.750336e-17, z: -1.2457482e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.036666665, y: 1.750336e-17, z: -1.2457482e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.023070225, y: -0.015309638, z: -0.0095126135}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.023070225, y: -0.015309638, z: -0.0095126135}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint17_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.014235648, y: -3.1086245e-17, z: 1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.014235648, y: -3.1086245e-17, z: 1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint17_R/joint18_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.025151502, y: -0.010246056, z: 0.0214081}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.025151502, y: -0.010246056, z: 0.0214081}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint20_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.02834694, y: -0.0056828842, z: -0.04119403}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.02834694, y: -0.0056828842, z: -0.04119403}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.013000941, y: -1.7763568e-17, z: 6.328271e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.013000941, y: -1.7763568e-17, z: 6.328271e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008269948, y: -4.4408918e-17, z: -4.1078252e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008269948, y: -4.4408918e-17, z: -4.1078252e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008269948, y: -8.8817837e-17, z: -3.8857805e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008269948, y: -8.8817837e-17, z: -3.8857805e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008266597, y: 8.881784e-18, z: -3.4416914e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008266597, y: 8.881784e-18, z: -3.4416914e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008266597, y: -5.7731595e-17, z: -3.3861803e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008266597, y: -5.7731595e-17, z: -3.3861803e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008261819, y: 5.7731595e-17, z: -2.3869794e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008261819, y: 5.7731595e-17, z: -2.3869794e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008261819, y: 7.105427e-17, z: -4.3298696e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008261819, y: 7.105427e-17, z: -4.3298696e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.00825946, y: -8.8817837e-17, z: -1.9428903e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.00825946, y: -8.8817837e-17, z: -1.9428903e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.00825946, y: 0, z: -9.436896e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.00825946, y: 0, z: -9.436896e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008262374, y: 1.7763568e-17, z: -4.7184477e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008262374, y: 1.7763568e-17, z: -4.7184477e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008262374, y: 1.7763568e-17, z: -5.2735593e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008262374, y: 1.7763568e-17, z: -5.2735593e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.00826717, y: -1.7763568e-17, z: -8.659739e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.00826717, y: -1.7763568e-17, z: -8.659739e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.00826717, y: 1.7763567e-16, z: -9.992007e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.00826717, y: 1.7763567e-16, z: -9.992007e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008270422, y: 1.7763568e-17, z: -5.2735593e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008270422, y: 1.7763568e-17, z: -5.2735593e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008270422, y: 5.3290704e-17, z: -7.105427e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008270422, y: 5.3290704e-17, z: -7.105427e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.011007865, y: -5.7731595e-17, z: 5.3290704e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.011007865, y: -5.7731595e-17, z: 5.3290704e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.008348257, y: -6.217249e-17, z: -5.3290704e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.008348257, y: -6.217249e-17, z: -5.3290704e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R/joint6_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.012714308, y: 0.010624248, z: 2.7061685e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.012714308, y: 0.010624248, z: 2.7061685e-18}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.016578142, y: -0.0031427008, z: -0.000014516571}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.016578142, y: -0.0031427008, z: -0.000014516571}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.012067745, y: 0.0019216144, z: 0.000053371114}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.012067745, y: 0.0019216144, z: 0.000053371114}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.02834694, y: -0.0056828842, z: 0.04119403}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.02834694, y: -0.0056828842, z: 0.04119403}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.013000941, y: 7.105427e-17, z: -4.4408918e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.013000941, y: 7.105427e-17, z: -4.4408918e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008269948, y: 1.7763568e-17, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008269948, y: 1.7763568e-17, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008269948, y: 4.440892e-18, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008269948, y: 4.440892e-18, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008266597, y: 1.3322676e-17, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008266597, y: 1.3322676e-17, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008266597, y: -1.3322676e-17, z: 3.5527136e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008266597, y: -1.3322676e-17, z: 3.5527136e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008261819, y: -6.4392934e-17, z: 3.5527136e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008261819, y: -6.4392934e-17, z: 3.5527136e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008261819, y: -5.551115e-17, z: 3.5527136e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008261819, y: -5.551115e-17, z: 3.5527136e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.00825946, y: -8.881784e-18, z: -4.4408918e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.00825946, y: -8.881784e-18, z: -4.4408918e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.00825946, y: -7.105427e-17, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.00825946, y: -7.105427e-17, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008262374, y: -8.881784e-18, z: 1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008262374, y: -8.881784e-18, z: 1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008262374, y: 1.7763568e-17, z: -2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008262374, y: 1.7763568e-17, z: -2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.00826717, y: -1.0658141e-16, z: 7.105427e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.00826717, y: -1.0658141e-16, z: 7.105427e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.00826717, y: -8.8817837e-17, z: 1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.00826717, y: -8.8817837e-17, z: 1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008270422, y: -8.881784e-18, z: -2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008270422, y: -8.881784e-18, z: -2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008270422, y: -7.133183e-17, z: -1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008270422, y: -7.133183e-17, z: -1.7763568e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.011007865, y: 8.881784e-18, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.011007865, y: 8.881784e-18, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L/joint5_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.008348257, y: 6.217249e-17, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.008348257, y: 6.217249e-17, z: 2.6645352e-17}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L/joint5_L/joint6_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.021563862, y: -0.008563255, z: 0.0045524174}
+        inSlope: {x: -0.00000035682234, y: -0.0000008670089, z: 0.00000012804196}
+        outSlope: {x: -0, y: -5.5509457e-17, z: 5.5509457e-17}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.021563862, y: -0.008563255, z: 0.0045524174}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint22_M/nurbsCircle1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0061676786, y: 0.011848732, z: 0.003951793}
+        inSlope: {x: 0.0000016223095, y: 0.0000010856546, z: -0.000000109657385}
+        outSlope: {x: -5.5509457e-17, y: 1.11018914e-16, z: 6.343938e-17}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: -0.0061676786, y: 0.011848732, z: 0.003951793}
+        inSlope: {x: -2.3789769e-17, y: 4.7579538e-17, z: -6.343938e-17}
+        outSlope: {x: -0.0000012706379, y: -0.0000009376924, z: 0.00000005913244}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint22_M/nurbsCircle2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0015321684, y: -0.08462181, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 0.0015321684, y: -0.08462181, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: bin
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint17_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint17_R/joint18_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint15_M/joint20_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R/joint6_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 2.9154134, y: 2.9154134, z: 2.9154134}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 2.9154134, y: 2.9154134, z: 2.9154134}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 2.9154134, y: 2.9154134, z: 2.9154134}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 2.9154134, y: 2.9154134, z: 2.9154134}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L/joint5_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_L/joint2_L/joint2Part1_L/joint8_L/joint8Part1_L/joint9_L/joint9Part1_L/joint10_L/joint10Part1_L/joint11_L/joint11Part1_L/joint12_L/joint12Part1_L/joint13_L/joint13Part1_L/joint4_L/joint5_L/joint6_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint22_M/nurbsCircle1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint22_M/nurbsCircle2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 6.3424516, y: 6.3424516, z: 6.3424516}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: {x: 6.3424516, y: 6.3424516, z: 6.3424516}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: bin
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R/joint6_R/Weapons_0017:BaseBallBat/Weapons_0017:BaseBallBAt
+    classID: 25
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint1_R/joint2_R/joint2Part1_R/joint8_R/joint8Part1_R/joint9_R/joint9Part1_R/joint10_R/joint10Part1_R/joint11_R/joint11Part1_R/joint12_R/joint12Part1_R/joint13_R/joint13Part1_R/joint4_R/joint5_R/joint6_R/Weapons_0017:BaseBallBat/Weapons_0017:BaseExtra/Weapons_0017:BaseballBatHead
+    classID: 25
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle4/polySurface2
+    classID: 25
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Group/Main/DeformationSystem/Root_M/joint15_2_M/joint16_M/joint29_M/nurbsCircle3/polySurface1
+    classID: 25
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.41666794
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: bin
+    classID: 25
+    script: {fileID: 0}
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.41666794
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []
