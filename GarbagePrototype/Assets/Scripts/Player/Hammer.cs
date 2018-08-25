@@ -17,6 +17,8 @@ public class Hammer : MonoBehaviour {
 
 	public GameObject[] jumpBuildings;
 
+    public GameObject[] hitUI;
+
     [Header("References Script")]
     public ReferencedScripts referencesScript;
 
@@ -25,8 +27,8 @@ public class Hammer : MonoBehaviour {
 		gameStartCoundownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
 		playerMainScript = GameObject.Find ("Player").GetComponent<PlayerMain> ();
 
-
-	}
+        hitUI[0].SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -82,6 +84,7 @@ public class Hammer : MonoBehaviour {
             enemiesHit++;
 			BuildingJumping ();
 			playerMainScript.enemiesKilled++;
+            StartCoroutine(HitIcons());
         }
 
         //power up ped
@@ -91,4 +94,11 @@ public class Hammer : MonoBehaviour {
             other.gameObject.SetActive(false);
         }
 	}
+
+    IEnumerator HitIcons()
+    {
+        hitUI[0].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        hitUI[0].SetActive(false);
+    }
 }
