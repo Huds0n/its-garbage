@@ -151,8 +151,14 @@ public class PlayerMain : MonoBehaviour {
 
     int anInt = 0;
 
-    AudioSource shortHurt;
-
+    AudioSource monsterAudio;
+    public AudioClip monsterSwingNormal;
+    public AudioClip monsterSwingSide;
+    public AudioClip monsterSwingHeavy;
+    public AudioClip monsterHurt;
+    public AudioClip monsterJump;
+    public AudioClip monsterFall;
+    public AudioClip monsterDash;
     // Use this for initialization
     void Start () {
         rb = GetComponent<Rigidbody>();
@@ -172,7 +178,7 @@ public class PlayerMain : MonoBehaviour {
 
 		dashTimeStamp = Time.time + dashRecharger;
 
-        shortHurt = GetComponent<AudioSource>();
+        monsterAudio = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -215,7 +221,8 @@ public class PlayerMain : MonoBehaviour {
         {
             //start hurting!
 			hurtAnimation = true;
-            shortHurt.Play(0);
+            monsterAudio.clip = monsterHurt;
+            monsterAudio.Play(0);
             StartCoroutine(Hurting());
 
         }
@@ -375,14 +382,20 @@ public class PlayerMain : MonoBehaviour {
         canPressHammer = false;
         //weaponTrail.SetActive(true);
         //anim.SetBool("HeavyHit", true);
-		if (referencesScript.squashScript.currentComboState < 1) {
-			anim.SetTrigger("NormalSwing");
+        if (referencesScript.squashScript.currentComboState < 1) {
+            monsterAudio.clip = monsterSwingNormal;
+            monsterAudio.Play();
+            anim.SetTrigger("NormalSwing");
 	} 
 	if (referencesScript.squashScript.currentComboState == 1){
-		anim.SetTrigger("SideSwing");
+            monsterAudio.clip = monsterSwingSide;
+            monsterAudio.Play();
+            anim.SetTrigger("SideSwing");
 	} 
 	if (referencesScript.squashScript.currentComboState >= 2){
-		anim.SetTrigger("HeavySwing");
+            monsterAudio.clip = monsterSwingHeavy;
+            monsterAudio.Play();
+            anim.SetTrigger("HeavySwing");
 	} 
         
         yield return new WaitForSeconds(goBackTime);
@@ -515,7 +528,9 @@ public class PlayerMain : MonoBehaviour {
         //Jumping Action
         if ((Input.GetKeyDown(KeyCode.UpArrow) && referencesScript.squashScript.canPressHammer == true) && grounded == true)
         {
-			//anim.SetTrigger ("JumpU");
+            //anim.SetTrigger ("JumpU");
+            monsterAudio.clip = monsterJump;
+            monsterAudio.Play();
             rb.velocity = Vector3.up * jumpVelocity;
             grounded = false;
         }
@@ -531,6 +546,8 @@ public class PlayerMain : MonoBehaviour {
         {
             leftArrowPressed = true;
             dashCount++;
+            monsterAudio.clip = monsterDash;
+            monsterAudio.Play();
             ActivateTimerToReset = true;
 
             if (dashCount == 2 /*&& amountOfDashes > 0*/)
@@ -550,6 +567,8 @@ public class PlayerMain : MonoBehaviour {
         {
             rightArrowPressed = true;
             dashCount++;
+            monsterAudio.clip = monsterDash;
+            monsterAudio.Play();
             ActivateTimerToReset = true;
 
             if (dashCount == 2 /*&& amountOfDashes > 0*/)

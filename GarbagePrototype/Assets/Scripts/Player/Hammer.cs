@@ -21,6 +21,9 @@ public class Hammer : MonoBehaviour {
 
     [Header("References Script")]
     public ReferencedScripts referencesScript;
+    AudioSource hitAudio;
+    public AudioClip hitRight;
+    public AudioClip hitWrong;
 
     // Use this for initialization
     void Start () {
@@ -28,6 +31,7 @@ public class Hammer : MonoBehaviour {
 		playerMainScript = GameObject.Find ("Player").GetComponent<PlayerMain> ();
 
         hitUI[0].SetActive(false);
+        hitAudio = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -70,7 +74,9 @@ public class Hammer : MonoBehaviour {
 				playerMainScript.hurt = true;
 				enemiesHit++;
 				playerMainScript.fuelImage.fillAmount -= 0.1f;
-				//StartCoroutine (referencesScript.cameraShake.Shake (.15f, .4f));
+                hitAudio.clip = hitWrong;
+                hitAudio.Play();
+                //StartCoroutine (referencesScript.cameraShake.Shake (.15f, .4f));
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
                 
             }
@@ -84,6 +90,8 @@ public class Hammer : MonoBehaviour {
             enemiesHit++;
 			BuildingJumping ();
 			playerMainScript.enemiesKilled++;
+            hitAudio.clip = hitRight;
+            hitAudio.Play();
             StartCoroutine(HitIcons());
         }
 
@@ -92,6 +100,8 @@ public class Hammer : MonoBehaviour {
         {
             playerMainScript.poweredUp = true;
             other.gameObject.SetActive(false);
+            hitAudio.clip = hitRight;
+            hitAudio.Play();
         }
 	}
 
