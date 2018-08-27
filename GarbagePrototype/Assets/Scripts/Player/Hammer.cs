@@ -33,6 +33,7 @@ public class Hammer : MonoBehaviour {
 
         hitUI[0].SetActive(false);
         hitUI[1].SetActive(false);
+        hitUI[2].SetActive(false);
         hitAudio = GetComponent<AudioSource>();
     }
 	
@@ -94,7 +95,7 @@ public class Hammer : MonoBehaviour {
 			playerMainScript.enemiesKilled++;
             hitAudio.clip = hitRight;
             hitAudio.Play();
-            hitUIposition = Random.Range(0, 2);
+            
             StartCoroutine(HitIcons());
         }
 
@@ -110,6 +111,7 @@ public class Hammer : MonoBehaviour {
 
     IEnumerator HitIcons()
     {
+        hitUIposition = Random.Range(0, 3);
         hitUI[hitUIposition].SetActive(true);
         yield return new WaitForSeconds(1f);
         hitUI[hitUIposition].SetActive(false);
