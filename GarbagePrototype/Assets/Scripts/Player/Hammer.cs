@@ -88,6 +88,8 @@ public class Hammer : MonoBehaviour {
         }
         //can hit ped
 		if (other.gameObject.layer == 10) {
+            StartCoroutine(HitIcons());
+
             referencesScript.squashScript.ComboSystem();
             referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
             enemiesHit++;
@@ -96,7 +98,7 @@ public class Hammer : MonoBehaviour {
             hitAudio.clip = hitRight;
             hitAudio.Play();
             
-            StartCoroutine(HitIcons());
+            
         }
 
         //power up ped
