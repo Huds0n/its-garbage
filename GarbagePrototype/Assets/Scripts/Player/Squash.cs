@@ -23,6 +23,7 @@ public class Squash : MonoBehaviour {
     public float origTimer;
     public bool ActivateTimerToReset = false;
     public Text comboText;
+    public Text backgroundComboText;
 
     [Header("References Script")]
     public ReferencedScripts referencesScript;
@@ -35,11 +36,13 @@ public class Squash : MonoBehaviour {
         //weaponTrail.SetActive(false);
 
         comboText.enabled = false;
+        backgroundComboText.enabled = false;
         origTimer = currentComboTimer;
     }
 
 	// Update is called once per frame
 	void Update () {
+        
         if (referencesScript.gameStartCoundownScript.gameStart == true)
         {
             PcControls();
@@ -51,10 +54,13 @@ public class Squash : MonoBehaviour {
             if(currentComboState >= 2)
             {
                 comboText.enabled = true;
+                backgroundComboText.enabled = true;
                 comboText.text = "x" + currentComboState;
+                backgroundComboText.text = comboText.text;
             } else
             {
                 comboText.enabled = false;
+                backgroundComboText.enabled = false;
             }
         }
 	}
