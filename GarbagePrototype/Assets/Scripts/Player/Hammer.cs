@@ -18,6 +18,7 @@ public class Hammer : MonoBehaviour {
 	public GameObject[] jumpBuildings;
 
     public GameObject[] hitUI;
+    int hitUIposition; 
 
     [Header("References Script")]
     public ReferencedScripts referencesScript;
@@ -31,6 +32,7 @@ public class Hammer : MonoBehaviour {
 		playerMainScript = GameObject.Find ("Player").GetComponent<PlayerMain> ();
 
         hitUI[0].SetActive(false);
+        hitUI[1].SetActive(false);
         hitAudio = GetComponent<AudioSource>();
     }
 	
@@ -92,6 +94,7 @@ public class Hammer : MonoBehaviour {
 			playerMainScript.enemiesKilled++;
             hitAudio.clip = hitRight;
             hitAudio.Play();
+            hitUIposition = Random.Range(0, 2);
             StartCoroutine(HitIcons());
         }
 
@@ -107,8 +110,8 @@ public class Hammer : MonoBehaviour {
 
     IEnumerator HitIcons()
     {
-        hitUI[0].SetActive(true);
+        hitUI[hitUIposition].SetActive(true);
         yield return new WaitForSeconds(1f);
-        hitUI[0].SetActive(false);
+        hitUI[hitUIposition].SetActive(false);
     }
 }

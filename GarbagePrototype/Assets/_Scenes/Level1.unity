@@ -15609,7 +15609,7 @@ Animator:
   m_GameObject: {fileID: 222178249}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b13b710b3f55be4baa8f8672c0dc002, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b5c68ae0f58a884aaba1c6156497553, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -33851,7 +33851,7 @@ Animator:
   m_GameObject: {fileID: 627762193}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9bc59d4b9a5a6f34287c3f3f87947f7a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 48fd94e6c7700274c8854d5d81b0d766, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -51792,7 +51792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1023779563
 Transform:
   m_ObjectHideFlags: 0
@@ -51800,8 +51800,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1023779562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -30.000002, z: 0}
-  m_LocalScale: {x: 0.8114787, y: 0.8114787, z: 0.8114787}
+  m_LocalPosition: {x: 0, y: -41.5, z: 0}
+  m_LocalScale: {x: 1.1078771, y: 1.1078775, z: 1.1078775}
   m_Children:
   - {fileID: 627762194}
   - {fileID: 1293822236}
@@ -64535,7 +64535,7 @@ Animator:
   m_GameObject: {fileID: 1293822235}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2e6b3df598e95e74cb07c64729a981ad, type: 2}
+  m_Controller: {fileID: 9100000, guid: 62f3e90dd375c1c44add361b089a72e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -90150,6 +90150,7 @@ MonoBehaviour:
   - {fileID: 319059760}
   hitUI:
   - {fileID: 153897792}
+  - {fileID: 1023779562}
   referencesScript: {fileID: 1234933818}
   hitRight: {fileID: 8300000, guid: 3601a4379b14a614dbf83295df070662, type: 3}
   hitWrong: {fileID: 8300000, guid: 4dc19edc9de07fd4bb9fcb311b4f964e, type: 3}
