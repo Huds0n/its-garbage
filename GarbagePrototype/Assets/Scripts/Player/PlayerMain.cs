@@ -425,21 +425,18 @@ public class PlayerMain : MonoBehaviour {
 				
 				fuelImage.fillAmount = 0.2f;
 				StartCoroutine (deathAnimation ());
-			}
+                inLimbo = false;
+                canDie = false;
+            }
 			//transform.position = new Vector3 (transform.position.x, 8f, transform.position.z);
 
 
         }
 
-        if (inLimbo)
+        if (inLimbo && referencesScript.livesScript.playerLives == 0)
         {
-			if (referencesScript.livesScript.playerLives > 0)
-            {
-                inLimbo = false;
-				canDie = false;
-
-			} else if(referencesScript.livesScript.playerLives == 0)
-            {
+			
+		
 				//setactive false all pedestrians to reset spawn
 				Debug.Log("GAME OVER MAN!");
 				//destroy/finish game
@@ -448,7 +445,7 @@ public class PlayerMain : MonoBehaviour {
                 //destory player or set active more likely change
                 Destroy(gameObject);
                 //gameObject.SetActive(false);
-            }
+            
         }
     }
 
@@ -465,7 +462,8 @@ public class PlayerMain : MonoBehaviour {
 		rb.isKinematic = false;
 		anim.SetBool ("death", false);
 		deathAnimationPlaying = false;
-		yield return new WaitForEndOfFrame ();
+        
+        yield return new WaitForEndOfFrame ();
 	}
 
     void Movement()
