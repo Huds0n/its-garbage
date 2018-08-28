@@ -34,6 +34,7 @@ public class Hammer : MonoBehaviour {
         hitUI[0].SetActive(false);
         hitUI[1].SetActive(false);
         hitUI[2].SetActive(false);
+        hitUI[3].SetActive(false);
         hitAudio = GetComponent<AudioSource>();
     }
 	
@@ -113,7 +114,7 @@ public class Hammer : MonoBehaviour {
 
     IEnumerator HitIcons()
     {
-        hitUIposition = Random.Range(0, 3);
+        hitUIposition = Random.Range(0, 4);
         hitUI[hitUIposition].SetActive(true);
         yield return new WaitForSeconds(1f);
         hitUI[hitUIposition].SetActive(false);
