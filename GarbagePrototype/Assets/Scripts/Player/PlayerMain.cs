@@ -198,11 +198,11 @@ public class PlayerMain : MonoBehaviour {
 		if (deathAnimationPlaying == false) {
 			PlayerAnimationFixed ();
 		}
-		
-		
-		//numberLivesText.text = lives.ToString();
 
-	}
+
+        //numberLivesText.text = lives.ToString();
+        LifeSystem();
+    }
 
     void FixedUpdate() {
 		if (fuelImage.fillAmount >= 1) {
@@ -233,7 +233,7 @@ public class PlayerMain : MonoBehaviour {
             StartCoroutine(PowerUp());
         }
 
-        LifeSystem();
+        
     }
 
     void PlayerAnimationFixed()
@@ -243,6 +243,7 @@ public class PlayerMain : MonoBehaviour {
         float heightAnimation = Input.GetAxisRaw("Vertical");
 
         anim.SetFloat("movement", movementAnimation);
+
 
         //Idle
         if ((fuelImage.fillAmount < .3f && firstEnemyHit == true) && movementAnimation == 0)
@@ -268,11 +269,11 @@ public class PlayerMain : MonoBehaviour {
 
         }
 
-		if(timeStamp < Time.time && movementAnimation == 0){
+		/*if(timeStamp < Time.time && movementAnimation == 0){
 			anim.SetTrigger ("weaponLook");
 
 			timeStamp += timeWait + 5f;
-		}
+		}*/
 
         //Jump
         if ((heightAnimation > 0 && grounded == false) && (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow)) && anInt == 0)
