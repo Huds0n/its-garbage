@@ -129,6 +129,7 @@ public class GameStartCountdown : MonoBehaviour {
 	}
 
 	void GameFinished(){
+
 		LeanTween.moveZ (cameraHolder, -15f, 2f).setEaseInOutBack ();
         if(badPedsHit < 3)
         {

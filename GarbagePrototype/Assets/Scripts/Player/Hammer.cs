@@ -37,6 +37,7 @@ public class Hammer : MonoBehaviour {
         hitUI[1].SetActive(false);
         hitUI[2].SetActive(false);
         hitUI[3].SetActive(false);
+        hitUI[4].SetActive(false);
 
         hitAudio = GetComponent<AudioSource>();
     }
@@ -99,7 +100,7 @@ public class Hammer : MonoBehaviour {
         }
         //can hit ped
 		if (other.gameObject.layer == 10) {
-            hitUIposition = Random.Range(0, 4);
+            hitUIposition = Random.Range(0, 5);
             hitUI[hitUIposition].SetActive(true);
             hitUI[hitUIposition].transform.position = new Vector3(other.transform.position.x, hitUI[hitUIposition].transform.position.y, other.transform.position.z);
             StartCoroutine(HitIcons());
@@ -107,8 +108,6 @@ public class Hammer : MonoBehaviour {
             referencesScript.squashScript.ComboSystem();
             referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
 
-
-            
             playerMainScript.enemiesKilled++;
 
             BuildingJumping ();
