@@ -101,6 +101,8 @@ public class PlayerMain : MonoBehaviour {
     public bool firstEnemyHit;
 	bool hurtAnimation;
 
+    int anInt = 0;
+
     [Space(5)]
     #endregion
 
@@ -124,8 +126,11 @@ public class PlayerMain : MonoBehaviour {
     public GameObject upArrow;
     public GameObject spaceBar;
     public GameObject newspaperSpriteObject;
+
+    [Space(5)]
     #endregion
 
+    #region Fuel
 
     [Header("Fuel")]
 	public GameObject fuelGameObject;
@@ -134,24 +139,25 @@ public class PlayerMain : MonoBehaviour {
     public bool largeUI;
     public int uiCount = 0;
 
+    [Space(5)]
+    #endregion
+
+    #region Hurt
+
     [Header("Hurt")]
-    //public Color colorStart;
+   
     public bool hurt;
-    //public Color colorDamage;
-    //public Renderer bodyRenderer;
+
     public Image damageImage;
 
 	bool deathAnimationPlaying;
 
-    [Header("Enemy Stats")]
-    public int enemiesKilled;
-    
-    [Header("References Script")]
-    public ReferencedScripts referencesScript;
+    [Space(5)]
+    #endregion
 
-    int anInt = 0;
+    #region Audio
 
-    AudioSource monsterAudio;
+    [Header("Audio")]
     public AudioClip monsterSwingNormal;
     public AudioClip monsterSwingSide;
     public AudioClip monsterSwingHeavy;
@@ -159,9 +165,28 @@ public class PlayerMain : MonoBehaviour {
     public AudioClip monsterJump;
     public AudioClip monsterFall;
     public AudioClip monsterDash;
+    AudioSource monsterAudio;
+
+    [Space(5)]
+    #endregion
+
+    [Header("Enemy Stats")]
+    public int enemiesKilled;
+    
+    [Header("References Script")]
+    public ReferencedScripts referencesScript;
+
     // Use this for initialization
     void Start () {
+        //Player Rigidbody
         rb = GetComponent<Rigidbody>();
+
+        //Find player Animator
+        //anim = GameObject.Find("combined_monster2").GetComponent<Animator>();
+        anim = GameObject.Find("newWeapTest01").GetComponent<Animator>();
+
+        //Find player Audiosource
+        monsterAudio = GetComponent<AudioSource>();
 
         //for being hurt when hit
         damageImage.enabled = false;
@@ -169,16 +194,12 @@ public class PlayerMain : MonoBehaviour {
         //for dash mechanic
         originalDashTimer = dashTimer;
 
-		//anim = GameObject.Find("combined_monster2").GetComponent<Animator>();
-        anim = GameObject.Find("newWeapTest01").GetComponent<Animator>();
+        timeStamp = Time.time + timeWait;
 
+        dashTimeStamp = Time.time + dashRecharger;
+
+        //Level 1 tutorial ----- change so only level 1 (bool)
         StartCoroutine(TutorialObjects());
-
-		timeStamp = Time.time + timeWait;
-
-		dashTimeStamp = Time.time + dashRecharger;
-
-        monsterAudio = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -194,65 +215,64 @@ public class PlayerMain : MonoBehaviour {
                 StartCoroutine(FuelUI());
             }
         }
+
 		//PlayerAnimation ();
 		if (deathAnimationPlaying == false) {
-			PlayerAnimationFixed ();
+			PlayerAnimation ();
 		}
 
-
-        //numberLivesText.text = lives.ToString();
+        //Player health and lives
         LifeSystem();
     }
 
     void FixedUpdate() {
-		if (fuelImage.fillAmount >= 1) {
-            //win Level
+        //Won level?
+        if (fuelImage.fillAmount >= 1) {
+            
 			referencesScript.gameStartCoundownScript.gameFinishedWin = true;
 		}
 
+        //While in-game...
 		if ((referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.inPause == false) && deathAnimationPlaying == false)
         {
             Movement();
             LifeSystem();
-         
         }
 
+        //Start hurting!
         if (hurt == true)
         {
-            //start hurting!
 			hurtAnimation = true;
+
             monsterAudio.clip = monsterHurt;
             monsterAudio.Play(0);
-            StartCoroutine(Hurting());
 
+            StartCoroutine(Hurting());
         }
 
+        //Got a power-up?
         if(poweredUp == true)
         {
-			
             StartCoroutine(PowerUp());
-        }
-
-        
+        }   
     }
 
-    void PlayerAnimationFixed()
+    void PlayerAnimation()
     {
-
+        //Get both axis from player keyboard (x,y)
         float movementAnimation = Input.GetAxisRaw("Horizontal");
         float heightAnimation = Input.GetAxisRaw("Vertical");
 
+        //Set movement animation parameter to the float 'movementAnimation'
         anim.SetFloat("movement", movementAnimation);
 
 
-        //Idle
+        //Idle animations
         if ((fuelImage.fillAmount < .3f && firstEnemyHit == true) && movementAnimation == 0)
         {
             anim.SetBool("isIdleHurt", true);
-
             
             anim.SetBool("isIdleNormal", false);
-
         }
         else if ((fuelImage.fillAmount >= .3f && fuelImage.fillAmount < .7f) && movementAnimation == 0)
         {
@@ -260,26 +280,28 @@ public class PlayerMain : MonoBehaviour {
             
             anim.SetBool("isIdleHurt", false);
             anim.SetBool("isIdleConfident", false);
-
         }
         else if ((fuelImage.fillAmount >= .7f) && movementAnimation == 0)
         {
             anim.SetBool("isIdleConfident", true);
-            anim.SetBool("isIdleNormal", false);
 
+            anim.SetBool("isIdleNormal", false);
         }
 
+        //Look at weapon animation
 		/*if(timeStamp < Time.time && movementAnimation == 0){
 			anim.SetTrigger ("weaponLook");
 
 			timeStamp += timeWait + 5f;
 		}*/
 
-        //Jump
+        //Jump animation
         if ((heightAnimation > 0 && grounded == false) && (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow)) && anInt == 0)
         {
             anInt++;
+
             anim.SetBool("Jump", true);
+
             anim.SetBool("isIdleNormal", false);
             anim.SetBool("isIdleHurt", false);
             anim.SetBool("isIdleConfident", false);
@@ -287,94 +309,37 @@ public class PlayerMain : MonoBehaviour {
         if ((grounded == true) && (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow)))
         {
             anInt = 0;
+
             anim.SetBool("Jump", false);
             anim.SetBool("jumpLeft", false);
             anim.SetBool("jumpRight", false);
         }
 
-        //Movement
+        //Movement (horizontal) animation
         if ((heightAnimation > 0 && grounded == false) && (Input.GetKey(KeyCode.LeftArrow) && movementAnimation < 0))
         {
             anim.SetBool("jumpLeft", true);
-
         }
         if ((grounded == true) && (Input.GetKey(KeyCode.LeftArrow) && movementAnimation < 0))
         {
             anim.SetBool("jumpLeft", false);
         }
-
+ 
         if ((heightAnimation > 0 && grounded == false) && Input.GetKey(KeyCode.RightArrow) && movementAnimation > 0)
         {
             anim.SetBool("jumpRight", true);
-
         }
         if ((grounded == true) && Input.GetKey(KeyCode.RightArrow) && movementAnimation > 0)
         {
-
             anim.SetBool("jumpRight", false);
         }
 
+        //Swing weapon animation
 		if(Input.GetKeyDown(KeyCode.Space) && canPressHammer == true)
 		{
 			movementAnimation = 0;
+
 			StartCoroutine (SwingingMotion ());
-			//anim.SetTrigger("HeavyHit");
-		}
-    }
-
-	void PlayerAnimation()
-    {
-        float movementAnimation = Input.GetAxisRaw("Horizontal");
-
-        //move left
-		if ((movementAnimation < 0 && (!Input.GetKeyDown(KeyCode.Space) && canPressHammer == true)) && deathAnimationPlaying == false)
-        {
-            anim.Play("movingLeft");
-            anim.SetBool("isLeft", true);
-            anim.SetBool("isIdle", false);
-        }
-        //move right
-		else if ((movementAnimation > 0 && (!Input.GetKeyDown(KeyCode.Space) && canPressHammer == true)) && deathAnimationPlaying == false)
-        {
-            anim.Play("movingRight");
-            anim.SetBool("isRight", true);
-            anim.SetBool("isIdle", false);
-        }
-        //idle
-        else if(movementAnimation == 0)
-        {
-            //anim.Play("isIdle");
-            anim.SetBool("isIdle", true);
-            anim.SetBool("isRight", false);
-            anim.SetBool("isLeft", false);
-        }
-
-        if(Input.GetKeyDown(KeyCode.Space) && canPressHammer == true)
-        {
-            movementAnimation = 0;
-            StartCoroutine (SwingingMotion ());
-            //anim.SetTrigger("HeavyHit");
-        }
-
-		//changing Idle animations
-		//maybe instead of changing controllers. create and change states
-		if (fuelImage.fillAmount < .3f &&  firstEnemyHit == true) {
-			anim.runtimeAnimatorController = hurtingAnim;
-
-		} else if (fuelImage.fillAmount >= .3f && fuelImage.fillAmount < .7f) {
-			anim.runtimeAnimatorController = defaultAnim;
-		} else if (fuelImage.fillAmount >= .7f){
-			anim.runtimeAnimatorController = confidentAnim;
-		}
-
-		float heightAnimation = Input.GetAxisRaw ("Vertical");
-
-		if ((heightAnimation > 0 && grounded == false) && (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow))) {
-			anim.SetBool ("Jump",true);
-			//anim.SetBool("isIdle", false);
-		} 
-		if((/*heightAnimation <= 0 && */grounded == true) && (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow))){
-			anim.SetBool ("Jump", false);
 		}
     }
 
@@ -382,94 +347,105 @@ public class PlayerMain : MonoBehaviour {
     {
         canPressHammer = false;
         //weaponTrail.SetActive(true);
-        //anim.SetBool("HeavyHit", true);
-        if (referencesScript.squashScript.currentComboState < 1) {
+
+        //If combo is 0 = normal hit animation
+        if (referencesScript.squashScript.currentComboState < 1)
+        {
             monsterAudio.clip = monsterSwingNormal;
             monsterAudio.Play();
+
             anim.SetTrigger("NormalSwing");
-	} 
-	if (referencesScript.squashScript.currentComboState == 1){
+        }
+        //If combo is 1 = swing hit animation
+        if (referencesScript.squashScript.currentComboState == 1)
+        {
             monsterAudio.clip = monsterSwingSide;
             monsterAudio.Play();
+
             anim.SetTrigger("SideSwing");
-	} 
-	if (referencesScript.squashScript.currentComboState >= 2){
+        }
+        //If combo is 2 or more = heavy hit animation
+        if (referencesScript.squashScript.currentComboState >= 2)
+        {
             monsterAudio.clip = monsterSwingHeavy;
             monsterAudio.Play();
             anim.SetTrigger("HeavySwing");
-	} 
+        }
         
         yield return new WaitForSeconds(goBackTime);
         //weaponTrail.SetActive(false);
         yield return new WaitForSeconds(hammerWait);
         canPressHammer = true;
-        //anim.SetBool("HeavyHit", false);
         yield return null;
     }
 
-    //relocate life system to a 'DontDestroyOnLoad object' !!!
+    //relocate life system to a 'DontDestroyOnLoad object' ? maybe? we'll see...
     void LifeSystem()
     {
+        //If died
         if ((fuelImage.fillAmount <= 0 && referencesScript.gameStartCoundownScript.gameStart == true) && !inLimbo && !canDie)
         {
-            //lives--;
 			referencesScript.livesScript.playerLives--;
+
             inLimbo = true;
             canDie = true;
 			justDied = true;
 
 			referencesScript.livesScript.i = 0;
 
-
+            //If you have more than 0 lives in the tank
 			if (referencesScript.livesScript.playerLives > 0)
 			{
-				
 				fuelImage.fillAmount = 0.2f;
+
 				StartCoroutine (deathAnimation ());
+
                 inLimbo = false;
                 canDie = false;
             }
-			//transform.position = new Vector3 (transform.position.x, 8f, transform.position.z);
-
-
         }
 
+        //If died and 0 lives left
         if (inLimbo && referencesScript.livesScript.playerLives == 0)
         {
-			
-		
-				//setactive false all pedestrians to reset spawn
+				//setActive(false) all pedestrians to reset
 				Debug.Log("GAME OVER MAN!");
 				//destroy/finish game
 				inLimbo = false;
 
-                //destory player or set active more likely change
+                //Destory player or set active more likely change
                 Destroy(gameObject);
                 //gameObject.SetActive(false);
-            
         }
     }
 
 	IEnumerator deathAnimation(){
 		deathAnimationPlaying = true;
+
 		anim.SetBool ("death", true);
+
 		CapsuleCollider playerCollider = GetComponent<CapsuleCollider> ();
 		playerCollider.enabled = false;
+
 		rb.isKinematic = true;
 
 		yield return new WaitForSeconds (1.8f);
 		transform.position = new Vector3 (transform.position.x, 8f, transform.position.z);
+
 		playerCollider.enabled = true;
+
 		rb.isKinematic = false;
+
 		anim.SetBool ("death", false);
+
 		deathAnimationPlaying = false;
-        
         yield return new WaitForEndOfFrame ();
 	}
 
     void Movement()
     {
-		if (referencesScript.squashScript.canPressHammer == true && referencesScript.gameStartCoundownScript.gameFinishedWin == false)
+        //If not swinging weapon and the game is not over
+        if (referencesScript.squashScript.canPressHammer == true && referencesScript.gameStartCoundownScript.gameFinishedWin == false)
         {
             //PC CONTROLS
 
@@ -479,7 +455,8 @@ public class PlayerMain : MonoBehaviour {
 
             ///METHOD 2
             float moveHorizontal = Input.GetAxis("Horizontal");
-            /*Vector3 */movement = new Vector3(moveHorizontal * movementSpeed, 0, 0);
+            /*Vector3 */
+            movement = new Vector3(moveHorizontal * movementSpeed, 0, 0);
 
             if (canPressHammer == true)
             {
@@ -499,38 +476,38 @@ public class PlayerMain : MonoBehaviour {
             ///METHOD 3
             //transform.Translate(Input.acceleration.x, 0, 0); 
 
-            //Player Movement Contraint Boarder
-		if (rb.position.x >= xBoarderRight)
+            //Player movement constraint boarder
+            if (rb.position.x >= xBoarderRight)
             {
-			rb.position = new Vector3(xBoarderRight, rb.position.y, rb.position.z);
-		} else if (rb.position.x <= xBoarderLeft)
+                rb.position = new Vector3(xBoarderRight, rb.position.y, rb.position.z);
+            }
+            else if (rb.position.x <= xBoarderLeft)
             {
-			rb.position = new Vector3(xBoarderLeft, rb.position.y, rb.position.z);
+                rb.position = new Vector3(xBoarderLeft, rb.position.y, rb.position.z);
             }
         }
     }
     
     void JumpMechanic()
     {
-        //Jump Physics
+        //Jump physics
         if (rb.velocity.y < 0)
         {
             rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
-
         }
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Z))
         {
             rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
-
         }
 
-        //Jumping Action
+        //Jumping action
         if ((Input.GetKeyDown(KeyCode.UpArrow) && referencesScript.squashScript.canPressHammer == true) && grounded == true)
         {
-            //anim.SetTrigger ("JumpU");
             monsterAudio.clip = monsterJump;
             monsterAudio.Play();
+
             rb.velocity = Vector3.up * jumpVelocity;
+
             grounded = false;
         }
     }
@@ -540,56 +517,66 @@ public class PlayerMain : MonoBehaviour {
     {
         ResetDashState(ActivateTimerToReset);
 
-        //first button press (get ready to dash)
+        //First button press (get ready to dash)
         if (Input.GetKeyDown(KeyCode.LeftArrow) && !rightArrowPressed)
         {
             leftArrowPressed = true;
+
             dashCount++;
+
             monsterAudio.clip = monsterDash;
             monsterAudio.Play();
+
             ActivateTimerToReset = true;
 
-            if (dashCount == 2 /*&& amountOfDashes > 0*/)
+            //If button pressed again in small time window, then dash
+            if (dashCount == 2)
             {
                 rb.AddForce(-dashDistance, 0, 0, ForceMode.Impulse);
-                //amountOfDashes--;
             }
-        } else if (Input.GetKeyDown(KeyCode.LeftArrow) && rightArrowPressed)
+        }
+        //Reset if pressed Right Arrow key just before you pressed Left Arrow key, and now set back to 0
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && rightArrowPressed)
         {
-            //reset when pressed Right Arrow key just before you pressed Left Arrow key, and now set back to 0
             dashCount = 0;
+
             rightArrowPressed = false;
         }
 
-        //first button press (get ready to dash)
+        //First button press (get ready to dash)
         if (Input.GetKeyDown(KeyCode.RightArrow) && !leftArrowPressed)
         {
             rightArrowPressed = true;
+
             dashCount++;
+
             monsterAudio.clip = monsterDash;
             monsterAudio.Play();
+
             ActivateTimerToReset = true;
 
-            if (dashCount == 2 /*&& amountOfDashes > 0*/)
+            //If button pressed again in small time window, then dash
+            if (dashCount == 2)
             {
                 rb.AddForce(dashDistance, 0, 0, ForceMode.Impulse);
-                //amountOfDashes--;
             }
-        } else if (Input.GetKeyDown(KeyCode.RightArrow) && leftArrowPressed)
+        }
+        //Reset if pressed Left Arrow key just before you pressed Right Arrow key, and now set back to 0
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && leftArrowPressed)
         {
-            //reset when pressed Left Arrow key just before you pressed Right Arrow key, and now set back to 0
             dashCount = 0;
+
             leftArrowPressed = false;
         }
 
-        //reset if pressed Space
+        //Reset dashCount state if pressed Space
         if (Input.GetKeyDown(KeyCode.Space))
         {
             dashCount = 0;
         }
     }
 
-    //if dashcount is 1 and ready to dash start this, only have 0.2 secs to press button again to dash, otherwise reset.
+    //If dashCount is 1 and ready to dash, start this, only have 0.2 secs to press button again to dash, otherwise reset.
     void ResetDashState(bool resetTimer)
     {
         if (resetTimer)
@@ -598,43 +585,48 @@ public class PlayerMain : MonoBehaviour {
             if (dashTimer <= 0)
             {
                 dashCount = 0;
+
                 ActivateTimerToReset = false;
                 leftArrowPressed = false;
                 rightArrowPressed = false;
+
                 dashTimer = originalDashTimer;
             }
         }
     }
     #endregion
 
-	void TutorialSort(){
-		leftArrow.SetActive(true);
-		rightArrow.SetActive(true);
-	}
-
     IEnumerator TutorialObjects()
     {
 		referencesScript.gameStartCoundownScript.inTutorial = true;
+
         yield return new WaitForSeconds(3f);
+
         leftArrow.SetActive(true);
         rightArrow.SetActive(true);
 
         yield return new WaitForSeconds(5f);
+
         leftArrow.SetActive(false);
         rightArrow.SetActive(false);
         upArrow.SetActive(true);
+
 		referencesScript.gameStartCoundownScript.inTutorial = false;
 
         yield return new WaitForSeconds(3f);
+
         upArrow.SetActive(false);
         spaceBar.SetActive(true);
 
         yield return new WaitForSeconds(4f);
+
         spaceBar.SetActive(false);
         newspaperSpriteObject.SetActive(true);
 
         yield return new WaitForSeconds(5f);
+
         newspaperSpriteObject.SetActive(false);
+
         yield return new WaitForEndOfFrame();
     }
 
@@ -644,49 +636,64 @@ public class PlayerMain : MonoBehaviour {
         {
             i = 1;
             movementSpeed = movementSpeed * 2f;
+
             yield return new WaitForSeconds(10f);
+
             movementSpeed = 4f;
+
             poweredUp = false;
+
             i = 0;
         }
         yield return new WaitForEndOfFrame();
     }
 
     IEnumerator Hurting()
-    {
-		
+    {	
         fuelGameObject.transform.localScale = new Vector3(fuelGameObject.transform.localScale.x - 0.1f, fuelGameObject.transform.localScale.y - 0.1f, fuelGameObject.transform.localScale.z - 0.1f);
+
         yield return new WaitForSeconds(0.025f);
+
         fuelGameObject.transform.localScale = new Vector3(fuelGameObject.transform.localScale.x + 0.1f, fuelGameObject.transform.localScale.y + 0.1f, fuelGameObject.transform.localScale.z + 0.1f);
 
 		hurt = false;
+
         yield return new WaitForEndOfFrame();
     }
 
     IEnumerator FuelUI()
     {
         uiCount = 1;
+
         fuelGameObject.transform.localScale = new Vector3(fuelGameObject.transform.localScale.x + 0.1f, fuelGameObject.transform.localScale.y + 0.1f, fuelGameObject.transform.localScale.z + 0.1f);
+
         yield return new WaitForSeconds(0.025f);
+
         fuelGameObject.transform.localScale = new Vector3(fuelGameObject.transform.localScale.x - 0.1f, fuelGameObject.transform.localScale.y - 0.1f, fuelGameObject.transform.localScale.z - 0.1f);
+
         largeUI = false;
+
         yield return new WaitForEndOfFrame();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        //Collided with ground layer
         if (collision.gameObject.layer == 12)
         {
             grounded = true;
             justDied = false;
         }
 
+        //Stepped in dog shit
         if (collision.gameObject.layer == 17)
         {
             if (referencesScript.gameStartCoundownScript.gameFinishedWin == false)
             {
                 referencesScript.gameStartCoundownScript.badPedsHit++;
+
                 anim.SetTrigger ("hurt");
+
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.squashScript.ActivateTimerToReset = false;
                 referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
@@ -695,6 +702,7 @@ public class PlayerMain : MonoBehaviour {
                 hurt = true;
 
                 fuelImage.fillAmount -= 0.05f;
+
                 //StartCoroutine (referencesScript.cameraShake.Shake (.15f, .4f));
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
             }

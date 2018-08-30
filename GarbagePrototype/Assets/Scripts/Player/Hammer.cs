@@ -17,8 +17,17 @@ public class Hammer : MonoBehaviour {
 
 	public GameObject[] jumpBuildings;
 
+    [Header("Hit Sprites")]
+    //Good Sprite Hits
     public GameObject[] hitUI;
-    int hitUIposition; 
+    int hitUIposition;
+
+    //Bad Sprite Hits
+    public GameObject[] badHitSprites;
+    int badHitSpriteArrayPosition;
+
+    //Power Up Hits
+    public GameObject powerUpSprite;
 
     [Header("References Script")]
     public ReferencedScripts referencesScript;
