@@ -685,7 +685,8 @@ public class PlayerMain : MonoBehaviour {
         {
             if (referencesScript.gameStartCoundownScript.gameFinishedWin == false)
             {
-				anim.SetTrigger ("hurt");
+                referencesScript.gameStartCoundownScript.badPedsHit++;
+                anim.SetTrigger ("hurt");
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.squashScript.ActivateTimerToReset = false;
                 referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;

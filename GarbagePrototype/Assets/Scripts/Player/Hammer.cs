@@ -9,7 +9,7 @@ public class Hammer : MonoBehaviour {
 	GameStartCountdown gameStartCoundownScript;
 	PlayerMain playerMainScript;
 
-    public int enemiesHit;
+    //public int enemiesHit;
 
     public bool canDie;
 
@@ -83,7 +83,7 @@ public class Hammer : MonoBehaviour {
 				canDie = true;
 				playerMainScript.hurt = true;
 
-				enemiesHit++;
+                referencesScript.gameStartCoundownScript.badPedsHit++;
 
 				playerMainScript.fuelImage.fillAmount -= 0.1f;
 
@@ -107,7 +107,8 @@ public class Hammer : MonoBehaviour {
             referencesScript.squashScript.ComboSystem();
             referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
 
-            enemiesHit++;
+
+            
             playerMainScript.enemiesKilled++;
 
             BuildingJumping ();

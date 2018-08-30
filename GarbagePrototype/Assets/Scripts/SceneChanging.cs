@@ -23,6 +23,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 	int i = 0;
     int iTwo = 0;
 
+    
 	public Text loadingText;
 
     public string goToLevelName;
@@ -77,7 +78,8 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         //Level1 win? go back to map to continue
         if (scene.name == "Level1" && winLevelOne) {
             Invoke("ToMap", 4f);
-		}
+            
+        }
 	}
 
     IEnumerator StartMenuToMap()
@@ -118,10 +120,13 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
     }
 
     void ToMap()
-    {
+    { 
         blackFade = GameObject.Find("BlackFade").GetComponent<Image>();
         blackFade.GetComponent<Animator>().Play("FadeIn");
+        
         SceneManager.LoadScene("Map");
+        CancelInvoke();
+        
     }
 
 	IEnumerator LoadAsyncScene(){

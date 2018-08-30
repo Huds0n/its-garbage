@@ -34,8 +34,12 @@ public class GameStartCountdown : MonoBehaviour {
 
 	public Button resumeMenuButton, optionsMenuButton, restartMenuButton, quitMenuButton;
 
+    [Header("Game Win")]
+    public Image gameWinImage;
+    public int badPedsHit;
+    public int levelOneBinScore;
 
-	int l = 0;
+    int l = 0;
 
 	public Animator anim;
 
@@ -52,6 +56,7 @@ public class GameStartCountdown : MonoBehaviour {
 
     private void Update()
     {
+        
 		if (gameFinishedWin == true && i == 0) {
             levelCompleteText.text = "Level Complete";
 			GameFinished ();
@@ -65,7 +70,6 @@ public class GameStartCountdown : MonoBehaviour {
 			PauseMenu ();
         } else if(Input.GetKeyDown(KeyCode.Escape) && inPause){
 			GoBackToGame ();
-            
         }
     }
 
@@ -84,7 +88,6 @@ public class GameStartCountdown : MonoBehaviour {
 			Button btn4 = quitMenuButton.GetComponent<Button> ();
 
 			btn1.onClick.AddListener (GoBackToGame);
-
 		}
 	}
 
@@ -127,6 +130,18 @@ public class GameStartCountdown : MonoBehaviour {
 
 	void GameFinished(){
 		LeanTween.moveZ (cameraHolder, -15f, 2f).setEaseInOutBack ();
+        if(badPedsHit < 3)
+        {
+            levelOneBinScore = 3;
+        } else if(badPedsHit >=3 && badPedsHit <= 10)
+        {
+            levelOneBinScore = 2;
+        }
+        else if(badPedsHit > 10)
+        {
+            levelOneBinScore = 1;
+        }
+
 		anim.SetBool ("victory", true);
 		i = 1;
 	}

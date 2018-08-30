@@ -90,7 +90,9 @@ public class Dog : MonoBehaviour {
 				if (referencesScript.playerMainScript.firstEnemyHit == false) {
 					referencesScript.playerMainScript.firstEnemyHit = true;
 				}
-				referencesScript.playerMainScript.anim.SetTrigger ("hurt");
+                referencesScript.gameStartCoundownScript.badPedsHit++;
+
+                referencesScript.playerMainScript.anim.SetTrigger ("hurt");
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.playerMainScript.fuelImage.fillAmount -= 0.05f;
