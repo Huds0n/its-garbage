@@ -89,8 +89,11 @@ public class Hammer : MonoBehaviour {
         }
         //can hit ped
 		if (other.gameObject.layer == 10) {
+            hitUIposition = Random.Range(0, 4);
+            hitUI[hitUIposition].SetActive(true);
+            hitUI[hitUIposition].transform.position = new Vector3(other.transform.position.x, hitUI[hitUIposition].transform.position.y, other.transform.position.z);
+           
             StartCoroutine(HitIcons());
-
             referencesScript.squashScript.ComboSystem();
             referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
             enemiesHit++;
@@ -114,8 +117,7 @@ public class Hammer : MonoBehaviour {
 
     IEnumerator HitIcons()
     {
-        hitUIposition = Random.Range(0, 4);
-        hitUI[hitUIposition].SetActive(true);
+        
         yield return new WaitForSeconds(1f);
         hitUI[hitUIposition].SetActive(false);
     }
