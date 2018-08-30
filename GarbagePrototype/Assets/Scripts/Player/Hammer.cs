@@ -22,9 +22,11 @@ public class Hammer : MonoBehaviour {
 
     [Header("References Script")]
     public ReferencedScripts referencesScript;
-    AudioSource hitAudio;
+
+    [Header("Audio")]
     public AudioClip hitRight;
     public AudioClip hitWrong;
+    AudioSource hitAudio;
 
     // Use this for initialization
     void Start () {
@@ -35,6 +37,7 @@ public class Hammer : MonoBehaviour {
         hitUI[1].SetActive(false);
         hitUI[2].SetActive(false);
         hitUI[3].SetActive(false);
+
         hitAudio = GetComponent<AudioSource>();
     }
 	
@@ -69,17 +72,24 @@ public class Hammer : MonoBehaviour {
 				if (playerMainScript.firstEnemyHit == false) {
 					playerMainScript.firstEnemyHit = true;
 				}
+
 				referencesScript.playerMainScript.anim.SetTrigger ("hurt");
+
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.squashScript.ActivateTimerToReset = false;
                 referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
+
                 badEnemyHit = true;
 				canDie = true;
 				playerMainScript.hurt = true;
+
 				enemiesHit++;
+
 				playerMainScript.fuelImage.fillAmount -= 0.1f;
+
                 hitAudio.clip = hitWrong;
                 hitAudio.Play();
+
                 //StartCoroutine (referencesScript.cameraShake.Shake (.15f, .4f));
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
                 
@@ -92,32 +102,34 @@ public class Hammer : MonoBehaviour {
             hitUIposition = Random.Range(0, 4);
             hitUI[hitUIposition].SetActive(true);
             hitUI[hitUIposition].transform.position = new Vector3(other.transform.position.x, hitUI[hitUIposition].transform.position.y, other.transform.position.z);
-           
             StartCoroutine(HitIcons());
+
             referencesScript.squashScript.ComboSystem();
             referencesScript.squashScript.currentComboTimer = referencesScript.squashScript.origTimer;
+
             enemiesHit++;
-			BuildingJumping ();
-			playerMainScript.enemiesKilled++;
+            playerMainScript.enemiesKilled++;
+
+            BuildingJumping ();
+			
             hitAudio.clip = hitRight;
             hitAudio.Play();
-            
-            
         }
 
         //power up ped
         if(other.gameObject.layer == 14)
         {
             playerMainScript.poweredUp = true;
+
             other.gameObject.SetActive(false);
+
             hitAudio.clip = hitRight;
             hitAudio.Play();
         }
 	}
 
     IEnumerator HitIcons()
-    {
-        
+    {  
         yield return new WaitForSeconds(1f);
         hitUI[hitUIposition].SetActive(false);
     }
