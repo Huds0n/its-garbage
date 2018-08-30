@@ -10,7 +10,7 @@ public class PowerUpPed : Pedestrian {
 	// Use this for initialization
 	void Start () {
 		PedestrianRefsValues ();
-		speed = 2f;
+		speed = 1.5f;
 		StartCoroutine ("WaitTime");
 	}
 

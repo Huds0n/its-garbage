@@ -35,6 +35,7 @@ public class Hammer : MonoBehaviour {
     [Header("Audio")]
     public AudioClip hitRight;
     public AudioClip hitWrong;
+    public AudioClip hitPowerUp;
     AudioSource hitAudio;
 
     // Use this for initialization
@@ -132,7 +133,8 @@ public class Hammer : MonoBehaviour {
 
             other.gameObject.SetActive(false);
 
-            hitAudio.clip = hitRight;
+            hitAudio.clip = hitPowerUp;
+            hitAudio.pitch = 0.55f;
             hitAudio.Play();
         }
 	}

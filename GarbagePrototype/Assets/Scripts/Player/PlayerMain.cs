@@ -245,6 +245,7 @@ public class PlayerMain : MonoBehaviour {
 			hurtAnimation = true;
 
             monsterAudio.clip = monsterHurt;
+            monsterAudio.pitch = Random.Range(0.9f, 1.1f);
             monsterAudio.Play(0);
 
             StartCoroutine(Hurting());
@@ -352,6 +353,7 @@ public class PlayerMain : MonoBehaviour {
         if (referencesScript.squashScript.currentComboState < 1)
         {
             monsterAudio.clip = monsterSwingNormal;
+            monsterAudio.pitch = Random.Range(0.9f, 1.1f);
             monsterAudio.Play();
 
             anim.SetTrigger("NormalSwing");
@@ -504,6 +506,7 @@ public class PlayerMain : MonoBehaviour {
         if ((Input.GetKeyDown(KeyCode.UpArrow) && referencesScript.squashScript.canPressHammer == true) && grounded == true)
         {
             monsterAudio.clip = monsterJump;
+            monsterAudio.pitch = Random.Range(0.9f, 1.1f);
             monsterAudio.Play();
 
             rb.velocity = Vector3.up * jumpVelocity;

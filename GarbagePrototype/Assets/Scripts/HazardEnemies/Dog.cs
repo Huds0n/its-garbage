@@ -56,9 +56,11 @@ public class Dog : MonoBehaviour {
                 dogAudio.Play();
 			} else {
 				rotation.eulerAngles = Vector3.zero;
-				transform.rotation = rotation;
+                transform.rotation = rotation;
+
                 dogAudio.clip = dogEnter;
                 dogAudio.Play();
+
 			}
 		
 
@@ -75,8 +77,9 @@ public class Dog : MonoBehaviour {
        
 		if (rand == 3) {
 			Instantiate (dogShit, transform.position, transform.rotation);
-            dogAudio.clip = dogShitNoise;
-            dogAudio.Play();
+
+            //dogAudio.clip = dogShitNoise;
+           // dogAudio.Play();
 
 		}
 	}
