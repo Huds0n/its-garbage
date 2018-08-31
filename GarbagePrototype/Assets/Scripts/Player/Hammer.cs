@@ -57,7 +57,6 @@ public class Hammer : MonoBehaviour {
 
 	}
 
-
 	void BuildingJumping(){
 		LeanTween.moveLocalY(jumpBuildings[0], 2.2f, .2f).setLoopPingPong(1).setEaseInBounce();
 		LeanTween.moveLocalY(jumpBuildings[1], 2f, .15f).setLoopPingPong(1).setEaseInBounce().setDelay(.1f);

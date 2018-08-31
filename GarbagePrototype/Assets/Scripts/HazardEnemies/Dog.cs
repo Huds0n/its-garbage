@@ -15,10 +15,10 @@ public class Dog : MonoBehaviour {
     [Header("References Script")]
     public ReferencedScripts referencesScript;
 
-
 	Quaternion rotation = Quaternion.identity;
 
 	public GameObject dogShit;
+
     AudioSource dogAudio;
     public AudioClip dogShitNoise;
     public AudioClip dogEnter;
@@ -30,6 +30,7 @@ public class Dog : MonoBehaviour {
         transform.position = new Vector3(startPositionX, transform.position.y, transform.position.z);
 
 		InvokeRepeating ("DogShitDrop", 3f, 2f);
+
         dogAudio = GetComponent<AudioSource>();
     }
 
@@ -52,6 +53,7 @@ public class Dog : MonoBehaviour {
 			if (transform.rotation.y == 0) {
 				rotation.eulerAngles = new Vector3 (0, 180, 0);
 				transform.rotation = rotation;
+
                 dogAudio.clip = dogEnter;
                 dogAudio.Play();
 			} else {
@@ -60,10 +62,7 @@ public class Dog : MonoBehaviour {
 
                 dogAudio.clip = dogEnter;
                 dogAudio.Play();
-
 			}
-		
-
 
             float temp = endPositionX;
             endPositionX = startPositionX;
@@ -80,7 +79,6 @@ public class Dog : MonoBehaviour {
 
             //dogAudio.clip = dogShitNoise;
            // dogAudio.Play();
-
 		}
 	}
 
@@ -96,10 +94,14 @@ public class Dog : MonoBehaviour {
                 referencesScript.gameStartCoundownScript.badPedsHit++;
 
                 referencesScript.playerMainScript.anim.SetTrigger ("hurt");
+
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
+
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.playerMainScript.fuelImage.fillAmount -= 0.05f;
+
                 //StartCoroutine(referencesScript.cameraShake.Shake(.15f, .4f));
+
                 referencesScript.playerMainScript.hurt = true;
             }
         }

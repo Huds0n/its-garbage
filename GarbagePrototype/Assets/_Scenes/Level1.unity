@@ -87750,8 +87750,9 @@ MonoBehaviour:
   dashDistance: 8
   dashTimer: 5
   dashCount: 0
-  dashRecharger: 0
-  poweredUp: 0
+  dashRecharger: 0.2
+  dashTimerReset: 0.2
+  poweredUp: 1
   hurtingAnim: {fileID: 9100000, guid: 75dc6c2f6f1b55f489ac5328851ba730, type: 2}
   defaultAnim: {fileID: 9100000, guid: f6c21e266d1440b4db17eb267ed3dd67, type: 2}
   confidentAnim: {fileID: 9100000, guid: 1188829460aa3eb428825aded0be255c, type: 2}

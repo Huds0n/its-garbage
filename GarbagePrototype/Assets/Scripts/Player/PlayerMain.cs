@@ -73,6 +73,8 @@ public class PlayerMain : MonoBehaviour {
 	public float dashRecharger;
 	float dashTimeStamp;
 
+    //public float dashTimerReset = 0.2f;
+
     [Space(5)]
     #endregion
 
@@ -194,6 +196,8 @@ public class PlayerMain : MonoBehaviour {
         //for dash mechanic
         originalDashTimer = dashTimer;
 
+        //dashTimerReset = originalDashTimer;
+
         timeStamp = Time.time + timeWait;
 
         dashTimeStamp = Time.time + dashRecharger;
@@ -208,8 +212,9 @@ public class PlayerMain : MonoBehaviour {
         if (referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.gameFinishedWin == false)
         {
             JumpMechanic();
-            DashMechanic();
 
+            DashMechanic();
+           
             if(largeUI == true && uiCount == 0)
             {
                 StartCoroutine(FuelUI());
@@ -595,6 +600,17 @@ public class PlayerMain : MonoBehaviour {
 
                 dashTimer = originalDashTimer;
             }
+            /*dashRecharger -= Time.deltaTime;
+            if(dashRecharger <= 0)
+            {
+                dashCount = 0;
+
+                ActivateTimerToReset = false;
+                leftArrowPressed = false;
+                rightArrowPressed = false;
+
+                dashRecharger = dashTimeStamp;
+            }*/
         }
     }
     #endregion
