@@ -49,6 +49,10 @@ public class Hammer : MonoBehaviour {
         hitUI[3].SetActive(false);
         hitUI[4].SetActive(false);
 
+        badHitSprites[0].SetActive(false);
+        badHitSprites[1].SetActive(false);
+        badHitSprites[2].SetActive(false);
+
         hitAudio = GetComponent<AudioSource>();
     }
 	
@@ -83,7 +87,12 @@ public class Hammer : MonoBehaviour {
 					playerMainScript.firstEnemyHit = true;
 				}
 
-				referencesScript.playerMainScript.anim.SetTrigger ("hurt");
+                badHitSpriteArrayPosition = Random.Range(0, 3);
+                badHitSprites[badHitSpriteArrayPosition].SetActive(true);
+                badHitSprites[badHitSpriteArrayPosition].transform.position = new Vector3(other.transform.position.x, badHitSprites[badHitSpriteArrayPosition].transform.position.y, other.transform.position.z);
+                StartCoroutine(BadHitIcons());
+
+                referencesScript.playerMainScript.anim.SetTrigger ("hurt");
 
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.squashScript.ActivateTimerToReset = false;
@@ -109,6 +118,7 @@ public class Hammer : MonoBehaviour {
         }
         //can hit ped
 		if (other.gameObject.layer == 10) {
+
             hitUIposition = Random.Range(0, 5);
             hitUI[hitUIposition].SetActive(true);
             hitUI[hitUIposition].transform.position = new Vector3(other.transform.position.x, hitUI[hitUIposition].transform.position.y, other.transform.position.z);
@@ -142,5 +152,11 @@ public class Hammer : MonoBehaviour {
     {  
         yield return new WaitForSeconds(1f);
         hitUI[hitUIposition].SetActive(false);
+    }
+
+    IEnumerator BadHitIcons()
+    {
+        yield return new WaitForSeconds(1f);
+        badHitSprites[badHitSpriteArrayPosition].SetActive(false);
     }
 }
