@@ -168,7 +168,8 @@ ModelImporter:
     4300000: BWWalkCyle_0002:purse
     4300002: model:CB_BuissnessWoman_Hair
     4300004: model:CB_BuissnessWoman_Body
-    7400000: BWtest02
+    7400000: BusinessWomanNoPaper
+    7400002: BWtest02
     9500000: //RootNode
     13700000: model:CB_BuissnessWoman_Body
     13700002: model:CB_BuissnessWoman_Hair
@@ -201,7 +202,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: BWtest02
+      name: BusinessWomanNoPaper
       takeName: BWtest02
       firstFrame: 0
       lastFrame: 30

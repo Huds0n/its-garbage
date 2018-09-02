@@ -225,7 +225,7 @@ ModelImporter:
     4300006: wheel3
     4300008: wheel4
     4300010: base
-    7400000: skater_TEST3
+    7400000: SkaterNoPaper
     9500000: //RootNode
     13700000: model:SkaterGirl_Mesh
   externalObjects: {}
@@ -257,7 +257,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: skater_TEST3
+      name: SkaterNoPaper
       takeName: skater_TEST3
       firstFrame: 1
       lastFrame: 80
