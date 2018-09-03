@@ -65,6 +65,19 @@ public class SpawnPedestrians : MonoBehaviour {
             case 5:
                 enemyType = "Good Old Man";
                 break;
+            case 6:
+                enemyType = "Bad Business Woman";
+                break;
+            case 7:
+                enemyType = "Good Business Woman";
+                break;
+            case 8:
+                enemyType = "Bad Skater Girl";
+                break;
+            case 9:
+                enemyType = "Good Skater Girl";
+                break;
+
         }
 
         //choose spawn location
