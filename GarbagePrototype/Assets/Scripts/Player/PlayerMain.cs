@@ -154,6 +154,8 @@ public class PlayerMain : MonoBehaviour {
 
 	bool deathAnimationPlaying;
 
+    public GameObject hurtSpriteUI;
+
     [Space(5)]
     #endregion
 
@@ -192,6 +194,7 @@ public class PlayerMain : MonoBehaviour {
 
         //for being hurt when hit
         damageImage.enabled = false;
+        hurtSpriteUI.SetActive(false);
 
         //for dash mechanic
         originalDashTimer = dashTimer;
@@ -254,6 +257,8 @@ public class PlayerMain : MonoBehaviour {
             monsterAudio.Play(0);
 
             StartCoroutine(Hurting());
+
+            //StartCoroutine(HurtSpriteSwear());
         }
 
         //Got a power-up?
@@ -668,7 +673,7 @@ public class PlayerMain : MonoBehaviour {
     }
 
     IEnumerator Hurting()
-    {	
+    {
         fuelGameObject.transform.localScale = new Vector3(fuelGameObject.transform.localScale.x - 0.1f, fuelGameObject.transform.localScale.y - 0.1f, fuelGameObject.transform.localScale.z - 0.1f);
 
         yield return new WaitForSeconds(0.025f);
@@ -678,6 +683,15 @@ public class PlayerMain : MonoBehaviour {
 		hurt = false;
 
         yield return new WaitForEndOfFrame();
+    }
+
+    public IEnumerator HurtSpriteSwear()
+    {
+        hurtSpriteUI.SetActive(true);
+
+        yield return new WaitForSeconds(0.7f);
+
+        hurtSpriteUI.SetActive(false);
     }
 
     IEnumerator FuelUI()
@@ -709,6 +723,8 @@ public class PlayerMain : MonoBehaviour {
         {
             if (referencesScript.gameStartCoundownScript.gameFinishedWin == false)
             {
+                StartCoroutine(HurtSpriteSwear());
+
                 referencesScript.gameStartCoundownScript.badPedsHit++;
 
                 anim.SetTrigger ("hurt");

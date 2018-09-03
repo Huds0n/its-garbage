@@ -35,7 +35,11 @@ public class GameStartCountdown : MonoBehaviour {
 	public Button resumeMenuButton, optionsMenuButton, restartMenuButton, quitMenuButton;
 
     [Header("Game Win")]
-    public Image gameWinImage;
+    public GameObject gameWinImage;
+    public GameObject[] binScoreFills;
+
+    public Text binScoreText;
+
     public int badPedsHit;
     public int levelOneBinScore;
 
@@ -51,7 +55,9 @@ public class GameStartCountdown : MonoBehaviour {
         
         pauseMenuImage.SetActive(false);
 
-		anim = GameObject.Find("newWeapTest01").GetComponent<Animator>();
+        gameWinImage.SetActive(false);
+
+        anim = GameObject.Find("newWeapTest01").GetComponent<Animator>();
     }
 
     private void Update()
@@ -144,9 +150,42 @@ public class GameStartCountdown : MonoBehaviour {
         }
 
 		anim.SetBool ("victory", true);
+
+        StartCoroutine(GarbageBinScore());
 		i = 1;
 	}
 
+    IEnumerator GarbageBinScore()
+    {
+        yield return new WaitForSeconds(4f);
+        gameWinImage.SetActive(true);
+        binScoreText.text = "0/3 Bin Score";
+        yield return new WaitForSeconds(0.5f);
+        if (levelOneBinScore == 3)
+        {
+            binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            binScoreText.text = "1/3 Bin Score";
+            yield return new WaitForSeconds(1f);
+            binScoreFills[1].GetComponent<Image>().fillAmount = 1;
+            binScoreText.text = "2/3 Bin Score!";
+            yield return new WaitForSeconds(1f);
+            binScoreFills[2].GetComponent<Image>().fillAmount = 1;
+            binScoreText.text = "3/3 Bin Score!! PERFECT!";
+        }
+        else if (levelOneBinScore == 2)
+        {
+            binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            binScoreText.text = "1/3 Bin Score";
+            yield return new WaitForSeconds(1f);
+            binScoreFills[1].GetComponent<Image>().fillAmount = 1;
+            binScoreText.text = "2/3 Bin Score!";
+        }
+        else
+        {
+            binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            binScoreText.text = "1/3 Bin Score";
+        }
+    }
     IEnumerator Countdown()
     {
         gameStartText.text = "Game Begins in";

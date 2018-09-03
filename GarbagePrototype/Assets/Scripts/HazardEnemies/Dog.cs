@@ -95,6 +95,8 @@ public class Dog : MonoBehaviour {
 
                 referencesScript.playerMainScript.anim.SetTrigger ("hurt");
 
+                referencesScript.playerMainScript.StartCoroutine(referencesScript.playerMainScript.HurtSpriteSwear());
+
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
 
                 referencesScript.squashScript.currentComboState = 0;
