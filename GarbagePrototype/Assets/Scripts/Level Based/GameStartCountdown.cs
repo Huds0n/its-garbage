@@ -206,6 +206,7 @@ public class GameStartCountdown : MonoBehaviour {
             //binScoreFills[2].GetComponent<Image>().fillAmount = 1;
             binScoreFills[2].SetActive(true);
             binScoreText.text = "3/3 Bin Score!! PERFECT!";
+
         }
         else if (endOfLevelBinScore == 2)
         {
