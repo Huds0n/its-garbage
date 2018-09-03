@@ -53,6 +53,8 @@ public class Hammer : MonoBehaviour {
         badHitSprites[1].SetActive(false);
         badHitSprites[2].SetActive(false);
 
+        powerUpSprite.SetActive(false);
+
         hitAudio = GetComponent<AudioSource>();
     }
 	
@@ -139,6 +141,10 @@ public class Hammer : MonoBehaviour {
         //power up ped
         if(other.gameObject.layer == 14)
         {
+            powerUpSprite.SetActive(true);
+            powerUpSprite.transform.position = new Vector3(other.transform.position.x, powerUpSprite.transform.position.y, other.transform.position.z);
+            StartCoroutine(PowerHitIcon());
+
             playerMainScript.poweredUp = true;
 
             other.gameObject.SetActive(false);
@@ -159,5 +165,11 @@ public class Hammer : MonoBehaviour {
     {
         yield return new WaitForSeconds(1f);
         badHitSprites[badHitSpriteArrayPosition].SetActive(false);
+    }
+
+    IEnumerator PowerHitIcon()
+    {
+        yield return new WaitForSeconds(1f);
+        powerUpSprite.SetActive(false);
     }
 }
