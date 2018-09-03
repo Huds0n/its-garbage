@@ -84,7 +84,13 @@ MonoBehaviour:
   opposite: 0
   animator: {fileID: 0}
   referencesScript: {fileID: 0}
-  textures: []
+  textures:
+  - {fileID: 2800000, guid: 7b69a9d09e8926e4499d4138a023143d, type: 3}
+  - {fileID: 2800000, guid: 46b66c2f689e44b4ea545e3708910fe6, type: 3}
+  - {fileID: 2800000, guid: 867385fe6bc0dd5408aedd68c234af5a, type: 3}
+  - {fileID: 2800000, guid: c3488b7c03f51aa4b938862f58da8d4b, type: 3}
+  - {fileID: 2800000, guid: e31731b9cdf521e43adba0ac386d9fc5, type: 3}
+  - {fileID: 2800000, guid: d17309f95a43cb3478a117a3255cd3c1, type: 3}
   rend: []
   rubbish: {fileID: 1335882646117562, guid: f13ef43edbfbf3b44a3f903b8eff4855, type: 2}
   indicatorScript: {fileID: 0}
