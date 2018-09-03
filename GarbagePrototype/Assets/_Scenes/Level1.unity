@@ -43479,7 +43479,11 @@ MonoBehaviour:
   - {fileID: 1773668290}
   binScoreText: {fileID: 102429650}
   badPedsHit: 0
-  levelOneBinScore: 0
+  endOfLevelBinScore: 0
+  levelOneEndScore: 0
+  levelTwoEndScore: 0
+  levelThreeEndScore: 0
+  finalScore: 0
   anim: {fileID: 0}
 --- !u!4 &939486654
 Transform:
@@ -73477,6 +73481,7 @@ GameObject:
   - component: {fileID: 1535984839}
   - component: {fileID: 1535984841}
   - component: {fileID: 1535984840}
+  - component: {fileID: 1535984842}
   m_Layer: 5
   m_Name: BinFill1
   m_TagString: Untagged
@@ -73526,7 +73531,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &1535984841
@@ -73535,6 +73540,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1535984838}
+--- !u!95 &1535984842
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1535984838}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 557e41bb343a57e49a67cf585f9b9765, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1537381651
 GameObject:
   m_ObjectHideFlags: 0
@@ -86811,6 +86834,7 @@ GameObject:
   - component: {fileID: 1773668291}
   - component: {fileID: 1773668293}
   - component: {fileID: 1773668292}
+  - component: {fileID: 1773668294}
   m_Layer: 5
   m_Name: BinFill3
   m_TagString: Untagged
@@ -86860,7 +86884,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &1773668293
@@ -86869,6 +86893,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773668290}
+--- !u!95 &1773668294
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773668290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 557e41bb343a57e49a67cf585f9b9765, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1773721073
 GameObject:
   m_ObjectHideFlags: 0
@@ -100668,6 +100710,7 @@ GameObject:
   - component: {fileID: 2054427239}
   - component: {fileID: 2054427241}
   - component: {fileID: 2054427240}
+  - component: {fileID: 2054427242}
   m_Layer: 5
   m_Name: BinFill2
   m_TagString: Untagged
@@ -100717,7 +100760,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &2054427241
@@ -100726,6 +100769,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2054427238}
+--- !u!95 &2054427242
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2054427238}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 557e41bb343a57e49a67cf585f9b9765, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2054963154
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using DentedPixel;
+using UnityEngine.SceneManagement;
 
 public class GameStartCountdown : MonoBehaviour {
 
@@ -41,11 +42,19 @@ public class GameStartCountdown : MonoBehaviour {
     public Text binScoreText;
 
     public int badPedsHit;
-    public int levelOneBinScore;
+    public int endOfLevelBinScore;
+
+    public int levelOneEndScore;
+    public int levelTwoEndScore;
+    public int levelThreeEndScore;
+
+    public int finalScore;
 
     int l = 0;
 
 	public Animator anim;
+
+    Scene currentScene;
 
     // Use this for initialization
     void Start () {
@@ -58,6 +67,8 @@ public class GameStartCountdown : MonoBehaviour {
         gameWinImage.SetActive(false);
 
         anim = GameObject.Find("newWeapTest01").GetComponent<Animator>();
+
+        currentScene = SceneManager.GetActiveScene();
     }
 
     private void Update()
@@ -139,14 +150,30 @@ public class GameStartCountdown : MonoBehaviour {
 		LeanTween.moveZ (cameraHolder, -15f, 2f).setEaseInOutBack ();
         if(badPedsHit < 3)
         {
-            levelOneBinScore = 3;
+            endOfLevelBinScore = 3;
         } else if(badPedsHit >=3 && badPedsHit <= 10)
         {
-            levelOneBinScore = 2;
+            endOfLevelBinScore = 2;
         }
         else if(badPedsHit > 10)
         {
-            levelOneBinScore = 1;
+            endOfLevelBinScore = 1;
+        }
+
+        //check scene name and set levelOneBinScore
+        if(currentScene.name == "Level1")
+        {
+            if(endOfLevelBinScore == 3)
+            {
+                levelOneEndScore = 3;
+            }
+            else if(endOfLevelBinScore == 2)
+            {
+                levelOneEndScore = 2;
+            } else
+            {
+                levelOneEndScore = 1;
+            }
         }
 
 		anim.SetBool ("victory", true);
@@ -159,33 +186,47 @@ public class GameStartCountdown : MonoBehaviour {
     {
         yield return new WaitForSeconds(4f);
         gameWinImage.SetActive(true);
+
+        binScoreFills[0].SetActive(false);
+        binScoreFills[1].SetActive(false);
+        binScoreFills[2].SetActive(false);
+
         binScoreText.text = "0/3 Bin Score";
         yield return new WaitForSeconds(0.5f);
-        if (levelOneBinScore == 3)
+        if (endOfLevelBinScore == 3)
         {
-            binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            //binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            binScoreFills[0].SetActive(true);
             binScoreText.text = "1/3 Bin Score";
             yield return new WaitForSeconds(1f);
-            binScoreFills[1].GetComponent<Image>().fillAmount = 1;
+           //binScoreFills[1].GetComponent<Image>().fillAmount = 1;
+            binScoreFills[1].SetActive(true);
             binScoreText.text = "2/3 Bin Score!";
             yield return new WaitForSeconds(1f);
-            binScoreFills[2].GetComponent<Image>().fillAmount = 1;
+            //binScoreFills[2].GetComponent<Image>().fillAmount = 1;
+            binScoreFills[2].SetActive(true);
             binScoreText.text = "3/3 Bin Score!! PERFECT!";
         }
-        else if (levelOneBinScore == 2)
+        else if (endOfLevelBinScore == 2)
         {
-            binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            //binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            binScoreFills[0].SetActive(true);
             binScoreText.text = "1/3 Bin Score";
             yield return new WaitForSeconds(1f);
-            binScoreFills[1].GetComponent<Image>().fillAmount = 1;
+            //binScoreFills[1].GetComponent<Image>().fillAmount = 1;
+            binScoreFills[1].SetActive(true);
             binScoreText.text = "2/3 Bin Score!";
+            yield return new WaitForSeconds(1f);
         }
         else
         {
-            binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            //binScoreFills[0].GetComponent<Image>().fillAmount = 1;
+            binScoreFills[0].SetActive(true);
             binScoreText.text = "1/3 Bin Score";
+            yield return new WaitForSeconds(1f);
         }
     }
+
     IEnumerator Countdown()
     {
         gameStartText.text = "Game Begins in";
