@@ -111,7 +111,8 @@ public class Hammer : MonoBehaviour {
 
                 //StartCoroutine (referencesScript.cameraShake.Shake (.15f, .4f));
                 CameraShaker.Instance.ShakeOnce(2f, 2f, .1f, .15f);
-                
+
+                referencesScript.playerMainScript.StartCoroutine(referencesScript.playerMainScript.ShowNewspaperSprite());
             }
             other.gameObject.SetActive(false);
 

@@ -40,6 +40,7 @@ public class GameStartCountdown : MonoBehaviour {
     public GameObject[] binScoreFills;
 
     public Text binScoreText;
+    public Text endLoadingText;
 
     public int badPedsHit;
     public int endOfLevelBinScore;
@@ -56,6 +57,10 @@ public class GameStartCountdown : MonoBehaviour {
 
     Scene currentScene;
 
+    public GameObject healthBarUI;
+    public GameObject dashUI;
+    public GameObject dashUIbackground;
+
     // Use this for initialization
     void Start () {
 		GameStartReset ();
@@ -69,6 +74,9 @@ public class GameStartCountdown : MonoBehaviour {
         anim = GameObject.Find("newWeapTest01").GetComponent<Animator>();
 
         currentScene = SceneManager.GetActiveScene();
+
+        LeanTween.moveLocalY(dashUI, -210f, .5f).setDelay(.5f);
+        LeanTween.moveLocalY(dashUIbackground, -210f, .5f).setDelay(.5f);
     }
 
     private void Update()
@@ -184,7 +192,13 @@ public class GameStartCountdown : MonoBehaviour {
 
     IEnumerator GarbageBinScore()
     {
+        LeanTween.moveLocalY(healthBarUI, 350f, 1f);
+
+        LeanTween.moveLocalY(dashUI, -300f, 1f);
+        LeanTween.moveLocalY(dashUIbackground, -300f, 1f);
+
         yield return new WaitForSeconds(4f);
+
         gameWinImage.SetActive(true);
 
         binScoreFills[0].SetActive(false);
@@ -192,6 +206,9 @@ public class GameStartCountdown : MonoBehaviour {
         binScoreFills[2].SetActive(false);
 
         binScoreText.text = "0/3 Bin Score";
+
+        endLoadingText.enabled = false;
+
         yield return new WaitForSeconds(0.5f);
         if (endOfLevelBinScore == 3)
         {
@@ -206,6 +223,9 @@ public class GameStartCountdown : MonoBehaviour {
             //binScoreFills[2].GetComponent<Image>().fillAmount = 1;
             binScoreFills[2].SetActive(true);
             binScoreText.text = "3/3 Bin Score!! PERFECT!";
+            LeanTween.scale(binScoreText.gameObject, new Vector3(1, 1, binScoreText.gameObject.transform.position.z), .5f).setLoopPingPong();
+
+            endLoadingText.enabled = true;
 
         }
         else if (endOfLevelBinScore == 2)
@@ -217,14 +237,19 @@ public class GameStartCountdown : MonoBehaviour {
             //binScoreFills[1].GetComponent<Image>().fillAmount = 1;
             binScoreFills[1].SetActive(true);
             binScoreText.text = "2/3 Bin Score!";
+            LeanTween.scale(binScoreText.gameObject, new Vector3(1, 1, binScoreText.gameObject.transform.position.z), .5f).setLoopPingPong();
             yield return new WaitForSeconds(1f);
+            endLoadingText.enabled = true;
+
         }
         else
         {
             //binScoreFills[0].GetComponent<Image>().fillAmount = 1;
             binScoreFills[0].SetActive(true);
             binScoreText.text = "1/3 Bin Score";
+            LeanTween.scale(binScoreText.gameObject, new Vector3(1, 1, binScoreText.gameObject.transform.position.z), .5f).setLoopPingPong();
             yield return new WaitForSeconds(1f);
+            endLoadingText.enabled = true;
         }
     }
 

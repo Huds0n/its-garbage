@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DentedPixel;
 using EZCameraShake;
+using UnityEngine.SceneManagement;
 
 public class PlayerMain : MonoBehaviour {
 
@@ -72,6 +73,8 @@ public class PlayerMain : MonoBehaviour {
 
 	public float dashRecharger;
 	float dashTimeStamp;
+
+    public GameObject dashUI;
 
     //public float dashTimerReset = 0.2f;
 
@@ -180,6 +183,8 @@ public class PlayerMain : MonoBehaviour {
     [Header("References Script")]
     public ReferencedScripts referencesScript;
 
+    Scene currentScene;
+
     // Use this for initialization
     void Start () {
         //Player Rigidbody
@@ -206,7 +211,11 @@ public class PlayerMain : MonoBehaviour {
         dashTimeStamp = Time.time + dashRecharger;
 
         //Level 1 tutorial ----- change so only level 1 (bool)
-        StartCoroutine(TutorialObjects());
+        currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Level1")
+        {
+            StartCoroutine(TutorialObjects());
+        }
     }
 	
 	// Update is called once per frame
@@ -229,6 +238,7 @@ public class PlayerMain : MonoBehaviour {
 			PlayerAnimation ();
 		}
 
+      
         //Player health and lives
         LifeSystem();
     }
@@ -546,6 +556,7 @@ public class PlayerMain : MonoBehaviour {
             if (dashCount == 2)
             {
                 rb.AddForce(-dashDistance, 0, 0, ForceMode.Impulse);
+                dashUI.SetActive(false);
             }
         }
         //Reset if pressed Right Arrow key just before you pressed Left Arrow key, and now set back to 0
@@ -572,6 +583,7 @@ public class PlayerMain : MonoBehaviour {
             if (dashCount == 2)
             {
                 rb.AddForce(dashDistance, 0, 0, ForceMode.Impulse);
+                dashUI.SetActive(false);
             }
         }
         //Reset if pressed Left Arrow key just before you pressed Right Arrow key, and now set back to 0
@@ -599,6 +611,8 @@ public class PlayerMain : MonoBehaviour {
             {
                 dashCount = 0;
 
+                dashUI.SetActive(true);
+
                 ActivateTimerToReset = false;
                 leftArrowPressed = false;
                 rightArrowPressed = false;
@@ -622,9 +636,12 @@ public class PlayerMain : MonoBehaviour {
 
     IEnumerator TutorialObjects()
     {
-		referencesScript.gameStartCoundownScript.inTutorial = true;
+        newspaperSpriteObject.SetActive(true);
+
+        referencesScript.gameStartCoundownScript.inTutorial = true;
 
         yield return new WaitForSeconds(3f);
+        newspaperSpriteObject.SetActive(false);
 
         leftArrow.SetActive(true);
         rightArrow.SetActive(true);
@@ -645,12 +662,27 @@ public class PlayerMain : MonoBehaviour {
         yield return new WaitForSeconds(4f);
 
         spaceBar.SetActive(false);
+
+        yield return new WaitForSeconds(.5f);
+
         newspaperSpriteObject.SetActive(true);
 
         yield return new WaitForSeconds(5f);
 
         newspaperSpriteObject.SetActive(false);
 
+        yield return new WaitForEndOfFrame();
+    }
+
+    public IEnumerator ShowNewspaperSprite()
+    {
+        if (newspaperSpriteObject.activeInHierarchy == false)
+        {
+            yield return new WaitForSeconds(1f);
+            newspaperSpriteObject.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            newspaperSpriteObject.SetActive(false);
+        }
         yield return new WaitForEndOfFrame();
     }
 

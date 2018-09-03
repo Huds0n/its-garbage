@@ -77,7 +77,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
         //Level1 win? go back to map to continue
         if (scene.name == "Level1" && winLevelOne) {
-            Invoke("ToMap", 4f);
+            Invoke("ToMap", 10f);
             
         }
 	}
