@@ -29,6 +29,10 @@ public class Hammer : MonoBehaviour {
     //Power Up Hits
     public GameObject powerUpSprite;
 
+    public GameObject powerUpUIBackground;
+    public Text backPowerText;
+    public Text powerText;
+
     [Header("References Script")]
     public ReferencedScripts referencesScript;
 
@@ -56,6 +60,10 @@ public class Hammer : MonoBehaviour {
         powerUpSprite.SetActive(false);
 
         hitAudio = GetComponent<AudioSource>();
+
+        powerUpUIBackground.SetActive(false);
+        backPowerText.enabled = false;
+        powerText.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -144,7 +152,7 @@ public class Hammer : MonoBehaviour {
             powerUpSprite.SetActive(true);
             powerUpSprite.transform.position = new Vector3(other.transform.position.x, powerUpSprite.transform.position.y, other.transform.position.z);
             StartCoroutine(PowerHitIcon());
-
+            StartCoroutine(PowerUpUI());
             playerMainScript.poweredUp = true;
 
             other.gameObject.SetActive(false);
@@ -171,5 +179,63 @@ public class Hammer : MonoBehaviour {
     {
         yield return new WaitForSeconds(1f);
         powerUpSprite.SetActive(false);
+    }
+
+    IEnumerator PowerUpUI()
+    {
+        powerUpUIBackground.SetActive(true);
+        backPowerText.enabled = true;
+        powerText.enabled = true;
+
+        backPowerText.text = "10";
+        powerText.text = "10";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "9";
+        powerText.text = "9";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "8";
+        powerText.text = "8";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "7";
+        powerText.text = "7";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "6";
+        powerText.text = "6";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "5";
+        powerText.text = "5";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "4";
+        powerText.text = "4";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "3";
+        powerText.text = "3";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "2";
+        powerText.text = "2";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "1";
+        powerText.text = "1";
+
+        yield return new WaitForSeconds(1f);
+        backPowerText.text = "0";
+        powerText.text = "0";
+
+        yield return new WaitForEndOfFrame();
+
+        powerUpUIBackground.SetActive(false);
+        backPowerText.enabled = false;
+        powerText.enabled = false;
+        yield return new WaitForEndOfFrame();
+
     }
 }
