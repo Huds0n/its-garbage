@@ -56,6 +56,7 @@ public class Rubbish : MonoBehaviour {
         LeanTween.scale(gameObject, new Vector3(.3f, .3f, .3f), .4f).setLoopPingPong();
 
         rubbishAudio = GetComponent<AudioSource>();
+        rubbishAudio.Play();
     }
 
 	// Update is called once per frame
@@ -77,9 +78,7 @@ public class Rubbish : MonoBehaviour {
             //blink
             //then destroy
 
-            rubbishAudio.clip = rubbishPickUp;
-            rubbishAudio.pitch = Random.Range(0.9f, 1.1f);
-            rubbishAudio.Play(1);
+            
 
             Destroy(gameObject);
         }
@@ -98,10 +97,10 @@ public class Rubbish : MonoBehaviour {
 
                     LeanTween.rotate(gameObject, new Vector3(359, 359, 359), .3f).setLoopPingPong();
 
-                    rubbishAudio.clip = rubbishDrop;
-                    rubbishAudio.pitch = Random.Range(0.9f, 1.1f);
+                    //rubbishAudio.clip = rubbishDrop;
+                   // rubbishAudio.pitch = Random.Range(0.9f, 1.1f);
                     //rubbishAudio.volume = 0.1f;
-                    rubbishAudio.Play(0);
+                    //rubbishAudio.Play(0);
                 }
             }
         }
@@ -112,6 +111,11 @@ public class Rubbish : MonoBehaviour {
         if(collision.gameObject.layer == 8)
         {
             player.GetComponent<PlayerMain>().fuelImage.fillAmount += 0.1f;
+
+            rubbishAudio.clip = rubbishPickUp;
+            rubbishAudio.pitch = Random.Range(0.9f, 1.1f);
+            rubbishAudio.Play(1);
+           
             //objScript.fuelImage.fillAmount += 0.1f;
             if (player.GetComponent<PlayerMain>().largeUI == false)
             {
