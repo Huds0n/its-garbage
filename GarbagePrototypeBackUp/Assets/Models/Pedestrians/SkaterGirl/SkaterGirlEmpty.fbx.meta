@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05c2dceebba567b4289f5adc8e44afea
+guid: 4875063cca9150a489f1e67cee19bb62
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -225,7 +225,7 @@ ModelImporter:
     4300006: wheel3
     4300008: wheel4
     4300010: base
-    7400000: SkaterNoPaper
+    7400000: SkaterGirlEmpty
     9500000: //RootNode
     13700000: model:SkaterGirl_Mesh
   externalObjects: {}
@@ -257,8 +257,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: SkaterNoPaper
-      takeName: skater_TEST3
+      name: SkaterGirlEmpty
+      takeName: Take 001
       firstFrame: 1
       lastFrame: 80
       wrapMode: 0
