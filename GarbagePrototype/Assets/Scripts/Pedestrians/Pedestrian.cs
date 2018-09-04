@@ -56,6 +56,12 @@ public class Pedestrian : MonoBehaviour {
         {
             speed = 3;
         }
+
+        //Business Woman Speed
+        if(gameObject.name == "BadBusinessWoman(Clone)" /*|| gameObject.name == "GoodBusinessWoman(Clone)"*/)
+        {
+            speed = 1.25f;
+        }
     }
 
     public void PedestrianSpeedChange()
@@ -148,11 +154,23 @@ public class Pedestrian : MonoBehaviour {
 			rend [1].material.mainTexture = textures [oneRandomNumber];
 			//hair
 			rend [2].material.mainTexture = textures [twoRandomNumber];
-		
+		    
 			//3 for pram
 			rend[3].material.mainTexture = textures [threeRandomNumber];
 			rend[4].material.mainTexture = textures [threeRandomNumber];
 			rend[5].material.mainTexture = textures [threeRandomNumber];
 		}
+
+        if (gameObject.name == "BadBusinessWoman(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //body
+            rend[1].material.mainTexture = textures[oneRandomNumber];
+            //hair
+            rend[2].material.mainTexture = textures[twoRandomNumber];
+
+        }
 	}
 }
