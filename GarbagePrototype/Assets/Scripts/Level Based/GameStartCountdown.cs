@@ -105,6 +105,11 @@ public class GameStartCountdown : MonoBehaviour {
 		inPause = false;
 	}
 
+    void QuitGame()
+    {
+        Application.Quit();
+    }
+
 	void PauseMenu(){
 		if (inPause) {
 			Button btn1 = resumeMenuButton.GetComponent<Button> ();
@@ -113,6 +118,8 @@ public class GameStartCountdown : MonoBehaviour {
 			Button btn4 = quitMenuButton.GetComponent<Button> ();
 
 			btn1.onClick.AddListener (GoBackToGame);
+
+            btn4.onClick.AddListener(QuitGame);
 		}
 	}
 
