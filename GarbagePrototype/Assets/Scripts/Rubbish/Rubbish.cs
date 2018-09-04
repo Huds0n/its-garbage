@@ -26,11 +26,7 @@ public class Rubbish : MonoBehaviour {
     public float fallMultiplier = 2.5f;
     [Range(0.0f, 5.0f)]
     public float lowJumpMultiplier = 2f;
-
-   
-    public AudioClip rubbishDrop;
-    public AudioClip rubbishPickUp;
-    AudioSource rubbishAudio;
+    AudioSource newspaperPickUp;
 
     private void Awake()
     {
@@ -55,7 +51,7 @@ public class Rubbish : MonoBehaviour {
         
         LeanTween.scale(gameObject, new Vector3(.3f, .3f, .3f), .4f).setLoopPingPong();
 
-        rubbishAudio = GetComponent<AudioSource>();
+        newspaperPickUp = GetComponent<AudioSource>();
     }
 
 	// Update is called once per frame
@@ -76,11 +72,7 @@ public class Rubbish : MonoBehaviour {
         {
             //blink
             //then destroy
-
-            rubbishAudio.clip = rubbishPickUp;
-            rubbishAudio.pitch = Random.Range(0.9f, 1.1f);
-            rubbishAudio.Play(1);
-
+            
             Destroy(gameObject);
         }
 
@@ -98,10 +90,7 @@ public class Rubbish : MonoBehaviour {
 
                     LeanTween.rotate(gameObject, new Vector3(359, 359, 359), .3f).setLoopPingPong();
 
-                    rubbishAudio.clip = rubbishDrop;
-                    rubbishAudio.pitch = Random.Range(0.9f, 1.1f);
-                    //rubbishAudio.volume = 0.1f;
-                    rubbishAudio.Play(0);
+                    newspaperPickUp.Play(0);
                 }
             }
         }
@@ -118,6 +107,7 @@ public class Rubbish : MonoBehaviour {
                 player.GetComponent<PlayerMain>().uiCount = 0;
                 player.GetComponent<PlayerMain>().largeUI = true;
             }
+            //newspaperPickUp.Play(0);
            player.GetComponent<PlayerMain>().canDie = false;
             Destroy(gameObject);
         }

@@ -143,7 +143,6 @@ public class Hammer : MonoBehaviour {
             BuildingJumping ();
 			
             hitAudio.clip = hitRight;
-            hitAudio.pitch = Random.Range(0.9f, 1.1f);
             hitAudio.Play();
         }
 
