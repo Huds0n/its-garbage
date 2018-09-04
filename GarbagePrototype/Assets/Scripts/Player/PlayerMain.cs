@@ -221,7 +221,7 @@ public class PlayerMain : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //if inbetween gameStart and gameFinish
-        if (referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.gameFinishedWin == false)
+        if ((referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.gameFinishedWin == false) && referencesScript.gameStartCoundownScript.inPause == false)
         {
             JumpMechanic();
 
@@ -234,7 +234,7 @@ public class PlayerMain : MonoBehaviour {
         }
 
 		//PlayerAnimation ();
-		if (deathAnimationPlaying == false) {
+		if (deathAnimationPlaying == false && referencesScript.gameStartCoundownScript.inPause == false) {
 			PlayerAnimation ();
 		}
 
