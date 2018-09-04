@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 107cea621bb3f9b458b1cfa109689842
+timeCreated: 1529417558
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: FrontHouse1_Door
+    100004: FrontHouse1_DoorStep
+    100006: FrontHouse1_Garage
+    100008: FrontHouse1_LeftSWindow1
+    100010: FrontHouse1_LeftSWindow2
+    100012: FrontHouse1_LeftWindow
+    100014: FrontHouse1_LeftWindow1
+    100016: FrontHouse1_MainHouse1Mesh
+    100018: FrontHouse1_Planter
+    100020: FrontHouse1_Planter1
+    100022: FrontHouse1_RightSWindow
+    100024: FrontHouse1_RightSWindow1
+    100026: FrontHouse1_RightSWindow2
+    100028: FrontHouse1_TopLeftWindow
+    100030: FrontHouse1_TopLeftWindow2
+    100032: FrontPath_FrontHouse1
+    400000: //RootNode
+    400002: FrontHouse1_Door
+    400004: FrontHouse1_DoorStep
+    400006: FrontHouse1_Garage
+    400008: FrontHouse1_LeftSWindow1
+    400010: FrontHouse1_LeftSWindow2
+    400012: FrontHouse1_LeftWindow
+    400014: FrontHouse1_LeftWindow1
+    400016: FrontHouse1_MainHouse1Mesh
+    400018: FrontHouse1_Planter
+    400020: FrontHouse1_Planter1
+    400022: FrontHouse1_RightSWindow
+    400024: FrontHouse1_RightSWindow1
+    400026: FrontHouse1_RightSWindow2
+    400028: FrontHouse1_TopLeftWindow
+    400030: FrontHouse1_TopLeftWindow2
+    400032: FrontPath_FrontHouse1
+    2100000: FrontHouse1_DoorMat
+    2100002: FrontHouse1_DoorStepMat
+    2100004: FrontHouse1_GarageMat
+    2100006: FrontHouse1_LeftSWindow1Mat
+    2100008: FrontHouse1_LeftSWindow2Mat
+    2100010: FrontHouse1_LeftWindowMat
+    2100012: FrontHouse1_LeftWindow1Mat
+    2100014: FrontHouse1_MainHouse1MeshMat
+    2100016: FrontHouse1_PlanterMat
+    2100018: FrontHouse1_Planter1Mat
+    2100020: FrontHouse1_RightSWindowMat
+    2100022: FrontHouse1_RightSWindow1Mat
+    2100024: FrontHouse1_RightSWindow2Mat
+    2100026: FrontHouse1_TopLeftWindowMat
+    2100028: FrontHouse1_TopLeftWindow2Mat
+    2100030: FrontPath_FrontHouse1Mat
+    2300000: FrontHouse1_Door
+    2300002: FrontHouse1_DoorStep
+    2300004: FrontHouse1_Garage
+    2300006: FrontHouse1_LeftSWindow1
+    2300008: FrontHouse1_LeftSWindow2
+    2300010: FrontHouse1_LeftWindow
+    2300012: FrontHouse1_LeftWindow1
+    2300014: FrontHouse1_MainHouse1Mesh
+    2300016: FrontHouse1_Planter
+    2300018: FrontHouse1_Planter1
+    2300020: FrontHouse1_RightSWindow
+    2300022: FrontHouse1_RightSWindow1
+    2300024: FrontHouse1_RightSWindow2
+    2300026: FrontHouse1_TopLeftWindow
+    2300028: FrontHouse1_TopLeftWindow2
+    2300030: FrontPath_FrontHouse1
+    3300000: FrontHouse1_Door
+    3300002: FrontHouse1_DoorStep
+    3300004: FrontHouse1_Garage
+    3300006: FrontHouse1_LeftSWindow1
+    3300008: FrontHouse1_LeftSWindow2
+    3300010: FrontHouse1_LeftWindow
+    3300012: FrontHouse1_LeftWindow1
+    3300014: FrontHouse1_MainHouse1Mesh
+    3300016: FrontHouse1_Planter
+    3300018: FrontHouse1_Planter1
+    3300020: FrontHouse1_RightSWindow
+    3300022: FrontHouse1_RightSWindow1
+    3300024: FrontHouse1_RightSWindow2
+    3300026: FrontHouse1_TopLeftWindow
+    3300028: FrontHouse1_TopLeftWindow2
+    3300030: FrontPath_FrontHouse1
+    4300000: FrontHouse1_Door
+    4300002: FrontHouse1_DoorStep
+    4300004: FrontHouse1_Garage
+    4300006: FrontHouse1_LeftSWindow1
+    4300008: FrontHouse1_LeftSWindow2
+    4300010: FrontHouse1_LeftWindow
+    4300012: FrontHouse1_LeftWindow1
+    4300014: FrontHouse1_MainHouse1Mesh
+    4300016: FrontHouse1_Planter
+    4300018: FrontHouse1_Planter1
+    4300020: FrontHouse1_RightSWindow
+    4300022: FrontHouse1_RightSWindow1
+    4300024: FrontHouse1_RightSWindow2
+    4300026: FrontHouse1_TopLeftWindow
+    4300028: FrontHouse1_TopLeftWindow2
+    4300030: FrontPath_FrontHouse1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

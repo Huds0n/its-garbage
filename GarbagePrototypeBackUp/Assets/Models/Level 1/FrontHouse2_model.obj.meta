@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: b2d5f3c5400bafc4096caaf49a80446d
+timeCreated: 1529455744
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: FrontHouse2_Door1
+    100004: FrontHouse2_DoorStep1
+    100006: FrontHouse2_FrontPath1
+    100008: FrontHouse2_polySurface79
+    100010: FrontHouse2_polySurface81
+    100012: FrontHouse2_polySurface82
+    100014: FrontHouse2_polySurface83
+    100016: FrontHouse2_polySurface84
+    100018: FrontHouse2_polySurface85
+    100020: FrontHouse2_polySurface86
+    100022: FrontHouse2_polySurface87
+    100024: FrontHouse2_polySurface92
+    100026: FrontHouse2_polySurface93
+    100028: FrontHouse2_polySurface94
+    100030: FrontHouse2_polySurface95
+    100032: polySurface91_FrontHouse2
+    400000: //RootNode
+    400002: FrontHouse2_Door1
+    400004: FrontHouse2_DoorStep1
+    400006: FrontHouse2_FrontPath1
+    400008: FrontHouse2_polySurface79
+    400010: FrontHouse2_polySurface81
+    400012: FrontHouse2_polySurface82
+    400014: FrontHouse2_polySurface83
+    400016: FrontHouse2_polySurface84
+    400018: FrontHouse2_polySurface85
+    400020: FrontHouse2_polySurface86
+    400022: FrontHouse2_polySurface87
+    400024: FrontHouse2_polySurface92
+    400026: FrontHouse2_polySurface93
+    400028: FrontHouse2_polySurface94
+    400030: FrontHouse2_polySurface95
+    400032: polySurface91_FrontHouse2
+    2100000: FrontHouse2_Door1Mat
+    2100002: FrontHouse2_DoorStep1Mat
+    2100004: FrontHouse2_FrontPath1Mat
+    2100006: FrontHouse2_polySurface79Mat
+    2100008: FrontHouse2_polySurface81Mat
+    2100010: FrontHouse2_polySurface82Mat
+    2100012: FrontHouse2_polySurface83Mat
+    2100014: FrontHouse2_polySurface84Mat
+    2100016: FrontHouse2_polySurface85Mat
+    2100018: FrontHouse2_polySurface86Mat
+    2100020: FrontHouse2_polySurface87Mat
+    2100022: FrontHouse2_polySurface92Mat
+    2100024: FrontHouse2_polySurface93Mat
+    2100026: FrontHouse2_polySurface94Mat
+    2100028: FrontHouse2_polySurface95Mat
+    2100030: polySurface91_FrontHouse2Mat
+    2300000: FrontHouse2_Door1
+    2300002: FrontHouse2_DoorStep1
+    2300004: FrontHouse2_FrontPath1
+    2300006: FrontHouse2_polySurface79
+    2300008: FrontHouse2_polySurface81
+    2300010: FrontHouse2_polySurface82
+    2300012: FrontHouse2_polySurface83
+    2300014: FrontHouse2_polySurface84
+    2300016: FrontHouse2_polySurface85
+    2300018: FrontHouse2_polySurface86
+    2300020: FrontHouse2_polySurface87
+    2300022: FrontHouse2_polySurface92
+    2300024: FrontHouse2_polySurface93
+    2300026: FrontHouse2_polySurface94
+    2300028: FrontHouse2_polySurface95
+    2300030: polySurface91_FrontHouse2
+    3300000: FrontHouse2_Door1
+    3300002: FrontHouse2_DoorStep1
+    3300004: FrontHouse2_FrontPath1
+    3300006: FrontHouse2_polySurface79
+    3300008: FrontHouse2_polySurface81
+    3300010: FrontHouse2_polySurface82
+    3300012: FrontHouse2_polySurface83
+    3300014: FrontHouse2_polySurface84
+    3300016: FrontHouse2_polySurface85
+    3300018: FrontHouse2_polySurface86
+    3300020: FrontHouse2_polySurface87
+    3300022: FrontHouse2_polySurface92
+    3300024: FrontHouse2_polySurface93
+    3300026: FrontHouse2_polySurface94
+    3300028: FrontHouse2_polySurface95
+    3300030: polySurface91_FrontHouse2
+    4300000: FrontHouse2_Door1
+    4300002: FrontHouse2_DoorStep1
+    4300004: FrontHouse2_FrontPath1
+    4300006: FrontHouse2_polySurface79
+    4300008: FrontHouse2_polySurface81
+    4300010: FrontHouse2_polySurface82
+    4300012: FrontHouse2_polySurface83
+    4300014: FrontHouse2_polySurface84
+    4300016: FrontHouse2_polySurface85
+    4300018: FrontHouse2_polySurface86
+    4300020: FrontHouse2_polySurface87
+    4300022: FrontHouse2_polySurface92
+    4300024: FrontHouse2_polySurface93
+    4300026: FrontHouse2_polySurface94
+    4300028: FrontHouse2_polySurface95
+    4300030: polySurface91_FrontHouse2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
