@@ -18,7 +18,11 @@ public class GameStartCountdown : MonoBehaviour {
 
     [Header("Text")]
     public Text gameStartText;
+    public Text gameStartBackText;
+
     public Text countdownText;
+    public Text countdownBackText;
+
     public Text levelCompleteText;
 
     [Header("Fuel UI")]
@@ -269,18 +273,26 @@ public class GameStartCountdown : MonoBehaviour {
     IEnumerator Countdown()
     {
         gameStartText.text = "Game Begins in";
+        gameStartBackText.text = "Game Begins in";
         yield return new WaitForSeconds(1.0f);
         gameStartText.text = "";
+        gameStartBackText.text = "";
         countdownText.text = "3";
+        countdownBackText.text = "3";
         yield return new WaitForSeconds(1.0f);
         countdownText.text = "2";
+        countdownBackText.text = "2";
         yield return new WaitForSeconds(1.0f);   
         countdownText.text = "1";
+        countdownBackText.text = "1";
         yield return new WaitForSeconds(1.0f);
         countdownText.text = "";
+        countdownBackText.text = "";
         gameStartText.text = "Go!";
+        gameStartBackText.text = "Go!";
         gameStart = true;
         yield return new WaitForSeconds(1.0f);
         gameStartText.text = "";
+        gameStartBackText.text = "";
     }
 }
