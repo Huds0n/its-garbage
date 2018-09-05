@@ -83,11 +83,11 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         if (scene.name == "Level1" && winLevelOne) {
             if(levelOneScore == 3)
             {
-                goBackToMapTime = 10f;
+                goBackToMapTime = 8f;
             }
             if (levelOneScore == 2)
             {
-                goBackToMapTime = 7f;
+                goBackToMapTime = 6f;
             }
             if (levelOneScore == 1)
             {
