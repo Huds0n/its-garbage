@@ -63,6 +63,8 @@ public class GameStartCountdown : MonoBehaviour {
 
     SceneChanging scenechanger;
 
+    public GameObject player;
+
     // Use this for initialization
     void Start () {
 		GameStartReset ();
@@ -90,7 +92,7 @@ public class GameStartCountdown : MonoBehaviour {
 			GameFinished ();
 		}
 
-		if(Input.GetKeyDown(KeyCode.Escape) && !inPause){
+		if((Input.GetKeyDown(KeyCode.Escape) && !inPause) && player != null){
             StartCoroutine(PauseButtons());
 			Time.timeScale = 0;
             pauseMenuImage.SetActive(true);

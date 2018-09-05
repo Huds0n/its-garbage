@@ -1685,10 +1685,10 @@ RectTransform:
   - {fileID: 1186902778}
   - {fileID: 1638850361}
   - {fileID: 153897793}
-  - {fileID: 539092449}
   - {fileID: 1023779563}
   - {fileID: 737165724}
   - {fileID: 1525068567}
+  - {fileID: 539092449}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10880,7 +10880,7 @@ Prefab:
     - target: {fileID: 224010278380967548, guid: ad066d551770f284bacf42057e793b93,
         type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 224010278380967548, guid: ad066d551770f284bacf42057e793b93,
         type: 2}
@@ -14481,7 +14481,7 @@ Transform:
   - {fileID: 527429684}
   - {fileID: 56573591}
   m_Father: {fileID: 85043539}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &739451936
 GameObject:
@@ -17518,6 +17518,7 @@ MonoBehaviour:
   healthBarUI: {fileID: 1792831137}
   dashUI: {fileID: 723757187}
   dashUIbackground: {fileID: 389591501}
+  player: {fileID: 1801419455}
 --- !u!4 &939486654
 Transform:
   m_ObjectHideFlags: 0
@@ -17560,6 +17561,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUIObjects: {fileID: 758374830}
+  gameOverText: {fileID: 991348299}
+  gameOverBackgroundText: {fileID: 1509154215}
   player: {fileID: 1801419455}
   lifeImage:
   - {fileID: 1755363304}
@@ -18033,7 +18036,7 @@ GameObject:
   - component: {fileID: 991348300}
   - component: {fileID: 991348299}
   m_Layer: 5
-  m_Name: Game OverText
+  m_Name: Game OverfrontText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18657,7 +18660,7 @@ Transform:
   - {fileID: 1293822236}
   - {fileID: 222178250}
   m_Father: {fileID: 85043539}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1029483291
 GameObject:
@@ -28770,7 +28773,7 @@ Transform:
   - {fileID: 1380935935}
   - {fileID: 1565874082}
   m_Father: {fileID: 85043539}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529507502
 GameObject:
@@ -35974,7 +35977,6 @@ MonoBehaviour:
   largeUI: 0
   uiCount: 0
   hurt: 0
-  damageImage: {fileID: 0}
   hurtSpriteUI: {fileID: 1756092952}
   monsterSwingNormal: {fileID: 8300000, guid: 86807429fb98f214c86f3996b1c7a758, type: 3}
   monsterSwingSide: {fileID: 8300000, guid: aaf831f89bbf8ff4fadc34731f78eacb, type: 3}

@@ -8,6 +8,10 @@ public class Lives : MonoBehaviour {
 
     public GameObject gameOverUIObjects;
 
+    public Text gameOverText;
+    public Text gameOverBackgroundText;
+
+    
 	public GameObject player;
 
 	public GameObject[] lifeImage;
@@ -27,6 +31,9 @@ public class Lives : MonoBehaviour {
         gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
 
         gameOverUIObjects.SetActive(false);
+
+        LeanTween.scale(gameOverText.gameObject, new Vector3(1, 1, gameOverText.gameObject.transform.position.z), 1f).setLoopPingPong();
+        LeanTween.scale(gameOverBackgroundText.gameObject, new Vector3(1, 1, gameOverBackgroundText.gameObject.transform.position.z), 1f).setLoopPingPong();
 
         LeanTween.scale(comboTextGameObject.GetComponent<RectTransform>(), comboTextGameObject.GetComponent<RectTransform>().localScale * 0.9f, 0.2f).setLoopPingPong();
     }

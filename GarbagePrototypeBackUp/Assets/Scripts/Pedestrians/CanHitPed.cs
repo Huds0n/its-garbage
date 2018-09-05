@@ -27,6 +27,7 @@ public class CanHitPed : Pedestrian, IPooledObject {
     [Range(0, 100)]
     public int pedCountLeft;
 
+    GameObject player;
 
     // Use this for initialization
     public void OnObjectSpawn() {
@@ -51,6 +52,8 @@ public class CanHitPed : Pedestrian, IPooledObject {
 	
     public void Update()
     {
+        player = GameObject.Find("Player");
+
         PedestrianSpeeds();
         PedestrianFacingWay();
         //PedestrianSpeedChange();
@@ -185,10 +188,14 @@ public class CanHitPed : Pedestrian, IPooledObject {
                 iTwo = 0;
                 o = 0;
                 oTwo = 0;
-                referencesScript.playerMainScript.fuelImage.fillAmount -= 0.03f;
-                referencesScript.playerMainScript.hurt = true;
-                //StartCoroutine(referencesScript.cameraShake.Shake(.15f, .4f));
-                referencesScript.hammerScript.canDie = true;
+
+                if (player != null)
+                {
+                    referencesScript.playerMainScript.fuelImage.fillAmount -= 0.03f;
+                    referencesScript.playerMainScript.hurt = true;
+                    //StartCoroutine(referencesScript.cameraShake.Shake(.15f, .4f));
+                    //referencesScript.hammerScript.canDie = true;
+                }
             }
             
             gameObject.SetActive(false);
