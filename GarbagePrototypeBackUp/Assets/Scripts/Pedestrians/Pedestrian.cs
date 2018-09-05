@@ -58,7 +58,7 @@ public class Pedestrian : MonoBehaviour {
         }
 
         //Business Woman Speed
-        if(gameObject.name == "BadBusinessWoman(Clone)" /*|| gameObject.name == "GoodBusinessWoman(Clone)"*/)
+        if(gameObject.name == "BadBusinessWoman(Clone)" || gameObject.name == "GoodBusinessWoman(Clone)")
         {
             speed = 1.25f;
         }
@@ -161,7 +161,7 @@ public class Pedestrian : MonoBehaviour {
 			rend[5].material.mainTexture = textures [threeRandomNumber];
 		}
 
-        if (gameObject.name == "BadBusinessWoman(Clone)")
+        if (gameObject.name == "BadBusinessWoman(Clone)" || gameObject.name == "GoodBusinessWoman(Clone)")
         {
             oneRandomNumber = Random.Range(0, 3);
             twoRandomNumber = Random.Range(3, textures.Length);
