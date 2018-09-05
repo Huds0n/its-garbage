@@ -190,5 +190,19 @@ public class Pedestrian : MonoBehaviour {
             rend[4].material.mainTexture = textures[oneRandomNumber];
             rend[5].material.mainTexture = textures[oneRandomNumber];         
         }
+
+        if(gameObject.name == "GoodSkater(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 4);
+            twoRandomNumber = Random.Range(4, textures.Length);
+
+            rend[0].material.mainTexture = textures[twoRandomNumber];
+
+            rend[2].material.mainTexture = textures[oneRandomNumber];
+            rend[3].material.mainTexture = textures[oneRandomNumber];
+            rend[4].material.mainTexture = textures[oneRandomNumber];
+            rend[5].material.mainTexture = textures[oneRandomNumber];
+            rend[6].material.mainTexture = textures[oneRandomNumber];
+        }
 	}
 }

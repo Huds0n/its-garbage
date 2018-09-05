@@ -37406,6 +37406,9 @@ MonoBehaviour:
   - tag: Bad Skater
     prefab: {fileID: 1976136870832750, guid: 6971c9b3f8aa66e479790d519b5b7fe8, type: 2}
     size: 10
+  - tag: Good Skater
+    prefab: {fileID: 1663878771029544, guid: 49dfea37e736a784ba773d173b074e75, type: 2}
+    size: 10
 --- !u!4 &1833188092
 Transform:
   m_ObjectHideFlags: 0
