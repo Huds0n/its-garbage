@@ -16,7 +16,7 @@ public class PlayerMain : MonoBehaviour {
     //public int lives = 3;
 
     public bool canDie;
-    bool inLimbo;
+    public bool inLimbo;
 
 	public bool justDied;
 
@@ -401,44 +401,93 @@ public class PlayerMain : MonoBehaviour {
         yield return null;
     }
 
+    IEnumerator DeathWork()
+    {
+        inLimbo = true;
+        canDie = true;
+        justDied = true;
+        yield return new WaitForEndOfFrame();
+
+        //If you have more than 0 lives in the tank
+        if (referencesScript.livesScript.playerLives > 0)
+        {
+            fuelImage.fillAmount = 0.2f;
+
+            StartCoroutine(deathAnimation());
+
+            inLimbo = false;
+            canDie = false;
+        }
+        referencesScript.livesScript.playerLives--;
+        yield return new WaitForEndOfFrame();
+    }
     //relocate life system to a 'DontDestroyOnLoad object' ? maybe? we'll see...
     void LifeSystem()
     {
-        //If died
-        if ((fuelImage.fillAmount <= 0 && referencesScript.gameStartCoundownScript.gameStart == true) && !inLimbo && !canDie)
+        if ((fuelImage.fillAmount == 0 && referencesScript.livesScript.playerLives > 0) && referencesScript.gameStartCoundownScript.gameStart == true)
         {
-			referencesScript.livesScript.playerLives--;
-
             inLimbo = true;
             canDie = true;
-			justDied = true;
+            justDied = true;
 
-			referencesScript.livesScript.i = 0;
+            fuelImage.fillAmount = 0.2f;
+               
+            StartCoroutine(deathAnimation());
 
-            //If you have more than 0 lives in the tank
-			if (referencesScript.livesScript.playerLives > 0)
-			{
-				fuelImage.fillAmount = 0.2f;
-
-				StartCoroutine (deathAnimation ());
-
-                inLimbo = false;
-                canDie = false;
-            }
+            referencesScript.livesScript.playerLives--;
         }
+
+        if ((fuelImage.fillAmount == 0 && referencesScript.livesScript.playerLives <= 0) && referencesScript.gameStartCoundownScript.gameStart == true)
+        {
+            //setActive(false) all pedestrians to reset
+            Debug.Log("GAME OVER MAN!");
+            //destroy/finish game
+            inLimbo = false;
+
+            //Destory player or set active more likely change
+            Destroy(gameObject);
+            //gameObject.SetActive(false);
+        }
+        //If died
+        /* if ((fuelImage.fillAmount <= 0 && referencesScript.gameStartCoundownScript.gameStart == true) && !inLimbo && !canDie)
+     {
+
+         inLimbo = true;
+         canDie = true;
+         justDied = true;
+
+         //StartCoroutine(DeathWork());
+         referencesScript.livesScript.playerLives--;
+         */
+        //If you have more than 0 lives in the tank
+        /*if (referencesScript.livesScript.playerLives > 0)
+        {
+            fuelImage.fillAmount = 0.2f;
+
+            StartCoroutine(deathAnimation());
+
+            inLimbo = false;
+            canDie = false;
+        }*/
+
+        //referencesScript.livesScript.i = 0;
+
+
+
+        // }
 
         //If died and 0 lives left
-        if (inLimbo && referencesScript.livesScript.playerLives == 0)
-        {
+        //if (inLimbo && referencesScript.livesScript.playerLives == 0)
+        //{
 				//setActive(false) all pedestrians to reset
-				Debug.Log("GAME OVER MAN!");
+		//		Debug.Log("GAME OVER MAN!");
 				//destroy/finish game
-				inLimbo = false;
+		//		inLimbo = false;
 
                 //Destory player or set active more likely change
-                Destroy(gameObject);
+           //     Destroy(gameObject);
                 //gameObject.SetActive(false);
-        }
+       // }
     }
 
 	IEnumerator deathAnimation(){
@@ -461,6 +510,7 @@ public class PlayerMain : MonoBehaviour {
 		anim.SetBool ("death", false);
 
 		deathAnimationPlaying = false;
+        inLimbo = false;
         yield return new WaitForEndOfFrame ();
 	}
 

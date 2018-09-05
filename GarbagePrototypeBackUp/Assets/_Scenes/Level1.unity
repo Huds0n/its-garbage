@@ -36057,6 +36057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canDie: 0
+  inLimbo: 0
   justDied: 0
   topLivesText: {fileID: 0}
   movementSpeed: 5
