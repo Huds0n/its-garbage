@@ -153,7 +153,7 @@ public class PlayerMain : MonoBehaviour {
    
     public bool hurt;
 
-    public Image damageImage;
+    //public Image damageImage;
 
 	bool deathAnimationPlaying;
 
@@ -198,7 +198,7 @@ public class PlayerMain : MonoBehaviour {
         monsterAudio = GetComponent<AudioSource>();
 
         //for being hurt when hit
-        damageImage.enabled = false;
+        //damageImage.enabled = false;
         hurtSpriteUI.SetActive(false);
 
         //for dash mechanic

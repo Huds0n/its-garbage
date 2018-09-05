@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Lives : MonoBehaviour {
 
-	public Text gameOverText;
+    public GameObject gameOverUIObjects;
 
 	public GameObject player;
 
@@ -26,7 +26,7 @@ public class Lives : MonoBehaviour {
 	void Start () {
         gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
 
-		gameOverText.enabled = false;
+        gameOverUIObjects.SetActive(false);
 
         LeanTween.scale(comboTextGameObject.GetComponent<RectTransform>(), comboTextGameObject.GetComponent<RectTransform>().localScale * 0.9f, 0.2f).setLoopPingPong();
     }
@@ -35,19 +35,22 @@ public class Lives : MonoBehaviour {
 	void Update () {
 		//playerLives = player.GetComponent<PlayerMain> ().lives;
 		if(player == null){
-			gameOverText.enabled = true;
+            gameOverUIObjects.SetActive(true);
             lifeImage[0].SetActive(false);
-            if (Input.GetKeyDown(KeyCode.R)){
+            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Space)){
                 gameStartCountdownScript.ResetVars();
 				SceneManager.LoadScene ("StartMenu");
 			}
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
 		}
 
 		if (i == 0) {
 			LifeScale ();
 		}
-			
-
 
 		if (playerLives == 1) {
 			lifeImage[2].SetActive(false);
