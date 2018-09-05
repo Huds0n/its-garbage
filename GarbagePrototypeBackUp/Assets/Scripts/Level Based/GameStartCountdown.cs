@@ -51,7 +51,7 @@ public class GameStartCountdown : MonoBehaviour {
 
     public int finalScore;
 
-    int l = 0;
+    public int l = 0;
 
 	public Animator anim;
 
@@ -64,6 +64,10 @@ public class GameStartCountdown : MonoBehaviour {
     SceneChanging scenechanger;
 
     public GameObject player;
+
+    public string goToLevelName;
+
+    Image blackFade;
 
     // Use this for initialization
     void Start () {
@@ -83,10 +87,13 @@ public class GameStartCountdown : MonoBehaviour {
         LeanTween.moveLocalY(dashUIbackground, -210f, .5f).setDelay(.5f);
 
         scenechanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
+
+        goToLevelName = "StartMenu";
     }
 
     private void Update()
     {
+
 		if (gameFinishedWin == true && i == 0) {
             levelCompleteText.text = "Level Complete";
 			GameFinished ();
@@ -123,6 +130,17 @@ public class GameStartCountdown : MonoBehaviour {
 		inPause = false;
 	}
 
+    void GoRestart()
+    {
+        ResetVars();
+        //scenechanger.pauseMenuRestart = true;
+    }
+
+    void QuitTheGame()
+    {
+        Application.Quit();
+    }
+
 	void PauseMenu(){
 		if (inPause) {
 			Button btn1 = resumeMenuButton.GetComponent<Button> ();
@@ -131,6 +149,8 @@ public class GameStartCountdown : MonoBehaviour {
 			Button btn4 = quitMenuButton.GetComponent<Button> ();
 
 			btn1.onClick.AddListener (GoBackToGame);
+            btn3.onClick.AddListener(GoRestart);
+            btn4.onClick.AddListener(QuitTheGame);
 		}
 	}
 

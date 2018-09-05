@@ -33,6 +33,10 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
     public float goBackToMapTime;
 
+    public bool pauseMenuRestart;
+    public Button restartPauseButton;
+
+    int p = 0;
     // Use this for initialization
     void Start () {
 		scene = SceneManager.GetActiveScene ();
@@ -40,7 +44,9 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 		winLevelTwo = false;
 		winLevelThree = false;
 		winLevelFour = false;
-	}
+
+       
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -99,6 +105,17 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             }
 
             Invoke("ToMap", goBackToMapTime);
+        }
+
+        if (scene.name == "Level1")
+        {
+            GameStartCountdown gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
+            if(gameStartCountdownScript.l == 1){
+                restartPauseButton = GameObject.Find("Restart Button").GetComponent<Button>();
+                restartPauseButton.onClick.AddListener(ToStartMenu);
+            }
+            //goToLevelName = "StartMenu";
+            //StartCoroutine(LoadAsyncScene());
             
         }
 	}
@@ -147,7 +164,6 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         
         SceneManager.LoadScene("Map");
         CancelInvoke();
-        
     }
 
 	IEnumerator LoadAsyncScene(){
@@ -158,5 +174,15 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         while (!asyncLoad.isDone) {
 			yield return null;
 		}
-	}
+    }
+
+    public void ToStartMenu()
+    {
+       
+       // if (p == 0)
+       // {
+            SceneManager.LoadScene("StartMenu");
+         //   p = 1;
+      //  }
+    }
 }

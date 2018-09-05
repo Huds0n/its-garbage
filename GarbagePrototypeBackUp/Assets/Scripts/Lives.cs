@@ -26,6 +26,7 @@ public class Lives : MonoBehaviour {
 
     GameStartCountdown gameStartCountdownScript;
 
+    
 	// Use this for initialization
 	void Start () {
         gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();

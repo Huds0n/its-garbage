@@ -11005,6 +11005,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1452999354210282, guid: ad066d551770f284bacf42057e793b93, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad066d551770f284bacf42057e793b93, type: 2}
   m_IsPrefabParent: 0
@@ -13347,7 +13351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &662171472
 Transform:
   m_ObjectHideFlags: 0
@@ -14766,7 +14770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &758374831
 Transform:
   m_ObjectHideFlags: 0
@@ -17582,11 +17586,13 @@ MonoBehaviour:
   badPedsHit: 0
   endOfLevelBinScore: 0
   finalScore: 0
+  l: 0
   anim: {fileID: 0}
   healthBarUI: {fileID: 1792831137}
   dashUI: {fileID: 723757187}
   dashUIbackground: {fileID: 389591501}
   player: {fileID: 1801419455}
+  goToLevelName: 
 --- !u!4 &939486654
 Transform:
   m_ObjectHideFlags: 0
@@ -33317,7 +33323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1709023352
 Transform:
   m_ObjectHideFlags: 0
