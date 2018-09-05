@@ -294,6 +294,8 @@ public class GameStartCountdown : MonoBehaviour {
     {
         gameStartText.text = "Game Begins in";
         gameStartBackText.text = "Game Begins in";
+        countdownText.text = "";
+        countdownBackText.text = "";
         yield return new WaitForSeconds(1.0f);
         gameStartText.text = "";
         gameStartBackText.text = "";
