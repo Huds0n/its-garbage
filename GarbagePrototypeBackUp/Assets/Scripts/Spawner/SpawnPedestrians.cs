@@ -44,7 +44,7 @@ public class SpawnPedestrians : MonoBehaviour {
         //Spawn Walker
 
         //choose type of pedestrian
-        int typeOfEnemy = Random.Range(0, 8);
+        int typeOfEnemy = Random.Range(0, 9);
         switch(typeOfEnemy)
         {
             case 0:
@@ -71,10 +71,10 @@ public class SpawnPedestrians : MonoBehaviour {
             case 7:
                 enemyType = "Good Business Woman";
                 break;
-            /*case 8:
-                enemyType = "Bad Skater Girl";
+            case 8:
+                enemyType = "Bad Skater";
                 break;
-            case 9:
+            /*case 9:
                 enemyType = "Good Skater Girl";
                 break;
                 */

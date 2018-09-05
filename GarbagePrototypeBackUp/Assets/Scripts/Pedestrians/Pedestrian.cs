@@ -62,6 +62,10 @@ public class Pedestrian : MonoBehaviour {
         {
             speed = 1.25f;
         }
+        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)")
+        {
+            speed = 3.2f;
+        }
     }
 
     public void PedestrianSpeedChange()
@@ -171,6 +175,20 @@ public class Pedestrian : MonoBehaviour {
             //hair
             rend[2].material.mainTexture = textures[twoRandomNumber];
 
+        }
+
+        if(gameObject.name == "BadSkater(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 4);
+            twoRandomNumber = Random.Range(4, textures.Length);
+
+            rend[0].material.mainTexture = textures[twoRandomNumber];
+
+            rend[1].material.mainTexture = textures[oneRandomNumber];
+            rend[2].material.mainTexture = textures[oneRandomNumber];
+            rend[3].material.mainTexture = textures[oneRandomNumber];
+            rend[4].material.mainTexture = textures[oneRandomNumber];
+            rend[5].material.mainTexture = textures[oneRandomNumber];         
         }
 	}
 }

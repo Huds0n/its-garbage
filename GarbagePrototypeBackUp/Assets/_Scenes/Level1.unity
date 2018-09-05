@@ -37403,6 +37403,9 @@ MonoBehaviour:
   - tag: Good Business Woman
     prefab: {fileID: 1716001141396824, guid: ff958bb6c7baff54b91222751193ae63, type: 2}
     size: 10
+  - tag: Bad Skater
+    prefab: {fileID: 1976136870832750, guid: 6971c9b3f8aa66e479790d519b5b7fe8, type: 2}
+    size: 10
 --- !u!4 &1833188092
 Transform:
   m_ObjectHideFlags: 0
