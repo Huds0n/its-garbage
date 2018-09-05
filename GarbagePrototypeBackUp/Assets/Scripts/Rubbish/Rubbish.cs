@@ -75,12 +75,15 @@ public class Rubbish : MonoBehaviour {
 
         if (timeSinceCreated > 5)
         {
+            untouchable = true;
             //blink
             //then destroy
+            rb.useGravity = false;
+            rb.isKinematic = false;
 
-            
+            StartCoroutine(GoAway());
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         if (untouchable == false)
@@ -104,6 +107,14 @@ public class Rubbish : MonoBehaviour {
                 }
             }
         }
+    }
+
+    IEnumerator GoAway()
+    {
+        LeanTween.moveY(gameObject, gameObject.transform.position.y - 1, 2f);
+
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)

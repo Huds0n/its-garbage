@@ -124,7 +124,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
     {
         blackFade = GameObject.Find("BlackFade").GetComponent<Image>();
         blackFade.GetComponent<Animator>().Play("FadeIn");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene("Map");
         CancelInvoke();
         yield return new WaitForEndOfFrame();
@@ -147,7 +147,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         yield return new WaitForSeconds(5f);
         blackFade = GameObject.Find("BlackFade").GetComponent<Image>();
         blackFade.GetComponent<Animator>().Play("FadeIn");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         loadingImage.enabled = true;
         blackFade = GameObject.Find("BlackFade").GetComponent<Image>();
         blackFade.GetComponent<Animator>().Play("FadeOut");
