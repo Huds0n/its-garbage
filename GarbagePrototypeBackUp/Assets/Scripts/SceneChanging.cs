@@ -51,6 +51,10 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 		if (scene.name == "StartMenu" && Input.GetKeyDown(KeyCode.Space)) {
             StartCoroutine(StartMenuToMap());
 		}
+        if(scene.name == "StartMenu" && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 
         //Map to ...
         if (scene.name == "Map")
