@@ -15,13 +15,13 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
 	Scene scene;
 
-	bool loadingScene;
+	public bool loadingScene;
 
 	Image blackFade;
     Image loadingImage;
 
-	int i = 0;
-    int iTwo = 0;
+	public int i = 0;
+    public int iTwo = 0;
 
     
 	public Text loadingText;

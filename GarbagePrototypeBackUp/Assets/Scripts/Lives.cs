@@ -20,8 +20,12 @@ public class Lives : MonoBehaviour {
 
 	public int i = 0;
 
+    GameStartCountdown gameStartCountdownScript;
+
 	// Use this for initialization
 	void Start () {
+        gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
+
 		gameOverText.enabled = false;
 
         LeanTween.scale(comboTextGameObject.GetComponent<RectTransform>(), comboTextGameObject.GetComponent<RectTransform>().localScale * 0.9f, 0.2f).setLoopPingPong();
@@ -34,7 +38,8 @@ public class Lives : MonoBehaviour {
 			gameOverText.enabled = true;
             lifeImage[0].SetActive(false);
             if (Input.GetKeyDown(KeyCode.R)){
-				SceneManager.LoadScene ("Level1");
+                gameStartCountdownScript.ResetVars();
+				SceneManager.LoadScene ("StartMenu");
 			}
 		}
 

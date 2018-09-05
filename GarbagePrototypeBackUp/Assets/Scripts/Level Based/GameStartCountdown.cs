@@ -61,6 +61,8 @@ public class GameStartCountdown : MonoBehaviour {
     public GameObject dashUI;
     public GameObject dashUIbackground;
 
+    SceneChanging scenechanger;
+
     // Use this for initialization
     void Start () {
 		GameStartReset ();
@@ -77,11 +79,12 @@ public class GameStartCountdown : MonoBehaviour {
 
         LeanTween.moveLocalY(dashUI, -210f, .5f).setDelay(.5f);
         LeanTween.moveLocalY(dashUIbackground, -210f, .5f).setDelay(.5f);
+
+        scenechanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
     }
 
     private void Update()
     {
-        
 		if (gameFinishedWin == true && i == 0) {
             levelCompleteText.text = "Level Complete";
 			GameFinished ();
@@ -96,6 +99,19 @@ public class GameStartCountdown : MonoBehaviour {
         } else if(Input.GetKeyDown(KeyCode.Escape) && inPause){
 			GoBackToGame ();
         }
+    }
+
+    public void ResetVars()
+    {
+        scenechanger.winLevelOne = false;
+        scenechanger.winLevelTwo = false;
+        scenechanger.winLevelThree = false;
+        scenechanger.winLevelFour = false;
+
+        scenechanger.loadingScene = false;
+
+        scenechanger.i = 0;
+        scenechanger.iTwo = 0;
     }
 
 	void GoBackToGame(){
