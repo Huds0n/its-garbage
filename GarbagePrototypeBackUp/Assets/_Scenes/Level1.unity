@@ -9972,7 +9972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &481761930
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17405,7 +17405,6 @@ MonoBehaviour:
   gameStartBackText: {fileID: 1806190970}
   countdownText: {fileID: 1695042842}
   countdownBackText: {fileID: 290282105}
-  levelCompleteText: {fileID: 481761931}
   fuelUI: {fileID: 1792831137}
   inTutorial: 0
   inPause: 0

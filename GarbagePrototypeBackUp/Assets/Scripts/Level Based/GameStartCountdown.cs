@@ -23,7 +23,7 @@ public class GameStartCountdown : MonoBehaviour {
     public Text countdownText;
     public Text countdownBackText;
 
-    public Text levelCompleteText;
+    //public Text levelCompleteText;
 
     [Header("Fuel UI")]
     public GameObject fuelUI;
@@ -95,7 +95,7 @@ public class GameStartCountdown : MonoBehaviour {
     {
 
 		if (gameFinishedWin == true && i == 0) {
-            levelCompleteText.text = "Level Complete";
+            //levelCompleteText.text = "Level Complete";
 			GameFinished ();
 		}
 
@@ -181,7 +181,7 @@ public class GameStartCountdown : MonoBehaviour {
 
 		countdownText.text = "";
 		gameStartText.text = "";
-		levelCompleteText.text = "";
+		//levelCompleteText.text = "";
 	}
 
 	void FuelUIStart(){
