@@ -220,9 +220,11 @@ public class PlayerMain : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         //if inbetween gameStart and gameFinish
         if ((referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.gameFinishedWin == false) && referencesScript.gameStartCoundownScript.inPause == false)
         {
+            
             JumpMechanic();
 
             DashMechanic();
@@ -238,9 +240,12 @@ public class PlayerMain : MonoBehaviour {
 			PlayerAnimation ();
 		}
 
-      
+
         //Player health and lives
-        LifeSystem();
+        if ((referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.inPause == false) && deathAnimationPlaying == false)
+        {
+            LifeSystem();
+        }
     }
 
     void FixedUpdate() {
@@ -254,7 +259,7 @@ public class PlayerMain : MonoBehaviour {
 		if ((referencesScript.gameStartCoundownScript.gameStart == true && referencesScript.gameStartCoundownScript.inPause == false) && deathAnimationPlaying == false)
         {
             Movement();
-            LifeSystem();
+            //LifeSystem();
         }
 
         //Start hurting!
@@ -424,21 +429,22 @@ public class PlayerMain : MonoBehaviour {
     //relocate life system to a 'DontDestroyOnLoad object' ? maybe? we'll see...
     void LifeSystem()
     {
-        if ((fuelImage.fillAmount == 0 && referencesScript.livesScript.playerLives > 0) && referencesScript.gameStartCoundownScript.gameStart == true)
+        if ((fuelImage.fillAmount == 0 && referencesScript.livesScript.playerLives >= 1) && referencesScript.gameStartCoundownScript.gameStart == true)
         {
             inLimbo = true;
             canDie = true;
             justDied = true;
 
-            fuelImage.fillAmount = 0.2f;
-               
             StartCoroutine(deathAnimation());
 
-            referencesScript.livesScript.playerLives--;
-        }
+            fuelImage.fillAmount = 0.2f;
 
-        if ((fuelImage.fillAmount == 0 && referencesScript.livesScript.playerLives <= 0) && referencesScript.gameStartCoundownScript.gameStart == true)
+            referencesScript.livesScript.playerLives--;
+            referencesScript.livesScript.i = 0;
+        }
+        if ((fuelImage.fillAmount == 0 && referencesScript.livesScript.playerLives == 0) && (referencesScript.gameStartCoundownScript.gameStart == true && inLimbo))
         {
+           
             //setActive(false) all pedestrians to reset
             Debug.Log("GAME OVER MAN!");
             //destroy/finish game
@@ -510,7 +516,7 @@ public class PlayerMain : MonoBehaviour {
 		anim.SetBool ("death", false);
 
 		deathAnimationPlaying = false;
-        inLimbo = false;
+       // inLimbo = false;
         yield return new WaitForEndOfFrame ();
 	}
 

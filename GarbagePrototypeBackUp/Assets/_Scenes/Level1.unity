@@ -17684,7 +17684,7 @@ MonoBehaviour:
   - {fileID: 1166110033}
   - {fileID: 450802643}
   comboTextGameObject: {fileID: 1596346244}
-  playerLives: 3
+  playerLives: 2
   i: 0
 --- !u!1 &944003991
 GameObject:
