@@ -35725,7 +35725,7 @@ MonoBehaviour:
   inLimbo: 0
   justDied: 0
   topLivesText: {fileID: 0}
-  movementSpeed: 5
+  movementSpeed: 6
   mobileMoveSpeed: 15
   xBoarderLeft: -14.5
   xBoarderRight: 12
