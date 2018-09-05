@@ -2339,13 +2339,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   referencesScript: {fileID: 0}
   textures:
-  - {fileID: 2800000, guid: 4e3da490db1fadb43ad1406660402bdc, type: 3}
-  - {fileID: 2800000, guid: 21d2c68e2c713e942a524dcca1c4303a, type: 3}
-  - {fileID: 2800000, guid: 269b34462b026db4fb44212a09dbe3ef, type: 3}
-  - {fileID: 2800000, guid: 4c7526a5147c8ea48b4c9d543f168c49, type: 3}
-  - {fileID: 2800000, guid: 89c7716224271af47a0d1afed68e0441, type: 3}
-  - {fileID: 2800000, guid: 594d2bad72142f6408ada05ac36f1525, type: 3}
-  - {fileID: 2800000, guid: d8caf5fa62a4dea46be9ee68bcc2d631, type: 3}
+  - {fileID: 2800000, guid: 4c7451281296aad49b5ba0c9de66382c, type: 3}
+  - {fileID: 2800000, guid: a608db3ecb3d4be4bb7e1ac777ac17f1, type: 3}
+  - {fileID: 2800000, guid: 9805a67be08771742946ae96996874bb, type: 3}
   rend: []
 --- !u!137 &137452630759904924
 SkinnedMeshRenderer:

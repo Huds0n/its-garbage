@@ -3241,10 +3241,13 @@ MonoBehaviour:
   animator: {fileID: 0}
   referencesScript: {fileID: 0}
   textures:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2800000, guid: 4a8a9d8b13c1b1a49abb47f9099a2e91, type: 3}
+  - {fileID: 2800000, guid: b7542b968e3e4574facb5de023e6e122, type: 3}
+  - {fileID: 2800000, guid: 41976169658c0ab4cbcaf9494ba71c13, type: 3}
+  - {fileID: 2800000, guid: 4b83b0adb25a6a34ca03d0f5e10cdbe3, type: 3}
+  - {fileID: 2800000, guid: 02f31edf4bd54754b8f44f79e34b87b5, type: 3}
   rend: []
-  rubbish: {fileID: 1335882646117562, guid: f13ef43edbfbf3b44a3f903b8eff4855, type: 2}
+  rubbish: {fileID: 1901746509052448, guid: 1fddbf788e3fe3b42991191e00d6bffe, type: 2}
   indicatorScript: {fileID: 0}
   pedCountRight: 0
   pedCountLeft: 0
