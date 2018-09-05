@@ -45,10 +45,6 @@ public class GameStartCountdown : MonoBehaviour {
     public int badPedsHit;
     public int endOfLevelBinScore;
 
-    public int levelOneEndScore;
-    public int levelTwoEndScore;
-    public int levelThreeEndScore;
-
     public int finalScore;
 
     int l = 0;
@@ -191,14 +187,14 @@ public class GameStartCountdown : MonoBehaviour {
         {
             if(endOfLevelBinScore == 3)
             {
-                levelOneEndScore = 3;
+                scenechanger.levelOneScore = 3;
             }
             else if(endOfLevelBinScore == 2)
             {
-                levelOneEndScore = 2;
+                scenechanger.levelOneScore = 2;
             } else
             {
-                levelOneEndScore = 1;
+                scenechanger.levelOneScore = 1;
             }
         }
 
@@ -244,7 +240,6 @@ public class GameStartCountdown : MonoBehaviour {
             LeanTween.scale(binScoreText.gameObject, new Vector3(1, 1, binScoreText.gameObject.transform.position.z), .5f).setLoopPingPong();
 
             endLoadingText.enabled = true;
-
         }
         else if (endOfLevelBinScore == 2)
         {

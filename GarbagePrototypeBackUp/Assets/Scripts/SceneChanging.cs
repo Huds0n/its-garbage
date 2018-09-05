@@ -22,11 +22,16 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
 	public int i = 0;
     public int iTwo = 0;
-
     
 	public Text loadingText;
 
     public string goToLevelName;
+
+    public int levelOneScore;
+    public int levelTwoScore;
+    public int LevelThreeScore;
+
+    public float goBackToMapTime;
 
     // Use this for initialization
     void Start () {
@@ -72,12 +77,24 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             }
 
             //arrow "You Are Here!" position change in map depending on which level
-
         }
 
         //Level1 win? go back to map to continue
         if (scene.name == "Level1" && winLevelOne) {
-            Invoke("ToMap", 10f);
+            if(levelOneScore == 3)
+            {
+                goBackToMapTime = 10f;
+            }
+            if (levelOneScore == 2)
+            {
+                goBackToMapTime = 7f;
+            }
+            if (levelOneScore == 1)
+            {
+                goBackToMapTime = 4f;
+            }
+
+            Invoke("ToMap", goBackToMapTime);
             
         }
 	}
