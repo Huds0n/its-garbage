@@ -2599,7 +2599,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1690566464110668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6460853, y: 0.12442601, z: -9.544542}
+  m_LocalPosition: {x: -13.070654, y: 1.87, z: -10.895269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4152266685345316}
@@ -2971,7 +2971,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100014, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: f4e67e50b9245ad4a9acbcb7b4e25696, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3006,7 +3006,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100014, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: f4e67e50b9245ad4a9acbcb7b4e25696, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3041,7 +3041,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100016, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: 1390e8193e3b21646a8e365a0c3b00e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3076,7 +3076,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100014, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: f4e67e50b9245ad4a9acbcb7b4e25696, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3111,7 +3111,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100014, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: f4e67e50b9245ad4a9acbcb7b4e25696, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3146,7 +3146,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100014, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: f4e67e50b9245ad4a9acbcb7b4e25696, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3268,19 +3268,9 @@ MonoBehaviour:
   opposite: 0
   animator: {fileID: 0}
   referencesScript: {fileID: 0}
-  textures:
-  - {fileID: 2800000, guid: 4a5cf416cd2ffa2438a189cc7904bf91, type: 3}
-  - {fileID: 2800000, guid: 9a9a87b9a606d6f41919b8bd77baf758, type: 3}
-  - {fileID: 2800000, guid: e3703d4937edb1945a31e49e36fa1577, type: 3}
-  - {fileID: 2800000, guid: 2ebc0444596ec5341a05f744a29ebb3c, type: 3}
-  - {fileID: 2800000, guid: 79fe6a5a7d2f4ba4fa7d4dc27d4a83ed, type: 3}
-  - {fileID: 2800000, guid: c0879419ce2f92b45b9e454d80c7832b, type: 3}
-  - {fileID: 2800000, guid: eca38335be3b9d04c9898103d4918567, type: 3}
-  - {fileID: 2800000, guid: 26c6df2d5613f4b4896439d80faa577b, type: 3}
-  - {fileID: 2800000, guid: 9e4f96389aff9844a9098ded7893c9df, type: 3}
-  - {fileID: 2800000, guid: c92962bd74602b5488282bb612712991, type: 3}
+  textures: []
   rend: []
-  rubbish: {fileID: 1901746509052448, guid: 1fddbf788e3fe3b42991191e00d6bffe, type: 2}
+  rubbish: {fileID: 1328168693961768, guid: 05fefa3a6770ed9479e59c9be58ae2a8, type: 2}
   indicatorScript: {fileID: 0}
   pedCountRight: 0
   pedCountLeft: 0
@@ -3299,11 +3289,11 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
-  - {fileID: 2100002, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
-  - {fileID: 2100004, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
-  - {fileID: 2100006, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
-  - {fileID: 2100008, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
+  - {fileID: 2100000, guid: 6769874ca2b7902478e76161169689b3, type: 2}
+  - {fileID: 2100000, guid: 6769874ca2b7902478e76161169689b3, type: 2}
+  - {fileID: 2100000, guid: 6769874ca2b7902478e76161169689b3, type: 2}
+  - {fileID: 2100000, guid: 6769874ca2b7902478e76161169689b3, type: 2}
+  - {fileID: 2100000, guid: 6769874ca2b7902478e76161169689b3, type: 2}
   - {fileID: 2100010, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
   - {fileID: 2100012, guid: 5edfb94e4785891439f6fb438e9757b4, type: 3}
   m_StaticBatchInfo:

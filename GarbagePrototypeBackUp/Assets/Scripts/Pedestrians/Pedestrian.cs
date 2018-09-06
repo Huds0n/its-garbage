@@ -52,7 +52,7 @@ public class Pedestrian : MonoBehaviour {
         }
 
         //Man Speed
-        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)")
+        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone) " || gameObject.name == "GoodDadDonut(Clone) " )
         {
             speed = 3;
         }
@@ -116,7 +116,7 @@ public class Pedestrian : MonoBehaviour {
 		rend = GetComponentsInChildren<Renderer> ();
 		//Debug.Log (textures.Length);
 
-		if (gameObject.name == "DontHitPed(Clone)" || gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)") {
+		if (gameObject.name == "DontHitPed(Clone)" || gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)" || gameObject.name == "GoodDadDonut(Clone)") {
 			oneRandomNumber = Random.Range (0, textures.Length);
 			twoRandomNumber = Random.Range (0, textures.Length);
 
@@ -195,11 +195,11 @@ public class Pedestrian : MonoBehaviour {
 
         if(gameObject.name == "BadSkater(Clone)")
         {
-            oneRandomNumber = Random.Range(0, 4);
-            twoRandomNumber = Random.Range(4, textures.Length);
-
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(4, 9);
+            //mesh
             rend[0].material.mainTexture = textures[twoRandomNumber];
-
+            //board
             rend[1].material.mainTexture = textures[oneRandomNumber];
             rend[2].material.mainTexture = textures[oneRandomNumber];
             rend[3].material.mainTexture = textures[oneRandomNumber];
@@ -207,7 +207,7 @@ public class Pedestrian : MonoBehaviour {
             rend[5].material.mainTexture = textures[oneRandomNumber];         
         }
 
-        if(gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterSchool(Clone)")
+        if(gameObject.name == "GoodSkater(Clone)")
         {
             oneRandomNumber = Random.Range(0, 4);
             twoRandomNumber = Random.Range(4, textures.Length);

@@ -2342,6 +2342,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 4c7451281296aad49b5ba0c9de66382c, type: 3}
   - {fileID: 2800000, guid: a608db3ecb3d4be4bb7e1ac777ac17f1, type: 3}
   - {fileID: 2800000, guid: 9805a67be08771742946ae96996874bb, type: 3}
+  - {fileID: 2800000, guid: e31731b9cdf521e43adba0ac386d9fc5, type: 3}
+  - {fileID: 2800000, guid: d17309f95a43cb3478a117a3255cd3c1, type: 3}
+  - {fileID: 2800000, guid: d17309f95a43cb3478a117a3255cd3c1, type: 3}
   rend: []
 --- !u!137 &137452630759904924
 SkinnedMeshRenderer:

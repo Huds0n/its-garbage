@@ -2415,6 +2415,10 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 9065ac55e78b9e244ad819fefb2280a2, type: 3}
   - {fileID: 2800000, guid: 790cd3266621185408c24efe8eae5425, type: 3}
   - {fileID: 2800000, guid: e72dde20e9f75b34db19bc2b5c20da40, type: 3}
+  - {fileID: 2800000, guid: c3488b7c03f51aa4b938862f58da8d4b, type: 3}
+  - {fileID: 2800000, guid: e31731b9cdf521e43adba0ac386d9fc5, type: 3}
+  - {fileID: 2800000, guid: d17309f95a43cb3478a117a3255cd3c1, type: 3}
+  - {fileID: 2800000, guid: b5bdce8db411312438e3d6ef10ebf2b1, type: 3}
   rend: []
   rubbish: {fileID: 1676089707616918, guid: 6b71647b28e3e9e4ba37d1037da7a5a5, type: 2}
   indicatorScript: {fileID: 0}
