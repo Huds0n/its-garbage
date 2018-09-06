@@ -63,7 +63,7 @@ public class Pedestrian : MonoBehaviour {
             speed = 1.25f;
         }
         //Skater
-        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterDonut(Clone)" || gameObject.name == "GoodSkaterBook(Clone)")
+        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterDonut(Clone)" || gameObject.name == "GoodSkaterSchool(Clone)")
         {
             speed = 3.2f;
         }
@@ -207,7 +207,7 @@ public class Pedestrian : MonoBehaviour {
             rend[5].material.mainTexture = textures[oneRandomNumber];         
         }
 
-        if(gameObject.name == "GoodSkater(Clone)")
+        if(gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterSchool(Clone)")
         {
             oneRandomNumber = Random.Range(0, 4);
             twoRandomNumber = Random.Range(4, textures.Length);
@@ -220,5 +220,83 @@ public class Pedestrian : MonoBehaviour {
             rend[5].material.mainTexture = textures[oneRandomNumber];
             rend[6].material.mainTexture = textures[oneRandomNumber];
         }
-	}
+        if (gameObject.name == "BadBully(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(0, 3);
+
+            //2 body
+            rend[0].material.mainTexture = textures[oneRandomNumber];
+            //rend[1].material.mainTexture = textures[twoRandomNumber];
+        }
+        if (gameObject.name == "GoodBully(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(0, 3);
+
+            //2 body
+            rend[0].material.mainTexture = textures[oneRandomNumber];
+            rend[1].material.mainTexture = textures[oneRandomNumber];
+        }
+        if (gameObject.name == "BadTeacher(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            rend[0].material.mainTexture = textures[twoRandomNumber];
+            rend[1].material.mainTexture = textures[oneRandomNumber];
+            rend[2].material.mainTexture = textures[oneRandomNumber];
+        }
+        if (gameObject.name == "GoodTeacher(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            rend[0].material.mainTexture = textures[twoRandomNumber];
+            rend[1].material.mainTexture = textures[twoRandomNumber];
+            rend[2].material.mainTexture = textures[twoRandomNumber];
+            rend[3].material.mainTexture = textures[oneRandomNumber];
+            rend[4].material.mainTexture = textures[oneRandomNumber];
+        }
+        if (gameObject.name == "GoodCop(Clone)")
+        {
+            //body
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //hat
+            rend[0].material.mainTexture = textures[3];
+            //donutbag
+            rend[1].material.mainTexture = textures[5];
+            //segway
+            rend[2].material.mainTexture = textures[4];
+            //wheels
+            rend[3].material.mainTexture = textures[4];
+            //hair
+            rend[4].material.mainTexture = textures[6];
+            //mesh
+            rend[5].material.mainTexture = textures[oneRandomNumber];
+            //badge
+            rend[6].material.mainTexture = textures[7];
+        }
+        if (gameObject.name == "BadCop(Clone)")
+        {
+            //body
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //hat
+            rend[0].material.mainTexture = textures[3];
+            //segway
+            rend[1].material.mainTexture = textures[5];
+            //wheels
+            rend[2].material.mainTexture = textures[5];
+            //hair
+            rend[3].material.mainTexture = textures[5];
+            //mesh
+            rend[4].material.mainTexture = textures[oneRandomNumber];
+            //badge
+            rend[5].material.mainTexture = textures[6];
+        }
+    }
 }
