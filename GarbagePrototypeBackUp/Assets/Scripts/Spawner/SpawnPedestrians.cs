@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnPedestrians : MonoBehaviour {
 
@@ -16,7 +17,8 @@ public class SpawnPedestrians : MonoBehaviour {
 
     public float spawnTimeDelay = 3f;
     float timeStamp;
-   
+
+    Scene scene;
     
     [Header("References Script")]
     public ReferencedScripts referencesScript;
@@ -28,6 +30,8 @@ public class SpawnPedestrians : MonoBehaviour {
         //InvokeRepeating("Spawn", 0f, spawnTime);
 
         timeStamp = Time.time + spawnTimeDelay;
+
+        scene = SceneManager.GetActiveScene();
     }
     private void FixedUpdate()
     {
@@ -44,41 +48,60 @@ public class SpawnPedestrians : MonoBehaviour {
         //Spawn Walker
 
         //choose type of pedestrian
-        int typeOfEnemy = Random.Range(0, 10);
-        switch(typeOfEnemy)
+
+        if (scene.name == "Level1")
         {
-            case 0:
-                enemyType = "CANT Hit Ped";
-                break;
-            case 1:
-                enemyType = "Can Hit Ped";
-                break;
-            case 2:
-                enemyType = "Bad Pram";
-                break;
-            case 3:
-                enemyType = "Good Pram";
-                break;
-            case 4:
-                enemyType = "Bad Old Man";
-                break;
-            case 5:
-                enemyType = "Good Old Man";
-                break;
-            case 6:
-                enemyType = "Bad Business Woman";
-                break;
-            case 7:
-                enemyType = "Good Business Woman";
-                break;
-            case 8:
-                enemyType = "Bad Skater";
-                break;
-            case 9:
-                enemyType = "Good Skater";
-                break;
+            int typeOfEnemy = Random.Range(0, 10);
+            switch (typeOfEnemy)
+            {
+                case 0:
+                    enemyType = "CANT Hit Ped";
+                    break;
+                case 1:
+                    enemyType = "Can Hit Ped";
+                    break;
+                case 2:
+                    enemyType = "Bad Pram";
+                    break;
+                case 3:
+                    enemyType = "Good Pram";
+                    break;
+                case 4:
+                    enemyType = "Bad Old Man";
+                    break;
+                case 5:
+                    enemyType = "Good Old Man";
+                    break;
+                case 6:
+                    enemyType = "Bad Business Woman";
+                    break;
+                case 7:
+                    enemyType = "Good Business Woman";
+                    break;
+                case 8:
+                    enemyType = "Bad Skater";
+                    break;
+                case 9:
+                    enemyType = "Good Skater";
+                    break;
+            }
         }
 
+        if (scene.name == "Level2")
+        {
+            int typeOfEnemy = Random.Range(0, 2);
+            switch (typeOfEnemy)
+            {
+                case 0:
+                    enemyType = "CANT Hit Ped";
+                    break;
+                case 1:
+                    enemyType = "Can Hit Ped";
+                    break;
+
+
+            }
+        }
         //choose spawn location
         int spawnPointIndex = Random.Range(0, 2);
         //Debug.Log(spawnPointIndex);
