@@ -196,6 +196,16 @@ public class CanHitPed : Pedestrian, IPooledObject {
                     //StartCoroutine(referencesScript.cameraShake.Shake(.15f, .4f));
                     //referencesScript.hammerScript.canDie = true;
                 }
+
+                if (opposite && indicatorScript.explodeLeft == false)
+                {
+                    indicatorScript.explodeLeft = true;
+                }
+
+                if (!opposite && indicatorScript.explodeRight == false)
+                {
+                    indicatorScript.explodeRight = true;
+                }
             }
             
             gameObject.SetActive(false);

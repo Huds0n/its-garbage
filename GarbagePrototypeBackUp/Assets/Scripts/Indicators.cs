@@ -10,17 +10,35 @@ public class Indicators : MonoBehaviour {
     public int offScreenCountRight;
     public int offScreenCountLeft;
 
+
+    public GameObject[] indicatorExplosion;
+    public bool explodeLeft;
+    public bool explodeRight;
+
 	[Header("References Script")]
 	public ReferencedScripts referencesScript;
 
 	// Use this for initialization
 	void Start () {
 		IndicatorPositionsandMovement ();
+
+        indicatorExplosion[0].SetActive(false);
+        indicatorExplosion[1].SetActive(false);
     }
 		
 	// Update is called once per frame
 	void Update () {
 		IndicatorMechanic ();
+
+        if (explodeLeft)
+        {
+            StartCoroutine(ExplosionLeft());
+        }
+
+        if (explodeRight)
+        {
+            StartCoroutine(ExplosionRight());
+        }
     }
 
 	void IndicatorPositionsandMovement(){
@@ -57,4 +75,30 @@ public class Indicators : MonoBehaviour {
 			offScreenIndicator [1].enabled = false;
 		}
 	}
+
+    IEnumerator ExplosionLeft()
+    {
+        if (indicatorExplosion[0].activeInHierarchy == false)
+        {
+            indicatorExplosion[0].SetActive(true);
+            yield return new WaitForSeconds(.5f);
+            indicatorExplosion[0].SetActive(false);
+            explodeLeft = false;
+        }
+        explodeLeft = false;
+        yield return new WaitForEndOfFrame();
+    }
+
+    IEnumerator ExplosionRight()
+    {
+        if (indicatorExplosion[1].activeInHierarchy == false)
+        {
+            indicatorExplosion[1].SetActive(true);
+            yield return new WaitForSeconds(.5f);
+            indicatorExplosion[1].SetActive(false);
+            explodeRight = false;
+        }
+        explodeRight = false;
+        yield return new WaitForEndOfFrame();
+    }
 }
