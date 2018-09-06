@@ -128,6 +128,8 @@ public class GameStartCountdown : MonoBehaviour {
         scenechanger.i = 0;
         scenechanger.iTwo = 0;
         scenechanger.iThree = 0;
+
+        scenechanger.map = 0;
     }
 
 	void GoBackToGame(){

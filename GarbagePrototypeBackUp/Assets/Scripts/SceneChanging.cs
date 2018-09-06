@@ -39,6 +39,8 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
     int p = 0;
 
+
+    public int map = 0;
     public int startMenuPressedSpace;
     // Use this for initialization
     void Start () {
@@ -71,11 +73,34 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         {
             loadingImage = GameObject.Find("LoadingPage").GetComponent<Image>();
 
+            GameObject arrowUI = GameObject.Find("Arrow");
+            GameObject arrowTwoUI = GameObject.Find("Arrow 2");
+            GameObject arrowThreeUI = GameObject.Find("Arrow 3");
+
+            GameObject levelOneUI = GameObject.Find("Level 1");
+            GameObject levelTwoUI = GameObject.Find("Level 2");
+            GameObject levelThreeUI = GameObject.Find("Level 3");
+
+            
+            if (map == 0)
+            {
+                StartCoroutine(MapTimerText());
+                
+            }
+
             //goto Level1
             if (!winLevelOne)
             {
                 if (i == 0)
                 {
+                    arrowUI.SetActive(true);
+                    arrowTwoUI.SetActive(false);
+                    arrowThreeUI.SetActive(false);
+
+                    levelOneUI.SetActive(true);
+                    levelTwoUI.SetActive(false);
+                    levelThreeUI.SetActive(false);
+
                     startMenuPressedSpace = 0;
                     goToLevelName = "Level1";
                     StartCoroutine(MapToLevel());
@@ -86,6 +111,14 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             {
                 if (iTwo == 0)
                 {
+                    arrowUI.SetActive(false);
+                    arrowTwoUI.SetActive(true);
+                    arrowThreeUI.SetActive(false);
+
+                    levelOneUI.SetActive(false);
+                    levelTwoUI.SetActive(true);
+                    levelThreeUI.SetActive(false);
+
                     startMenuPressedSpace = 0;
                     goToLevelName = "Level2";
                     StartCoroutine(MapToLevel());
@@ -96,6 +129,14 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             {
                 if (iThree == 0)
                 {
+                    arrowUI.SetActive(false);
+                    arrowTwoUI.SetActive(false);
+                    arrowThreeUI.SetActive(true);
+
+                    levelOneUI.SetActive(false);
+                    levelTwoUI.SetActive(false);
+                    levelThreeUI.SetActive(true);
+
                     startMenuPressedSpace = 0;
                     goToLevelName = "Level3";
                     StartCoroutine(MapToLevel());
@@ -119,7 +160,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             {
                 goBackToMapTime = 4f;
             }
-
+            map = 0;
             Invoke("ToMap", goBackToMapTime);
         }
 
@@ -137,7 +178,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             {
                 goBackToMapTime = 4f;
             }
-
+            map = 0;
             Invoke("ToMap", goBackToMapTime);
         }
 
@@ -154,6 +195,28 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         yield return new WaitForEndOfFrame();
     }
 
+    IEnumerator MapTimerText()
+    {
+        if (scene.name == "Map")
+        {
+            Text timerMapText = GameObject.Find("Timer").GetComponent<Text>();
+            timerMapText.text = ":04";
+            yield return new WaitForSeconds(1f);
+            timerMapText.text = ":03";
+            yield return new WaitForSeconds(1f);
+            timerMapText.text = ":02";
+            yield return new WaitForSeconds(1f);
+            timerMapText.text = ":01";
+            yield return new WaitForSeconds(1f);
+            timerMapText.text = ":00";
+            
+            yield return new WaitForEndOfFrame();
+            map = 1;
+        }
+        yield return new WaitForEndOfFrame();
+        map = 1;
+
+    }
     IEnumerator MapToLevel()
     {
         if(goToLevelName == "Level1")
