@@ -116,8 +116,6 @@ public class SpawnPedestrians : MonoBehaviour {
                 case 7:
                     enemyType = "Good Skater";
                     break;
-
-
             }
         }
 

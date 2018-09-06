@@ -2279,7 +2279,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695614563465958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4003224, y: 2.277, z: -13.074354}
+  m_LocalPosition: {x: 13.54468, y: 0.12442601, z: -8.644564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4708084831862824}
@@ -2384,7 +2384,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d7584c1647ab5554d9ead1b84bd9effe, type: 3}
+  - {fileID: 2100000, guid: 6d762fff521eac74e9622693d878ce51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2419,7 +2419,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d7584c1647ab5554d9ead1b84bd9effe, type: 3}
+  - {fileID: 2100000, guid: 6d762fff521eac74e9622693d878ce51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2518,7 +2518,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: a608db3ecb3d4be4bb7e1ac777ac17f1, type: 3}
   - {fileID: 2800000, guid: 9805a67be08771742946ae96996874bb, type: 3}
   rend: []
-  rubbish: {fileID: 1865783654686624, guid: 6ba4a7351c484274aa8055108815486b, type: 2}
+  rubbish: {fileID: 1676089707616918, guid: 6b71647b28e3e9e4ba37d1037da7a5a5, type: 2}
   indicatorScript: {fileID: 0}
   pedCountRight: 0
   pedCountLeft: 0

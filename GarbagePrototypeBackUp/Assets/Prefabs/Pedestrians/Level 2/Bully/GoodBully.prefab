@@ -2324,7 +2324,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 73f44657d5915034b9cbad030b8f67cd, type: 3}
+  - {fileID: 2100000, guid: 4cb14634e03a1c74e90cb09617a4c9f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2416,7 +2416,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 790cd3266621185408c24efe8eae5425, type: 3}
   - {fileID: 2800000, guid: e72dde20e9f75b34db19bc2b5c20da40, type: 3}
   rend: []
-  rubbish: {fileID: 1865783654686624, guid: 6ba4a7351c484274aa8055108815486b, type: 2}
+  rubbish: {fileID: 1676089707616918, guid: 6b71647b28e3e9e4ba37d1037da7a5a5, type: 2}
   indicatorScript: {fileID: 0}
   pedCountRight: 0
   pedCountLeft: 0
