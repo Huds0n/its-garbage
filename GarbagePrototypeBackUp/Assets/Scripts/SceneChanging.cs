@@ -22,8 +22,9 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
 	public int i = 0;
     public int iTwo = 0;
-    
-	public Text loadingText;
+    public int iThree = 0;
+
+    public Text loadingText;
 
     public string goToLevelName;
 
@@ -86,6 +87,16 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
                 if (iTwo == 0)
                 {
                     startMenuPressedSpace = 0;
+                    goToLevelName = "Level2";
+                    StartCoroutine(MapToLevel());
+                }
+            }
+            //goto Level3
+            if (winLevelOne && winLevelTwo)
+            {
+                if (iThree == 0)
+                {
+                    startMenuPressedSpace = 0;
                     goToLevelName = "Level3";
                     StartCoroutine(MapToLevel());
                 }
@@ -112,6 +123,25 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             Invoke("ToMap", goBackToMapTime);
         }
 
+        if (scene.name == "Level2" && winLevelTwo)
+        {
+            if (levelTwoScore == 3)
+            {
+                goBackToMapTime = 8f;
+            }
+            if (levelTwoScore == 2)
+            {
+                goBackToMapTime = 6f;
+            }
+            if (levelTwoScore == 1)
+            {
+                goBackToMapTime = 4f;
+            }
+
+            Invoke("ToMap", goBackToMapTime);
+        }
+
+        //
         if (scene.name == "Level1")
         {
             GameStartCountdown gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
@@ -144,6 +174,10 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         if (goToLevelName == "Level2")
         {
             iTwo = 1;
+        }
+        if (goToLevelName == "Level3")
+        {
+            iThree = 1;
         }
         loadingImage.enabled = false;
         blackFade = GameObject.Find("BlackFade").GetComponent<Image>();

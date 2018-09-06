@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DentedPixel;
+using UnityEngine.SceneManagement;
 
 public class GarbageTruckMain : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class GarbageTruckMain : MonoBehaviour {
 
     AudioSource garbageTruckNoise;
 
+    Scene scene;
+
     // Use this for initialization
     void Start () {
         i = 0;
@@ -23,6 +26,8 @@ public class GarbageTruckMain : MonoBehaviour {
         sceneChangingScript = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
 
         garbageTruckNoise = GetComponent<AudioSource>();
+
+        scene = SceneManager.GetActiveScene();
 	}
 	
 	// Update is called once per frame
@@ -61,7 +66,18 @@ public class GarbageTruckMain : MonoBehaviour {
         {
             //move truck out of scene
             LeanTween.moveX(gameObject, gameObject.transform.position.x + 30, 5f).callOnCompletes();
-            sceneChangingScript.winLevelOne = true;
+            if(scene.name == "Level1")
+            {
+                sceneChangingScript.winLevelOne = true;
+            }
+            if (scene.name == "Level2")
+            {
+                sceneChangingScript.winLevelTwo = true;
+            }
+            if (scene.name == "Level3")
+            {
+                sceneChangingScript.winLevelThree = true;
+            }
             iTwo = 1;
         }
     }

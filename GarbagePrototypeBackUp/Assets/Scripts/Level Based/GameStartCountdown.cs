@@ -127,6 +127,7 @@ public class GameStartCountdown : MonoBehaviour {
         
         scenechanger.i = 0;
         scenechanger.iTwo = 0;
+        scenechanger.iThree = 0;
     }
 
 	void GoBackToGame(){
@@ -228,7 +229,23 @@ public class GameStartCountdown : MonoBehaviour {
             }
         }
 
-		anim.SetBool ("victory", true);
+        if (currentScene.name == "Level2")
+        {
+            if (endOfLevelBinScore == 3)
+            {
+                scenechanger.levelTwoScore = 3;
+            }
+            else if (endOfLevelBinScore == 2)
+            {
+                scenechanger.levelTwoScore = 2;
+            }
+            else
+            {
+                scenechanger.levelTwoScore = 1;
+            }
+        }
+
+        anim.SetBool ("victory", true);
 
         StartCoroutine(GarbageBinScore());
 		i = 1;
