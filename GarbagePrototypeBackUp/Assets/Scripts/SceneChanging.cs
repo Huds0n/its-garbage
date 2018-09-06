@@ -141,18 +141,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             Invoke("ToMap", goBackToMapTime);
         }
 
-        //
-        if (scene.name == "Level1")
-        {
-            GameStartCountdown gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
-            if(gameStartCountdownScript.l == 1){
-                restartPauseButton = GameObject.Find("Restart Button").GetComponent<Button>();
-                restartPauseButton.onClick.AddListener(ToStartMenu);
-            }
-            //goToLevelName = "StartMenu";
-            //StartCoroutine(LoadAsyncScene());
-            
-        }
+       
 	}
 
     IEnumerator StartMenuToMap()
@@ -213,15 +202,5 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         while (!asyncLoad.isDone) {
 			yield return null;
 		}
-    }
-
-    public void ToStartMenu()
-    {
-       
-       // if (p == 0)
-       // {
-            SceneManager.LoadScene("StartMenu");
-         //   p = 1;
-      //  }
     }
 }

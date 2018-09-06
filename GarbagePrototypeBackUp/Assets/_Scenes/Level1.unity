@@ -4346,7 +4346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.6962, y: -99.065}
+  m_AnchoredPosition: {x: -55.6962, y: -76}
   m_SizeDelta: {x: 1351, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204474950
@@ -24882,7 +24882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.6962, y: 51.965}
+  m_AnchoredPosition: {x: -55.6962, y: 17}
   m_SizeDelta: {x: 1351, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1367061086
@@ -29427,7 +29427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1529507503
 RectTransform:
   m_ObjectHideFlags: 0
