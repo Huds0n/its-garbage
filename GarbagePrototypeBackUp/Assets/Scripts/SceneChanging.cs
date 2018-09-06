@@ -37,6 +37,8 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
     public Button restartPauseButton;
 
     int p = 0;
+
+    public int startMenuPressedSpace;
     // Use this for initialization
     void Start () {
 		scene = SceneManager.GetActiveScene ();
@@ -54,8 +56,9 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 		Debug.Log(scene.name);
 
         //Start Menu to Map
-		if (scene.name == "StartMenu" && Input.GetKeyDown(KeyCode.Space)) {
+		if (scene.name == "StartMenu" && Input.GetKeyDown(KeyCode.Space) && startMenuPressedSpace == 0) {
             StartCoroutine(StartMenuToMap());
+            startMenuPressedSpace = 1;
 		}
         if(scene.name == "StartMenu" && Input.GetKeyDown(KeyCode.Escape))
         {
@@ -72,6 +75,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             {
                 if (i == 0)
                 {
+                    startMenuPressedSpace = 0;
                     goToLevelName = "Level1";
                     StartCoroutine(MapToLevel());
                 }
@@ -81,6 +85,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             {
                 if (iTwo == 0)
                 {
+                    startMenuPressedSpace = 0;
                     goToLevelName = "Level3";
                     StartCoroutine(MapToLevel());
                 }

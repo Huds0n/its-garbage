@@ -117,13 +117,14 @@ public class GameStartCountdown : MonoBehaviour {
 
     public void ResetVars()
     {
+        scenechanger.startMenuPressedSpace = 0;
         scenechanger.winLevelOne = false;
         scenechanger.winLevelTwo = false;
         scenechanger.winLevelThree = false;
         scenechanger.winLevelFour = false;
 
         scenechanger.loadingScene = false;
-
+        
         scenechanger.i = 0;
         scenechanger.iTwo = 0;
     }
