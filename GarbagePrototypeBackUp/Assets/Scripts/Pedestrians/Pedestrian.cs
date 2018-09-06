@@ -62,9 +62,25 @@ public class Pedestrian : MonoBehaviour {
         {
             speed = 1.25f;
         }
-        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)")
+        //Skater
+        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterDonut(Clone)" || gameObject.name == "GoodSkaterBook(Clone)")
         {
             speed = 3.2f;
+        }
+        //Bully
+        if (gameObject.name == "BadBully(Clone)" || gameObject.name == "GoodBully(Clone)")
+        {
+            speed = 1.2f;
+        }
+        //Teacher
+        if (gameObject.name == "BadTeacher(Clone)" || gameObject.name == "GoodTeacher(Clone)")
+        {
+            speed = 1.25f;
+        }
+        //Cop
+        if (gameObject.name == "BadCop(Clone)" || gameObject.name == "GoodCop(Clone)")
+        {
+            speed = 2f;
         }
     }
 

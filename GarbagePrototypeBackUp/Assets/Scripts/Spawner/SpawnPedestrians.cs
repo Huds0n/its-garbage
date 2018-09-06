@@ -89,7 +89,7 @@ public class SpawnPedestrians : MonoBehaviour {
 
         if (scene.name == "Level2")
         {
-            int typeOfEnemy = Random.Range(0, 2);
+            int typeOfEnemy = Random.Range(0, 8);
             switch (typeOfEnemy)
             {
                 case 0:
@@ -98,7 +98,52 @@ public class SpawnPedestrians : MonoBehaviour {
                 case 1:
                     enemyType = "Can Hit Ped";
                     break;
+                case 2:
+                    enemyType = "Bad Bully";
+                    break;
+                case 3:
+                    enemyType = "Good Bully";
+                    break;
+                case 4:
+                    enemyType = "Bad Teacher";
+                    break;
+                case 5:
+                    enemyType = "Good Teacher";
+                    break;
+                case 6:
+                    enemyType = "Bad Skater";
+                    break;
+                case 7:
+                    enemyType = "Good Skater";
+                    break;
 
+
+            }
+        }
+
+        if (scene.name == "Level3")
+        {
+            int typeOfEnemy = Random.Range(0, 6);
+            switch (typeOfEnemy)
+            {
+                case 0:
+                    enemyType = "CANT Hit Ped";
+                    break;
+                case 1:
+                    enemyType = "Can Hit Ped";
+                    break;
+                case 2:
+                    enemyType = "Bad Skater";
+                    break;
+                case 3:
+                    enemyType = "Good Skater";
+                    break;
+                case 4:
+                    enemyType = "Bad Cop";
+                    break;
+                case 5:
+                    enemyType = "Good Cop";
+                    break;
 
             }
         }

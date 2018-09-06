@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44326848, g: 0.49251634, b: 0.5721775, a: 1}
+  m_IndirectSpecularColor: {r: 0.4432689, g: 0.49251693, b: 0.57217866, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -75436,6 +75436,24 @@ MonoBehaviour:
     size: 10
   - tag: Can Hit Ped
     prefab: {fileID: 1699325815100884, guid: a14fbaa373dbf934d8619b8dd0898320, type: 2}
+    size: 10
+  - tag: Bad Bully
+    prefab: {fileID: 1886932555748970, guid: 48b38fd63e8e25e4eb6e715e62d444c6, type: 2}
+    size: 10
+  - tag: Good Bully
+    prefab: {fileID: 1690566464110668, guid: 46f54b99b88df8c458207f29adadaa8f, type: 2}
+    size: 10
+  - tag: Bad Teacher
+    prefab: {fileID: 1198906542440652, guid: 7758ee83bb1b4e04aa910dc48dd004e7, type: 2}
+    size: 10
+  - tag: Good Teacher
+    prefab: {fileID: 1695614563465958, guid: 810ca19d1e4f3c142b3c5367bbe0caf9, type: 2}
+    size: 10
+  - tag: Bad Skater
+    prefab: {fileID: 1976136870832750, guid: 6971c9b3f8aa66e479790d519b5b7fe8, type: 2}
+    size: 10
+  - tag: Good Skater
+    prefab: {fileID: 1690566464110668, guid: 5a9b1bf85f085d7439d344c16c193514, type: 2}
     size: 10
 --- !u!4 &1833188092
 Transform:
