@@ -30,7 +30,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
     public int levelOneScore;
     public int levelTwoScore;
-    public int LevelThreeScore;
+    public int levelThreeScore;
 
     public float goBackToMapTime;
 
@@ -182,8 +182,24 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             Invoke("ToMap", goBackToMapTime);
         }
 
-       
-	}
+        if (scene.name == "Level3" && winLevelThree)
+        {
+            if (levelThreeScore == 3)
+            {
+                goBackToMapTime = 8f;
+            }
+            if (levelThreeScore == 2)
+            {
+                goBackToMapTime = 6f;
+            }
+            if (levelThreeScore == 1)
+            {
+                goBackToMapTime = 4f;
+            }
+            map = 0;
+            Invoke("ToFinalScore", goBackToMapTime);
+        }
+    }
 
     IEnumerator StartMenuToMap()
     {
@@ -217,6 +233,16 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         map = 1;
 
     }
+
+    void ToFinalScore()
+    {
+        blackFade = GameObject.Find("BlackFade").GetComponent<Image>();
+        blackFade.GetComponent<Animator>().Play("FadeIn");
+
+        SceneManager.LoadScene("FinalScene");
+        CancelInvoke();
+    }
+
     IEnumerator MapToLevel()
     {
         if(goToLevelName == "Level1")
