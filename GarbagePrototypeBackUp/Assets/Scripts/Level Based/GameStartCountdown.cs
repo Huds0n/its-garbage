@@ -69,6 +69,8 @@ public class GameStartCountdown : MonoBehaviour {
 
     Image blackFade;
 
+    public GameObject[] particalWinEffects;
+
     // Use this for initialization
     void Start () {
 		GameStartReset ();
@@ -89,6 +91,9 @@ public class GameStartCountdown : MonoBehaviour {
         scenechanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
 
         goToLevelName = "StartMenu";
+
+        particalWinEffects[0].SetActive(false);
+        particalWinEffects[1].SetActive(false);
     }
 
     private void Update()
@@ -246,6 +251,9 @@ public class GameStartCountdown : MonoBehaviour {
         binScoreText.text = "0/3 Bin Score";
 
         endLoadingText.enabled = false;
+
+        particalWinEffects[0].SetActive(true);
+        particalWinEffects[1].SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
         if (endOfLevelBinScore == 3)
