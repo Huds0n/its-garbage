@@ -223,40 +223,51 @@ public class Pedestrian : MonoBehaviour {
         if (gameObject.name == "BadBully(Clone)")
         {
             oneRandomNumber = Random.Range(0, 3);
-            twoRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(4, 6);
 
-            //2 body
+            //body
             rend[0].material.mainTexture = textures[oneRandomNumber];
-            //rend[1].material.mainTexture = textures[twoRandomNumber];
+            //hair
+            rend[1].material.mainTexture = textures[twoRandomNumber];
         }
         if (gameObject.name == "GoodBully(Clone)")
         {
-            oneRandomNumber = Random.Range(0, 3);
-            twoRandomNumber = Random.Range(0, 3);
+            oneRandomNumber = Random.Range(0, 2);
+            twoRandomNumber = Random.Range(3, 5);
 
-            //2 body
-            rend[0].material.mainTexture = textures[oneRandomNumber];
+            //book
+            rend[0].material.mainTexture = textures[6];
+            //body
             rend[1].material.mainTexture = textures[oneRandomNumber];
+            //hair
+            rend[2].material.mainTexture = textures[twoRandomNumber];
         }
         if (gameObject.name == "BadTeacher(Clone)")
         {
-            oneRandomNumber = Random.Range(0, 3);
-            twoRandomNumber = Random.Range(3, textures.Length);
-
-            rend[0].material.mainTexture = textures[twoRandomNumber];
-            rend[1].material.mainTexture = textures[oneRandomNumber];
-            rend[2].material.mainTexture = textures[oneRandomNumber];
+            //hair
+            oneRandomNumber = Random.Range(3,5);
+            //body
+            twoRandomNumber = Random.Range(0,2);
+            //hair
+            rend[0].material.mainTexture = textures[oneRandomNumber];
+            //mesh
+            rend[1].material.mainTexture = textures[twoRandomNumber];
         }
         if (gameObject.name == "GoodTeacher(Clone)")
         {
-            oneRandomNumber = Random.Range(0, 3);
-            twoRandomNumber = Random.Range(3, textures.Length);
+            //hair
+            oneRandomNumber = Random.Range(3,6);
+            //body
+            twoRandomNumber = Random.Range(0,2);
+            //book
+            rend[0].material.mainTexture = textures[6];
+            //book
+            rend[1].material.mainTexture = textures[6];
+            //hair
+            rend[2].material.mainTexture = textures[oneRandomNumber];
+            //body
+            rend[3].material.mainTexture = textures[twoRandomNumber];
 
-            rend[0].material.mainTexture = textures[twoRandomNumber];
-            rend[1].material.mainTexture = textures[twoRandomNumber];
-            rend[2].material.mainTexture = textures[twoRandomNumber];
-            rend[3].material.mainTexture = textures[oneRandomNumber];
-            rend[4].material.mainTexture = textures[oneRandomNumber];
         }
         if (gameObject.name == "GoodCop(Clone)")
         {

@@ -3248,6 +3248,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 02f31edf4bd54754b8f44f79e34b87b5, type: 3}
   - {fileID: 2800000, guid: 729081134641a5d469d5df29cb6e5e8c, type: 3}
   - {fileID: 2800000, guid: e31731b9cdf521e43adba0ac386d9fc5, type: 3}
+  - {fileID: 2800000, guid: c3488b7c03f51aa4b938862f58da8d4b, type: 3}
   rend: []
   rubbish: {fileID: 1901746509052448, guid: 1fddbf788e3fe3b42991191e00d6bffe, type: 2}
   indicatorScript: {fileID: 0}
