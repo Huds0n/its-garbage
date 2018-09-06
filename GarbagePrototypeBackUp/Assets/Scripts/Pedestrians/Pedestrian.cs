@@ -52,7 +52,7 @@ public class Pedestrian : MonoBehaviour {
         }
 
         //Man Speed
-        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)")
+        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)")
         {
             speed = 3;
         }
@@ -100,7 +100,7 @@ public class Pedestrian : MonoBehaviour {
 		rend = GetComponentsInChildren<Renderer> ();
 		//Debug.Log (textures.Length);
 
-		if (gameObject.name == "DontHitPed(Clone)" || gameObject.name == "HitPed1(Clone)") {
+		if (gameObject.name == "DontHitPed(Clone)" || gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)") {
 			oneRandomNumber = Random.Range (0, textures.Length);
 			twoRandomNumber = Random.Range (0, textures.Length);
 

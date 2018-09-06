@@ -146,6 +146,7 @@ public class CanHitPed : Pedestrian, IPooledObject {
 
     private void OnTriggerEnter(Collider other)
     {
+        SpawnRubbish();
         if (other.gameObject.tag == "Hammer")
         {
             if (!opposite)
@@ -160,7 +161,7 @@ public class CanHitPed : Pedestrian, IPooledObject {
                 oTwo = 0;
                 oThree = 0;
             }
-            SpawnRubbish();
+            
             
             gameObject.SetActive(false);
         }
