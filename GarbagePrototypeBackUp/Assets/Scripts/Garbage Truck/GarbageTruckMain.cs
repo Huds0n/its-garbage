@@ -14,7 +14,7 @@ public class GarbageTruckMain : MonoBehaviour {
 
     SceneChanging sceneChangingScript;
 
-    AudioSource garbageTruckNoise;
+    //AudioSource garbageTruckNoise;
 
     Scene scene;
 
@@ -25,7 +25,7 @@ public class GarbageTruckMain : MonoBehaviour {
 
         sceneChangingScript = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
 
-        garbageTruckNoise = GetComponent<AudioSource>();
+        //garbageTruckNoise = GetComponent<AudioSource>();
 
         scene = SceneManager.GetActiveScene();
 	}
@@ -35,7 +35,7 @@ public class GarbageTruckMain : MonoBehaviour {
         //if player won game level move to player position x
 		if(referencesScript.gameStartCoundownScript.gameFinishedWin == true)
         {
-            garbageTruckNoise.Play();
+            //garbageTruckNoise.Play();
 
             MoveToPlayerPosition();
         }
