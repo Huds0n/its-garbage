@@ -52,7 +52,7 @@ public class Pedestrian : MonoBehaviour {
         }
 
         //Man Speed
-        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)")
+        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone) " || gameObject.name == "GoodDadDonut(Clone) " )
         {
             speed = 3;
         }
@@ -63,7 +63,7 @@ public class Pedestrian : MonoBehaviour {
             speed = 1.25f;
         }
         //Skater
-        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterDonut(Clone)" || gameObject.name == "GoodSkaterBook(Clone)")
+        if (gameObject.name == "BadSkater(Clone)" || gameObject.name == "GoodSkater(Clone)" || gameObject.name == "GoodSkaterDonut(Clone)" || gameObject.name == "GoodSkaterSchool(Clone)")
         {
             speed = 3.2f;
         }
@@ -116,7 +116,7 @@ public class Pedestrian : MonoBehaviour {
 		rend = GetComponentsInChildren<Renderer> ();
 		//Debug.Log (textures.Length);
 
-		if (gameObject.name == "DontHitPed(Clone)" || gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)") {
+		if (gameObject.name == "DontHitPed(Clone)" || gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)" || gameObject.name == "GoodDadDonut(Clone)") {
 			oneRandomNumber = Random.Range (0, textures.Length);
 			twoRandomNumber = Random.Range (0, textures.Length);
 
@@ -195,11 +195,11 @@ public class Pedestrian : MonoBehaviour {
 
         if(gameObject.name == "BadSkater(Clone)")
         {
-            oneRandomNumber = Random.Range(0, 4);
-            twoRandomNumber = Random.Range(4, textures.Length);
-
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(4, 9);
+            //mesh
             rend[0].material.mainTexture = textures[twoRandomNumber];
-
+            //board
             rend[1].material.mainTexture = textures[oneRandomNumber];
             rend[2].material.mainTexture = textures[oneRandomNumber];
             rend[3].material.mainTexture = textures[oneRandomNumber];
@@ -220,5 +220,94 @@ public class Pedestrian : MonoBehaviour {
             rend[5].material.mainTexture = textures[oneRandomNumber];
             rend[6].material.mainTexture = textures[oneRandomNumber];
         }
-	}
+        if (gameObject.name == "BadBully(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(4, 6);
+
+            //body
+            rend[0].material.mainTexture = textures[oneRandomNumber];
+            //hair
+            rend[1].material.mainTexture = textures[twoRandomNumber];
+        }
+        if (gameObject.name == "GoodBully(Clone)")
+        {
+            oneRandomNumber = Random.Range(0, 2);
+            twoRandomNumber = Random.Range(3, 5);
+
+            //book
+            rend[0].material.mainTexture = textures[6];
+            //body
+            rend[1].material.mainTexture = textures[oneRandomNumber];
+            //hair
+            rend[2].material.mainTexture = textures[twoRandomNumber];
+        }
+        if (gameObject.name == "BadTeacher(Clone)")
+        {
+            //hair
+            oneRandomNumber = Random.Range(3,5);
+            //body
+            twoRandomNumber = Random.Range(0,2);
+            //hair
+            rend[0].material.mainTexture = textures[oneRandomNumber];
+            //mesh
+            rend[1].material.mainTexture = textures[twoRandomNumber];
+        }
+        if (gameObject.name == "GoodTeacher(Clone)")
+        {
+            //hair
+            oneRandomNumber = Random.Range(3,6);
+            //body
+            twoRandomNumber = Random.Range(0,2);
+            //book
+            rend[0].material.mainTexture = textures[6];
+            //book
+            rend[1].material.mainTexture = textures[6];
+            //hair
+            rend[2].material.mainTexture = textures[oneRandomNumber];
+            //body
+            rend[3].material.mainTexture = textures[twoRandomNumber];
+
+        }
+        if (gameObject.name == "GoodCop(Clone)")
+        {
+            //body
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //hat
+            rend[0].material.mainTexture = textures[3];
+            //donutbag
+            rend[1].material.mainTexture = textures[5];
+            //segway
+            rend[2].material.mainTexture = textures[4];
+            //wheels
+            rend[3].material.mainTexture = textures[4];
+            //hair
+            rend[4].material.mainTexture = textures[6];
+            //mesh
+            rend[5].material.mainTexture = textures[oneRandomNumber];
+            //badge
+            rend[6].material.mainTexture = textures[7];
+        }
+        if (gameObject.name == "BadCop(Clone)")
+        {
+            //body
+            oneRandomNumber = Random.Range(0, 3);
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //hat
+            rend[0].material.mainTexture = textures[3];
+            //segway
+            rend[1].material.mainTexture = textures[5];
+            //wheels
+            rend[2].material.mainTexture = textures[5];
+            //hair
+            rend[3].material.mainTexture = textures[5];
+            //mesh
+            rend[4].material.mainTexture = textures[oneRandomNumber];
+            //badge
+            rend[5].material.mainTexture = textures[6];
+        }
+    }
 }

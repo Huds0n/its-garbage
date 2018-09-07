@@ -1842,7 +1842,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1886932555748970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6045183, y: 1.254, z: -6.396477}
+  m_LocalPosition: {x: -6.735926, y: 2.329, z: -6.7458525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4924869011797690}
@@ -3031,7 +3031,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 23359d38d704f4f44866481916d4417f, type: 3}
+  - {fileID: 2100000, guid: e0f8f8df361e4d94fb0af776c45a3628, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3173,6 +3173,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 41976169658c0ab4cbcaf9494ba71c13, type: 3}
   - {fileID: 2800000, guid: 4b83b0adb25a6a34ca03d0f5e10cdbe3, type: 3}
   - {fileID: 2800000, guid: 02f31edf4bd54754b8f44f79e34b87b5, type: 3}
+  - {fileID: 2800000, guid: e31731b9cdf521e43adba0ac386d9fc5, type: 3}
+  - {fileID: 2800000, guid: c3488b7c03f51aa4b938862f58da8d4b, type: 3}
   rend: []
 --- !u!137 &137057483068839410
 SkinnedMeshRenderer:
@@ -3322,7 +3324,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 23359d38d704f4f44866481916d4417f, type: 3}
+  - {fileID: 2100000, guid: 50eafc4a7a80bac41afae02701205dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3377,7 +3379,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 23359d38d704f4f44866481916d4417f, type: 3}
+  - {fileID: 2100000, guid: f753d5f1e1723c14ca38adbd008482ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

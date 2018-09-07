@@ -3206,6 +3206,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 26c6df2d5613f4b4896439d80faa577b, type: 3}
   - {fileID: 2800000, guid: 9e4f96389aff9844a9098ded7893c9df, type: 3}
   - {fileID: 2800000, guid: c92962bd74602b5488282bb612712991, type: 3}
+  - {fileID: 2800000, guid: c3488b7c03f51aa4b938862f58da8d4b, type: 3}
+  - {fileID: 2800000, guid: e31731b9cdf521e43adba0ac386d9fc5, type: 3}
+  - {fileID: 2800000, guid: d17309f95a43cb3478a117a3255cd3c1, type: 3}
   rend: []
 --- !u!137 &137822268128324404
 SkinnedMeshRenderer:

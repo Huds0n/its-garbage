@@ -603,8 +603,8 @@ public class PlayerMain : MonoBehaviour {
 
             dashCount++;
 
-            monsterAudio.clip = monsterDash;
-            monsterAudio.Play();
+           //monsterAudio.clip = monsterDash;
+            //monsterAudio.Play();
 
             ActivateTimerToReset = true;
 
