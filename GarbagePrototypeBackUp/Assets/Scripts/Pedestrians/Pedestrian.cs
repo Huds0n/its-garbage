@@ -52,7 +52,7 @@ public class Pedestrian : MonoBehaviour {
         }
 
         //Man Speed
-        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone) " || gameObject.name == "GoodDadDonut(Clone) " )
+        if(gameObject.name == "HitPed1(Clone)" || gameObject.name == "DontHitPed(Clone)" || gameObject.name == "DontHitPed No Book(Clone)" || gameObject.name == "GoodDadBook(Clone)" || gameObject.name == "GoodDadDonut(Clone)" )
         {
             speed = 3;
         }
