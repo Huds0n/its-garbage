@@ -84,11 +84,11 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             GameObject levelThreeUI = GameObject.Find("Level 3");
 
             
-            if (map == 0)
+           /* if (map == 0)
             {
                 StartCoroutine(MapTimerText());
                 
-            }
+            }*/
 
             //goto Level1
             if (!winLevelOne)
@@ -213,28 +213,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
         yield return new WaitForEndOfFrame();
     }
 
-    IEnumerator MapTimerText()
-    {
-        if (scene.name == "Map")
-        {
-            Text timerMapText = GameObject.Find("Timer").GetComponent<Text>();
-            timerMapText.text = ":04";
-            yield return new WaitForSeconds(1f);
-            timerMapText.text = ":03";
-            yield return new WaitForSeconds(1f);
-            timerMapText.text = ":02";
-            yield return new WaitForSeconds(1f);
-            timerMapText.text = ":01";
-            yield return new WaitForSeconds(1f);
-            timerMapText.text = ":00";
-            
-            yield return new WaitForEndOfFrame();
-            map = 1;
-        }
-        yield return new WaitForEndOfFrame();
-        map = 1;
-
-    }
+   
 
     void ToFinalScore()
     {
