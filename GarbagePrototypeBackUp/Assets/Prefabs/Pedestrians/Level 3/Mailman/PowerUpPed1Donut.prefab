@@ -2675,7 +2675,7 @@ MonoBehaviour:
   referencesScript: {fileID: 0}
   textures: []
   rend: []
-  waitTime: 1
+  waitTime: 60
 --- !u!137 &137074470056321456
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
