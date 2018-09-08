@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class MapTimerText : MonoBehaviour {
 
     Text timerMapText;
-	// Use this for initialization
+
 	void Start () {
 
-       timerMapText = GetComponent<Text>();
+        timerMapText = GetComponent<Text>();
 
         timerMapText.text = "";
+
         StartCoroutine(StartTimer());
 	}
 

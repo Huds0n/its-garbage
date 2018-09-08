@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
+    public int playerLives = 2;
+
 	public float mapWaitTime = 5f;
 
     public bool winLevelOne;
@@ -41,7 +43,6 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 
     int p = 0;
 
-
     public int map = 0;
     public int startMenuPressedSpace;
     // Use this for initialization
@@ -53,6 +54,8 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 		//winLevelFour = false;
 
         Application.targetFrameRate = 60;
+
+        playerLives = 2;
     }
 	
 	// Update is called once per frame
@@ -82,13 +85,6 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
             GameObject levelOneUI = GameObject.Find("Level 1");
             GameObject levelTwoUI = GameObject.Find("Level 2");
             GameObject levelThreeUI = GameObject.Find("Level 3");
-
-            
-           /* if (map == 0)
-            {
-                StartCoroutine(MapTimerText());
-                
-            }*/
 
             //goto Level1
             if (!winLevelOne)
@@ -144,8 +140,6 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
                     StartCoroutine(MapToLevel());
                 }
             }
-
-            
         }
 
         //Level1 win? go back to map to continue

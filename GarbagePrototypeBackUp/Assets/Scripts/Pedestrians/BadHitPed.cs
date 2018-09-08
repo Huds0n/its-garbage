@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BadHitPed : Pedestrian, IPooledObject {
 
-
     // Use this for initialization
     public void OnObjectSpawn() {
         PedestrianRefsValues();
@@ -17,18 +16,16 @@ public class BadHitPed : Pedestrian, IPooledObject {
         PedestrianSpeeds();
 
         PedestrianFacingWay();
-       // PedestrianSpeedChange();
     }
    
     // Update is called once per frame
     public void FixedUpdate () {
         PedestrianMovement();
-        //PedestrianAnimationSpeed();
     }
 
     void OnCollisionEnter(Collision other)
     {
-        ///Ped Killer Wall
+        ///Pedestrian Killer Wall
         if (other.gameObject.layer == 13)
         {
             gameObject.SetActive(false);

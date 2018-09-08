@@ -18,7 +18,7 @@ public class Lives : MonoBehaviour {
 
     public GameObject comboTextGameObject;
 
-	public int playerLives = 3; 
+    public int playerLives; 
 
 	string lifeNameString; 
 
@@ -26,9 +26,15 @@ public class Lives : MonoBehaviour {
 
     GameStartCountdown gameStartCountdownScript;
 
-    
+    SceneChanging sceneChanger;
+
 	// Use this for initialization
 	void Start () {
+
+        sceneChanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
+
+        playerLives = sceneChanger.playerLives;
+
         gameStartCountdownScript = GameObject.Find("Level Based Scripts").GetComponent<GameStartCountdown>();
 
         gameOverUIObjects.SetActive(false);
@@ -44,6 +50,8 @@ public class Lives : MonoBehaviour {
 		//playerLives = player.GetComponent<PlayerMain> ().lives;
 		if(player == null){
             gameOverUIObjects.SetActive(true);
+            lifeImage[1].SetActive(false);
+            lifeImage[2].SetActive(false);
             lifeImage[0].SetActive(false);
             if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Space)){
                 gameStartCountdownScript.ResetVars();
@@ -68,8 +76,9 @@ public class Lives : MonoBehaviour {
 		}
 		if (playerLives == 0) {
 			lifeImage[1].SetActive(false);
-			//StartCoroutine (LoseLife ());
-		}
+            lifeImage[2].SetActive(false);
+            //StartCoroutine (LoseLife ());
+        }
 	
 	}
 

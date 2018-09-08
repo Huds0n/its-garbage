@@ -63,6 +63,8 @@ public class GameStartCountdown : MonoBehaviour {
 
     SceneChanging scenechanger;
 
+    Lives livesScript;
+
     public GameObject player;
 
     public string goToLevelName;
@@ -70,6 +72,8 @@ public class GameStartCountdown : MonoBehaviour {
     Image blackFade;
 
     public GameObject[] particalWinEffects;
+
+
 
     // Use this for initialization
     void Start () {
@@ -89,6 +93,7 @@ public class GameStartCountdown : MonoBehaviour {
         LeanTween.moveLocalY(dashUIbackground, -210f, .5f).setDelay(.5f);
 
         scenechanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
+        livesScript = GetComponent<Lives>();
 
         goToLevelName = "StartMenu";
 
@@ -117,6 +122,7 @@ public class GameStartCountdown : MonoBehaviour {
 
     public void ResetVars()
     {
+        scenechanger.playerLives = 2;
         scenechanger.startMenuPressedSpace = 0;
         scenechanger.winLevelOne = false;
         scenechanger.winLevelTwo = false;
@@ -207,6 +213,7 @@ public class GameStartCountdown : MonoBehaviour {
 
 	void GameFinished(){
 
+        
 		LeanTween.moveZ (cameraHolder, -15f, 2f).setEaseInOutBack ();
         if(badPedsHit < 3)
         {
@@ -219,6 +226,8 @@ public class GameStartCountdown : MonoBehaviour {
         {
             endOfLevelBinScore = 1;
         }
+
+        scenechanger.playerLives = livesScript.playerLives;
 
         //check scene name and set levelOneBinScore
         if(currentScene.name == "Level1")
