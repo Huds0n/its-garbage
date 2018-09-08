@@ -121,7 +121,7 @@ public class SpawnPedestrians : MonoBehaviour {
 
         if (scene.name == "Level3")
         {
-            int typeOfEnemy = Random.Range(0, 6);
+            int typeOfEnemy = Random.Range(0, 8);
             switch (typeOfEnemy)
             {
                 case 0:
@@ -141,6 +141,12 @@ public class SpawnPedestrians : MonoBehaviour {
                     break;
                 case 5:
                     enemyType = "Good Cop";
+                    break;
+                case 6:
+                    enemyType = "Bad Chubby Lady";
+                    break;
+                case 7:
+                    enemyType = "Good Chubby Lady";
                     break;
 
             }

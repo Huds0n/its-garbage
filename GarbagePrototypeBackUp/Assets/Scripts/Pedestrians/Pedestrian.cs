@@ -82,6 +82,11 @@ public class Pedestrian : MonoBehaviour {
         {
             speed = 2f;
         }
+        //Chubby Lady
+        if (gameObject.name == "BadChubbyLady(Clone)" || gameObject.name == "GoodChubbyLady(Clone)")
+        {
+            speed = 1f;
+        }
     }
 
     public void PedestrianSpeedChange()
@@ -309,5 +314,33 @@ public class Pedestrian : MonoBehaviour {
             //badge
             rend[5].material.mainTexture = textures[6];
         }
+        if (gameObject.name == "GoodChubbyLady(Clone)")
+        {
+            //body
+            oneRandomNumber = Random.Range(0, 3);
+            //hat
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //bag
+            rend[0].material.mainTexture = textures[6];
+            //hat
+            rend[1].material.mainTexture = textures[twoRandomNumber];
+            //mesh
+            rend[2].material.mainTexture = textures[oneRandomNumber];
+        }
+        if (gameObject.name == "BadChubbyLady(Clone)")
+        {
+            //body
+            oneRandomNumber = Random.Range(0, 3);
+            //hat
+            twoRandomNumber = Random.Range(3, textures.Length);
+
+            //hat
+            rend[0].material.mainTexture = textures[twoRandomNumber];
+            //mesh
+            rend[1].material.mainTexture = textures[oneRandomNumber];
+
+        }
+
     }
 }

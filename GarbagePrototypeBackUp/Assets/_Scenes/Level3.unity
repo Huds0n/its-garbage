@@ -56464,6 +56464,12 @@ MonoBehaviour:
   - tag: Good Cop
     prefab: {fileID: 1690566464110668, guid: ba289d10cc3131941b06d74bdd2257ac, type: 2}
     size: 15
+  - tag: Bad Chubby Lady
+    prefab: {fileID: 1453450508904826, guid: 114190b259c48904894e69f78be1c952, type: 2}
+    size: 15
+  - tag: Good Chubby Lady
+    prefab: {fileID: 1401431148805812, guid: f2b146004583a314d9ef51cbf41c2350, type: 2}
+    size: 15
 --- !u!4 &1833188092
 Transform:
   m_ObjectHideFlags: 0
