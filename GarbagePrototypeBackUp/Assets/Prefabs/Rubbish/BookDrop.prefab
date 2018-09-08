@@ -351,5 +351,5 @@ MonoBehaviour:
   moveSpeed: 6
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
-  rubbishDrop: {fileID: 8300000, guid: 158c741cf11b48e4ba7384002f6b407c, type: 3}
-  rubbishPickUp: {fileID: 8300000, guid: c5fcabbe1a7b6304aa7eff6a2cbf5c7d, type: 3}
+  rubbishDrop: {fileID: 8300000, guid: c5fcabbe1a7b6304aa7eff6a2cbf5c7d, type: 3}
+  rubbishPickUp: {fileID: 8300000, guid: 158c741cf11b48e4ba7384002f6b407c, type: 3}

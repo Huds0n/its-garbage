@@ -171,7 +171,6 @@ public class PlayerMain : MonoBehaviour {
     public AudioClip monsterHurt;
     public AudioClip monsterJump;
     public AudioClip monsterFall;
-    public AudioClip monsterDash;
     AudioSource monsterAudio;
 
     [Space(5)]
@@ -603,9 +602,6 @@ public class PlayerMain : MonoBehaviour {
 
             dashCount++;
 
-           //monsterAudio.clip = monsterDash;
-            //monsterAudio.Play();
-
             ActivateTimerToReset = true;
 
             //If button pressed again in small time window, then dash
@@ -629,9 +625,6 @@ public class PlayerMain : MonoBehaviour {
             rightArrowPressed = true;
 
             dashCount++;
-
-            monsterAudio.clip = monsterDash;
-            monsterAudio.Play();
 
             ActivateTimerToReset = true;
 
