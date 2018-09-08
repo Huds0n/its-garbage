@@ -11,7 +11,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
     public bool winLevelOne;
     public bool winLevelTwo;
     public bool winLevelThree;
-    public bool winLevelFour;
+    //public bool winLevelFour;
 
 	Scene scene;
 
@@ -32,6 +32,8 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
     public int levelTwoScore;
     public int levelThreeScore;
 
+    //public int overallScore;
+
     public float goBackToMapTime;
 
     public bool pauseMenuRestart;
@@ -48,7 +50,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
 		winLevelOne = false;
 		winLevelTwo = false;
 		winLevelThree = false;
-		winLevelFour = false;
+		//winLevelFour = false;
 
         Application.targetFrameRate = 60;
     }
@@ -143,7 +145,7 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
                 }
             }
 
-            //arrow "You Are Here!" position change in map depending on which level
+            
         }
 
         //Level1 win? go back to map to continue

@@ -121,7 +121,12 @@ public class GameStartCountdown : MonoBehaviour {
         scenechanger.winLevelOne = false;
         scenechanger.winLevelTwo = false;
         scenechanger.winLevelThree = false;
-        scenechanger.winLevelFour = false;
+        //scenechanger.winLevelFour = false;
+
+        scenechanger.levelOneScore = 0;
+        scenechanger.levelTwoScore = 0;
+        scenechanger.levelThreeScore = 0;
+        //scenechanger.overallScore = 0;
 
         scenechanger.loadingScene = false;
         
@@ -244,6 +249,22 @@ public class GameStartCountdown : MonoBehaviour {
             else
             {
                 scenechanger.levelTwoScore = 1;
+            }
+        }
+
+        if (currentScene.name == "Level3")
+        {
+            if (endOfLevelBinScore == 3)
+            {
+                scenechanger.levelThreeScore = 3;
+            }
+            else if (endOfLevelBinScore == 2)
+            {
+                scenechanger.levelThreeScore = 2;
+            }
+            else
+            {
+                scenechanger.levelThreeScore = 1;
             }
         }
 
