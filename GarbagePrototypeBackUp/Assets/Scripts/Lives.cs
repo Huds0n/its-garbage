@@ -47,8 +47,10 @@ public class Lives : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//playerLives = player.GetComponent<PlayerMain> ().lives;
-		if(player == null){
+        sceneChanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
+
+        //playerLives = player.GetComponent<PlayerMain> ().lives;
+        if (player == null){
             gameOverUIObjects.SetActive(true);
             lifeImage[1].SetActive(false);
             lifeImage[2].SetActive(false);

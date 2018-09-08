@@ -47,6 +47,9 @@ public class SceneChanging : GenericSingletonClass <SceneChanging> {
     public int startMenuPressedSpace;
     // Use this for initialization
     void Start () {
+
+        Cursor.visible = false;
+
 		scene = SceneManager.GetActiveScene ();
 		winLevelOne = false;
 		winLevelTwo = false;
