@@ -8,9 +8,4 @@ public class finalscore : MonoBehaviour {
 	void Start () {
         LeanTween.scale(gameObject, new Vector3(1.5f, 1.5f, gameObject.transform.position.z), 1f).setLoopPingPong();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

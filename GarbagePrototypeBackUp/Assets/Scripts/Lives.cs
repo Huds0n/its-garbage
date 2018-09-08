@@ -10,7 +10,6 @@ public class Lives : MonoBehaviour {
 
     public Text gameOverText;
     public Text gameOverBackgroundText;
-
     
 	public GameObject player;
 
@@ -72,16 +71,11 @@ public class Lives : MonoBehaviour {
 
 		if (playerLives == 1) {
 			lifeImage[2].SetActive(false);
-			//lifeNameString = "LifeImage3";
-
-			//StartCoroutine (LoseLife ());
 		}
 		if (playerLives == 0) {
 			lifeImage[1].SetActive(false);
             lifeImage[2].SetActive(false);
-            //StartCoroutine (LoseLife ());
         }
-	
 	}
 
 	void LifeScale(){

@@ -11,8 +11,6 @@ public class SpawnPedestrians : MonoBehaviour {
 
     public GameObject[] spawners;
 
-    //public float spawnTime = 2f;
-
     public string enemyType;
 
     public float spawnTimeDelay = 3f;
@@ -26,8 +24,6 @@ public class SpawnPedestrians : MonoBehaviour {
     private void Start()
     {
         pedestrianPooler = PedestrianPooler.Instance;
-
-        //InvokeRepeating("Spawn", 0f, spawnTime);
 
         timeStamp = Time.time + spawnTimeDelay;
 

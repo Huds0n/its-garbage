@@ -29,6 +29,8 @@ public class FinalScene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        sceneChanger = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
+
         if (finalScore == 9)
         {
             perfectText.enabled = true;
@@ -53,12 +55,10 @@ public class FinalScene : MonoBehaviour {
         sceneChanger.winLevelOne = false;
         sceneChanger.winLevelTwo = false;
         sceneChanger.winLevelThree = false;
-        //scenechanger.winLevelFour = false;
 
         sceneChanger.levelOneScore = 0;
         sceneChanger.levelTwoScore = 0;
         sceneChanger.levelThreeScore = 0;
-        //scenechanger.overallScore = 0;
 
         sceneChanger.loadingScene = false;
 

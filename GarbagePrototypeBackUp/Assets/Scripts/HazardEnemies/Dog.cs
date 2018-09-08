@@ -11,17 +11,17 @@ public class Dog : MonoBehaviour {
 
     static float t = 0.0f;
     public float speed = 0.1f;
-    
-    [Header("References Script")]
-    public ReferencedScripts referencesScript;
 
-	Quaternion rotation = Quaternion.identity;
+    Quaternion rotation = Quaternion.identity;
 
-	public GameObject dogShit;
+    public GameObject dogShit;
 
     AudioSource dogAudio;
     public AudioClip dogShitNoise;
     public AudioClip dogEnter;
+
+    [Header("References Script")]
+    public ReferencedScripts referencesScript;
 
     // Use this for initialization
     void Start () {
@@ -101,8 +101,6 @@ public class Dog : MonoBehaviour {
 
                 referencesScript.squashScript.currentComboState = 0;
                 referencesScript.playerMainScript.fuelImage.fillAmount -= 0.05f;
-
-                //StartCoroutine(referencesScript.cameraShake.Shake(.15f, .4f));
 
                 referencesScript.playerMainScript.hurt = true;
             }

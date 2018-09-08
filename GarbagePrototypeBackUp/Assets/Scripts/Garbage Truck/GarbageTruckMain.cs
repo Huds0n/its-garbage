@@ -9,30 +9,30 @@ public class GarbageTruckMain : MonoBehaviour {
     int i;
     int iTwo;
 
-    [Header("References Script")]
-    public ReferencedScripts referencesScript;
-
-    SceneChanging sceneChangingScript;
-
     //AudioSource garbageTruckNoise;
 
     Scene scene;
+
+    SceneChanging sceneChangingScript;
+
+    [Header("References Script")]
+    public ReferencedScripts referencesScript;
 
     // Use this for initialization
     void Start () {
         i = 0;
         iTwo = 0;
 
+        scene = SceneManager.GetActiveScene();
+
         sceneChangingScript = GameObject.Find("SceneManager").GetComponent<SceneChanging>();
 
         //garbageTruckNoise = GetComponent<AudioSource>();
-
-        scene = SceneManager.GetActiveScene();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        //if player won game level move to player position x
+        //If player won game level move to player position x
 		if(referencesScript.gameStartCoundownScript.gameFinishedWin == true)
         {
             //garbageTruckNoise.Play();
@@ -46,6 +46,7 @@ public class GarbageTruckMain : MonoBehaviour {
         if (i == 0)
         {
             LeanTween.moveX(gameObject, referencesScript.playerObject.transform.position.x + 0.5f, 5f);
+
             StartCoroutine(TruckOperations());
             i = 1;
         }
@@ -64,7 +65,7 @@ public class GarbageTruckMain : MonoBehaviour {
     {
         if (iTwo == 0)
         {
-            //move truck out of scene
+            //Move truck out of scene
             LeanTween.moveX(gameObject, gameObject.transform.position.x + 30, 5f).callOnCompletes();
             if(scene.name == "Level1")
             {

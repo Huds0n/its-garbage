@@ -16,6 +16,7 @@ public class RestartLevel : MonoBehaviour {
         currentScene = SceneManager.GetActiveScene();
         levelName = currentScene.name;
     }
+
     // Update is called once per frame
     void Update () {
 		if (referencesScript.playerObject == null && Input.GetKey(KeyCode.R))

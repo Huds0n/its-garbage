@@ -73,8 +73,6 @@ public class GameStartCountdown : MonoBehaviour {
 
     public GameObject[] particalWinEffects;
 
-
-
     // Use this for initialization
     void Start () {
 		GameStartReset ();
@@ -89,6 +87,7 @@ public class GameStartCountdown : MonoBehaviour {
 
         currentScene = SceneManager.GetActiveScene();
 
+        //moving UI into scene
         LeanTween.moveLocalY(dashUI, -210f, .5f).setDelay(.5f);
         LeanTween.moveLocalY(dashUIbackground, -210f, .5f).setDelay(.5f);
 
@@ -103,9 +102,7 @@ public class GameStartCountdown : MonoBehaviour {
 
     private void Update()
     {
-
 		if (gameFinishedWin == true && i == 0) {
-            //levelCompleteText.text = "Level Complete";
 			GameFinished ();
 		}
 
@@ -127,12 +124,10 @@ public class GameStartCountdown : MonoBehaviour {
         scenechanger.winLevelOne = false;
         scenechanger.winLevelTwo = false;
         scenechanger.winLevelThree = false;
-        //scenechanger.winLevelFour = false;
 
         scenechanger.levelOneScore = 0;
         scenechanger.levelTwoScore = 0;
         scenechanger.levelThreeScore = 0;
-        //scenechanger.overallScore = 0;
 
         scenechanger.loadingScene = false;
         
@@ -153,7 +148,6 @@ public class GameStartCountdown : MonoBehaviour {
     void GoRestart()
     {
         ResetVars();
-        //scenechanger.pauseMenuRestart = true;
     }
 
     void QuitTheGame()
@@ -201,7 +195,6 @@ public class GameStartCountdown : MonoBehaviour {
 
 		countdownText.text = "";
 		gameStartText.text = "";
-		//levelCompleteText.text = "";
 	}
 
 	void FuelUIStart(){
@@ -212,8 +205,6 @@ public class GameStartCountdown : MonoBehaviour {
 	}
 
 	void GameFinished(){
-
-        
 		LeanTween.moveZ (cameraHolder, -15f, 2f).setEaseInOutBack ();
         if(badPedsHit < 3)
         {
@@ -229,7 +220,7 @@ public class GameStartCountdown : MonoBehaviour {
 
         scenechanger.playerLives = livesScript.playerLives;
 
-        //check scene name and set levelOneBinScore
+        //Check scene name and set levelOneBinScore
         if(currentScene.name == "Level1")
         {
             if(endOfLevelBinScore == 3)

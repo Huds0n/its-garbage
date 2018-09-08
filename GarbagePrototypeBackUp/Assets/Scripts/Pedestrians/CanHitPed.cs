@@ -56,7 +56,7 @@ public class CanHitPed : Pedestrian, IPooledObject {
 
         PedestrianSpeeds();
         PedestrianFacingWay();
-        //PedestrianSpeedChange();
+        
         PedestrianOffScreenIndicator();
 
     }
@@ -64,11 +64,7 @@ public class CanHitPed : Pedestrian, IPooledObject {
     // Update is called once per frame
     public void FixedUpdate () {
         PedestrianMovement();
-        //PedestrianAnimationSpeed();
-
     }
-
-
 
     public void SpawnRubbish()
     {
@@ -161,7 +157,6 @@ public class CanHitPed : Pedestrian, IPooledObject {
                 oTwo = 0;
                 oThree = 0;
             }
-            
             
             gameObject.SetActive(false);
         }

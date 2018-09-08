@@ -14,7 +14,6 @@ public class UIFuelDrop : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         hammerScript = GameObject.Find("Club").GetComponent<Hammer>();
-
 	}
 
     // Update is called once per frame
@@ -23,16 +22,12 @@ public class UIFuelDrop : MonoBehaviour {
            
         test.transform.position = new Vector3(position + 2, gameObject.transform.position.y, gameObject.transform.position.z);
 
-
         if (hammerScript.badEnemyHit == true)
-        {
-          
+        {      
             GameObject rubbish = Instantiate(rubbishUI, gameObject.transform.position, Quaternion.identity);
             rubbish.transform.SetParent(gameObject.transform, false);
             rubbish.transform.position = gameObject.transform.position;
             hammerScript.badEnemyHit = false;
-        }
-       
+        }  
 	}
-
 }

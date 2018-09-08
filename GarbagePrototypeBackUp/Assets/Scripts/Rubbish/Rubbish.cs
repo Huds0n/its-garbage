@@ -20,8 +20,6 @@ public class Rubbish : MonoBehaviour {
     float upForce = 7f;
     float sideForce = 4f;
 
-    //ObjectiveCheck objScript;
-
     [Range(0.0f, 5.0f)]
     public float fallMultiplier = 2.5f;
     [Range(0.0f, 5.0f)]
@@ -39,13 +37,8 @@ public class Rubbish : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
-
-        //objScript = Camera.main.GetComponent<ObjectiveCheck>(); 
         player = GameObject.FindGameObjectWithTag("Player");
         rb = gameObject.GetComponent<Rigidbody>();
-
-        //LeanTween.scale(gameObject, new Vector3(.3f,.3f,.3f), .5f).setLoopPingPong().setEaseInExpo();
 
         float xForce = Random.Range(-sideForce, sideForce);
         float yForce = Random.Range(upForce / 2f, upForce);
@@ -82,8 +75,6 @@ public class Rubbish : MonoBehaviour {
             rb.isKinematic = false;
 
             StartCoroutine(GoAway());
-
-            //Destroy(gameObject);
         }
 
         if (untouchable == false)

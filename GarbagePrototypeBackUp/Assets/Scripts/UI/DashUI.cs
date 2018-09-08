@@ -8,9 +8,4 @@ public class DashUI : MonoBehaviour {
 	void Start () {
 		LeanTween.scale (gameObject, new Vector3(gameObject.transform.localScale.x + .02f,gameObject.transform.localScale.y + .02f, gameObject.transform.localScale.z + .02f), 1f).setLoopPingPong ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
