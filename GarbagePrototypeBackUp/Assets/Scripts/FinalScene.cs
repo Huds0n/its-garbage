@@ -48,7 +48,7 @@ public class FinalScene : MonoBehaviour {
 
     public void ResetVars()
     {
-        sceneChanger.playerLives = 3;
+        sceneChanger.playerLives = 2;
         sceneChanger.startMenuPressedSpace = 0;
         sceneChanger.winLevelOne = false;
         sceneChanger.winLevelTwo = false;
